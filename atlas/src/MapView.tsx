@@ -137,7 +137,11 @@ function interpolateCanopyColor(value: number) {
     .join("")}`;
 }
 
-function cityCanopyColorExpression(cities: City[]): ExpressionSpecification {
+function cityCanopyColorExpression(
+  cities: City[],
+): DataDrivenPropertyValueSpecification<string> {
+  if (cities.length === 0) return "#8aa49a";
+
   const expression: unknown[] = ["match", ["get", "slug"]];
   for (const city of cities) {
     expression.push(city.slug, interpolateCanopyColor(city.areaWeightedCanopyPct));

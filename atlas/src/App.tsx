@@ -450,7 +450,7 @@ export default function App() {
                   <div className="metric-grid">
                     <div><span>Population</span><strong>{formatPopulation(selectedCity.population)}</strong></div>
                     <div><span>Census tracts</span><strong>{formatPopulation(selectedCity.tracts)}</strong></div>
-                    <div><span>Block groups</span><strong>{formatPopulation(selectedSummary?.neighbourhoods ?? selectedCity.blockGroups)}</strong></div>
+                    <div><span>Block groups</span><strong>{formatPopulation(selectedCity.blockGroups)}</strong></div>
                     <div><span>Canopy cover</span><strong>{selectedCity.areaWeightedCanopyPct.toFixed(1)}%</strong></div>
                   </div>
 

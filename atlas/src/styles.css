@@ -1157,4 +1157,8 @@ button {
     grid-column: 1;
   }
 
+  .canopy-rate-legend {
+    bottom: 100px;
+  }
+
 }

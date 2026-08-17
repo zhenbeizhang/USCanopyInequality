@@ -228,7 +228,7 @@ def health() -> dict[str, object]:
     return {
         "status": "ok",
         "cities": len(city_index()),
-        "cogSource": COG_BASE_URL or str(COG_ROOT),
+        "cogSource": "remote" if COG_BASE_URL else "local",
         "canopyDisplayFilter": {
             "minimumPixelsRetained": MIN_CANOPY_COMPONENT_PIXELS,
             "connectivity": CANOPY_FILTER_CONNECTIVITY,

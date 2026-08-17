@@ -297,6 +297,22 @@ class StaticReleaseTests(unittest.TestCase):
         )
         self.assertNotIn("HVCG", sources.upper())
 
+    def test_atlas_display_contract_guards_known_regressions(self) -> None:
+        map_view = (ROOT / "atlas" / "src" / "MapView.tsx").read_text(encoding="utf-8")
+        app = (ROOT / "atlas" / "src" / "App.tsx").read_text(encoding="utf-8")
+        styles = (ROOT / "atlas" / "src" / "styles.css").read_text(encoding="utf-8")
+        server = (ROOT / "atlas" / "server" / "app.py").read_text(encoding="utf-8")
+
+        self.assertIn('if (cities.length === 0) return "#8aa49a";', map_view)
+        self.assertIn("formatPopulation(selectedCity.blockGroups)", app)
+        self.assertNotIn("selectedSummary?.neighbourhoods ?? selectedCity.blockGroups", app)
+        self.assertRegex(
+            styles,
+            r"@media \(max-width: 760px\)[\s\S]*?\.canopy-rate-legend\s*\{\s*bottom:\s*100px;",
+        )
+        self.assertIn('"cogSource": "remote" if COG_BASE_URL else "local"', server)
+        self.assertNotIn('"cogSource": COG_BASE_URL or str(COG_ROOT)', server)
+
 
 if __name__ == "__main__":
     unittest.main()
