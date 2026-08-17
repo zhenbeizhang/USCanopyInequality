@@ -66,7 +66,7 @@ PREDICTORS = [
     ("z_black", "Black", "Race/ethnicity", "black_alone_pct", 1.0),
     ("z_hispanic", "Hispanic/Latino", "Race/ethnicity", "hispanic_or_latino_pct", 1.0),
     ("z_asian", "Asian", "Race/ethnicity", "asian_alone_pct", 1.0),
-    ("z_poc", "People of colour", "Race/ethnicity", "people_of_color_pct", 1.0),
+    ("z_poc", "Not White alone", "Race/ethnicity", "people_of_color_pct", 1.0),
     ("z_renter", "Renters", "Housing/mobility", "renter_occupied_pct", 1.0),
     ("z_no_vehicle", "No vehicle", "Housing/mobility", "no_vehicle_households_pct", 1.0),
     ("z_public_transport", "Public transit", "Housing/mobility", "public_transport_commute_pct", 1.0),

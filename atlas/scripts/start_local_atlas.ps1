@@ -16,13 +16,6 @@ $logRoot = Join-Path $runtime "logs"
 $apiUrl = "http://127.0.0.1:$ApiPort"
 $webUrl = "http://127.0.0.1:$WebPort"
 
-if ([string]::IsNullOrWhiteSpace($CogRoot)) {
-    $localCogRoot = "E:\美国树荫\CanopyAtlas\cogs"
-    if (Test-Path -LiteralPath $localCogRoot) {
-        $CogRoot = $localCogRoot
-    }
-}
-
 function Test-AtlasEndpoint {
     param([Parameter(Mandatory = $true)][string]$Url)
     try {

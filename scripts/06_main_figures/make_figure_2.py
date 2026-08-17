@@ -59,7 +59,7 @@ RULE_LABELS = {
     "uniform": "Uniform eligible fraction",
     "canopy_deficit": "Canopy-deficit first",
     "surface_heat": "Surface-heat first",
-    "social_condition": "Social-condition first",
+    "social_condition": "Social-context first",
 }
 MARKERS = {"uniform": "o", "canopy_deficit": "s", "surface_heat": "^", "social_condition": "D"}
 CLASS_COLORS = {
@@ -69,7 +69,7 @@ CLASS_COLORS = {
 }
 CLASS_LABELS = {
     "surface_heat_supported_both_models": "Surface heat supported",
-    "social_condition_supported_both_models": "Social condition supported",
+    "social_condition_supported_both_models": "Social-context ordering supported",
     "model_or_interval_uncertain": "Model or interval uncertain",
 }
 
@@ -194,7 +194,7 @@ def make_figure2() -> dict:
 
     order = [
         "Low income", "Poverty", "Older age", "Black", "Hispanic/Latino", "Asian",
-        "People of colour", "Renters", "No vehicle", "Public transit", "Density",
+        "Not White alone", "Renters", "No vehicle", "Public transit", "Density",
     ]
     y_positions = np.arange(len(order))[::-1]
     for i, label in enumerate(order):
@@ -375,7 +375,7 @@ def make_figure5() -> dict:
             va="center",
             arrowprops={"arrowstyle": "-", "lw": 0.55, "color": BLACK},
         )
-    ax_c.set_xlabel("Heat minus social-condition alignment\nwith population density (Spearman r)")
+    ax_c.set_xlabel("Surface-heat minus social-context alignment\nwith population density (Spearman r)")
     ax_c.set_ylabel("Heat-first minus social-first\npopulation-weighted increment per ha")
     ax_c.text(0.98, 0.04, f"Spearman r = {rho:.2f}", transform=ax_c.transAxes, ha="right", va="bottom", fontsize=6.7)
     clean_axis(ax_c)
@@ -385,8 +385,8 @@ def make_figure5() -> dict:
     caption = (
         "Fig. 5 | Equal-area analytical orderings depend on eligibility and city population placement. "
         "a, Model-implied population-weighted LST contrasts per allocated hectare at a prespecified 10% city-specific budget under four rules, three nested eligibility scopes and two thermal models. Points and bars are medians and 95% intervals from 500 paired primary-width spatial-block bootstrap draws across all 50 cities. G denotes context-relative canopy deficit; H denotes positive city-relative summer LST anomaly; H3 is the upper positive-heat class. Values are associational model translations, not observed cooling. "
-        "b, Dual-model city classification for the broad G > 0 scope. A city supports an ordering only when the 95% surface-heat-first minus social-condition-first interval lies on the same side of zero under both M2 city and M3; all other cities are classified as model or interval uncertain. "
-        "c, Difference between each rule's correlation with population density versus the resulting difference in population-weighted canopy increment per hectare. Positive values indicate that surface-heat-first places the same area where more residents coincide with the increment than social-condition-first. The association is descriptive; the exact thermal contrast additionally multiplies this placement term by the city-specific canopy-LST coefficient."
+        "b, Dual-model city classification for the broad G > 0 scope. A city supports an ordering only when the 95% surface-heat-first minus social-context-first interval lies on the same side of zero under both M2 city and M3; all other cities are classified as model or interval uncertain. "
+        "c, Difference between each rule's correlation with population density versus the resulting difference in population-weighted canopy increment per hectare. Positive values indicate that surface-heat-first places the same area where more residents coincide with the increment than social-context-first. The association is descriptive; the exact thermal contrast additionally multiplies this placement term by the city-specific canopy-LST coefficient."
     )
     (R5_OUT / "Fig5_caption.txt").write_text(caption, encoding="utf-8")
     qa = {
@@ -447,7 +447,7 @@ def make_supplementary_allocation_sensitivity() -> dict:
     for spine in ax_a.spines.values():
         spine.set_visible(False)
     cbar = fig.colorbar(image, ax=ax_a, orientation="horizontal", fraction=0.055, pad=0.12, aspect=30)
-    cbar.set_label("Surface-heat-first minus social-condition-first (person °C ha$^{-1}$)", fontsize=6.8)
+    cbar.set_label("Surface-heat-first minus social-context-first (person °C ha$^{-1}$)", fontsize=6.8)
     cbar.ax.tick_params(labelsize=6.2)
 
     class_order = ["surface_heat_supported_both_models", "model_or_interval_uncertain", "social_condition_supported_both_models"]
@@ -477,7 +477,7 @@ def make_supplementary_allocation_sensitivity() -> dict:
     ax_b.set_xlim(0, 50)
     ax_b.set_xlabel("Cities")
     clean_axis(ax_b)
-    short_labels = ["Surface heat", "Uncertain", "Social condition"]
+    short_labels = ["Surface heat", "Uncertain", "Social context"]
     handles = [Line2D([0], [0], marker="s", color=color, lw=0, markerfacecolor=color, label=label, markersize=5) for label, color in zip(short_labels, class_palette)]
     ax_b.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=3, frameon=False, handletextpad=0.3, columnspacing=0.65)
 
@@ -486,8 +486,8 @@ def make_supplementary_allocation_sensitivity() -> dict:
     outputs = save_figure(fig, out / "figures", "Supplementary_Fig_allocation_sensitivity")
     caption = (
         "Supplementary Fig. 17 | Eligibility, model form and social-condition construction constrain equal-area comparisons. "
-        "a, Surface-heat-first minus social-condition-first model-implied population-weighted LST contrasts at the 10% budget under three eligibility scopes and five increment/model-form specifications. Positive cells favour the surface-heat ordering under the displayed associational translation; negative cells favour the social-condition ordering. The piecewise and spline models restrict increments to each city's population-weighted 5th–95th-percentile canopy support. "
-        "b, Number of cities classified as supporting surface heat, supporting social condition or model/interval uncertain under both M2 and M3 for four social-condition constructions in the broad G > 0 scope. Equal weighting, omission of public-transit commuting and within-city ranking change the social-condition ordering only; all city classes use 95% paired spatial-bootstrap intervals."
+        "a, Surface-heat-first minus social-context-first model-implied population-weighted LST contrasts at the 10% budget under three eligibility scopes and five increment/model-form specifications. Positive cells favour the surface-heat ordering under the displayed associational translation; negative cells favour the social-context ordering. The piecewise and spline models restrict increments to each city's population-weighted 5th–95th-percentile canopy support. "
+        "b, Number of cities classified as supporting surface heat, supporting social context or model/interval uncertain under both M2 and M3 for four social-condition constructions in the broad G > 0 scope. Equal weighting, omission of public-transit commuting and within-city ranking change the social-condition ordering only; all city classes use 95% paired spatial-bootstrap intervals."
     )
     (out / "Supplementary_Fig_allocation_sensitivity_caption.txt").write_text(caption, encoding="utf-8")
     qa = {

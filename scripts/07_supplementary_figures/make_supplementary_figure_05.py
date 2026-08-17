@@ -52,7 +52,7 @@ PREDICTORS = [
     ("Black", "black_alone_pct", 1.0),
     ("Hispanic/Latino", "hispanic_or_latino_pct", 1.0),
     ("Asian", "asian_alone_pct", 1.0),
-    ("People of colour", "people_of_color_pct", 1.0),
+    ("Not White alone", "people_of_color_pct", 1.0),
     ("Renters", "renter_occupied_pct", 1.0),
     ("No vehicle", "no_vehicle_households_pct", 1.0),
     ("Public transit", "public_transport_commute_pct", 1.0),
@@ -66,7 +66,7 @@ DISPLAY = [
     "Black",
     "Hispanic/Latino",
     "Asian",
-    "People of colour",
+    "Not White alone",
     "Renters",
     "No vehicle",
     "Public transit",
@@ -320,7 +320,7 @@ def main() -> int:
 
     caption = (
         "Supplementary Fig. 5 | City heterogeneity in descriptive social-canopy contrasts on a common complete-case frame. "
-        "a,b, Population-weighted residential canopy in the highest oriented within-city quintile minus that in the lowest quintile for 11 prespecified attributes across 50 cities and the same 30,826 fully contained block groups. Household income is reversed so that the highest oriented quintile denotes lower income; all other columns compare higher with lower values or group concentrations. Age denotes median age, Hispanic denotes Hispanic/Latino concentration and POC denotes people of colour. Cities are ordered by their mean contrast across the 11 columns and split into two panels only for legibility. Negative values indicate less canopy in the named higher-disadvantage or higher-concentration context, whereas positive values indicate more. These are descriptive within-city contrasts rather than mutually adjusted demographic effects. Density is included as an urban-form context, and the city ordering is not a vulnerability or allocation ranking."
+        "a,b, Population-weighted residential canopy in the highest oriented within-city quintile minus that in the lowest quintile for 11 prespecified attributes across 50 cities and the same 30,826 fully contained block groups. Household income is reversed so that the highest oriented quintile denotes lower income; all other columns compare higher with lower values or group concentrations. Age denotes median age, Hispanic denotes Hispanic/Latino concentration and Not White alone denotes 100 minus the ACS White-alone racial share. Cities are ordered by their mean contrast across the 11 columns and split into two panels only for legibility. Negative values indicate less canopy in the named higher-disadvantage or higher-concentration context, whereas positive values indicate more. These are descriptive within-city contrasts rather than mutually adjusted demographic effects. Density is included as an urban-form context, and the city ordering is not a vulnerability or allocation ranking."
     )
     (TEXT / "Supplementary_Fig5_caption.txt").write_text(caption.replace("Older age", "Median age"), encoding="utf-8")
     print(json.dumps(qa, ensure_ascii=False, indent=2))

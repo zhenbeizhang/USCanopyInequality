@@ -138,7 +138,7 @@ def density_panels(
     norm = LogNorm(vmin=1, vmax=max_count)
     positions = ((0.075, 0.585, 0.245, 0.305), (0.350, 0.585, 0.245, 0.305), (0.625, 0.585, 0.245, 0.305))
     axes: list[mpl.axes.Axes] = []
-    labels = {1: "Lower social condition (V1)", 2: "Middle social condition (V2)", 3: "Higher social condition (V3)"}
+    labels = {1: "Lower tier (V1)", 2: "Middle tier (V2)", 3: "Upper tier (V3)"}
     g_cut = float(frame.loc[frame["G_level"].eq(2), "G"].max())
     h_cut = float(frame.loc[frame["H_level"].eq(2), "H"].max())
     mappable: mpl.cm.ScalarMappable | None = None
@@ -398,7 +398,7 @@ def main() -> int:
     write_json(QA / "Fig4_figure_qa.json", qa)
     caption = (
         "Fig. 4 | Canopy deficit, surface-heat context and social conditions overlap only partly across urban neighbourhoods. "
-        "a, Joint distribution of the density-stratified canopy deficit (G) and positive summer Landsat land-surface-temperature anomaly (H) across tertiles of the prespecified social-condition score (V) for 34,566 block groups in 50 cities. Dashed lines mark the positive-value medians used to separate G2/G3 and H2/H3; the outlined region in V3 identifies the joint G-positive, H3, V3 context. Values above the 99th percentile are retained in the outer density bins. "
+        "a, Joint distribution of the density-stratified canopy deficit (G) and positive summer Landsat land-surface-temperature anomaly (H) across tertiles of the prespecified social-condition ordering (V) for 34,566 block groups in 50 cities. Dashed lines mark the positive-value medians used to separate G2/G3 and H2/H3; the outlined region in V3 identifies the joint G-positive, H3, V3 context. Values above the 99th percentile are retained in the outer density bins. "
         "b, Equal-city observed-to-expected prevalence ratio for the joint context under the within-city marginal benchmark and benchmarks conditioned on large, primary and small spatial blocks. Points are central ratios and shading shows 95% two-level bootstrap intervals obtained by resampling cities and intact within-city blocks. The intervals describe sampling stability and are not tests against a spatial-randomization null. "
         "c, Percentage of analysed block groups assigned to the joint context in each city. The 3,602 joint-context block groups represented 4.59 million residents, but local labels were threshold- and scale-dependent."
     )

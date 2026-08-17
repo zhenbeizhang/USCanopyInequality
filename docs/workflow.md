@@ -65,7 +65,7 @@ python run_pipeline.py --stages 4
 ~~~
 
 Stage 4 classifies each of the 34,566 complete units by city-relative canopy
-deficit, positive LST anomaly and social condition. It constructs the 27-cell
+deficit, positive LST anomaly and the social-condition ordering. It constructs the 27-cell
 G-H-V typology, calculates the joint-context benchmark, repeats it after
 leaving each component out, and evaluates threshold sensitivity. The benchmark
 is descriptive co-location evidence, not a causal risk score.

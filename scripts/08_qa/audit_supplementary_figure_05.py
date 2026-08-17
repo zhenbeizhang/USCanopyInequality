@@ -31,7 +31,7 @@ VARIABLES = [
     "Black",
     "Hispanic/Latino",
     "Asian",
-    "People of colour",
+    "Not White alone",
     "Renters",
     "No vehicle",
     "Public transit",

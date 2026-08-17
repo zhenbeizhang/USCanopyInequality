@@ -47,7 +47,7 @@ GROUPS = (
     "white_alone_pct",
     "age_65_plus_pct",
 )
-GROUP_LABELS = ("People of colour", "Hispanic/Latino", "Black", "Asian", "White", "Age 65+")
+GROUP_LABELS = ("Not White alone", "Hispanic/Latino", "Black", "Asian", "White", "Age 65+")
 INK = "#171A18"
 LIMIT = 0.40
 CMAP = LinearSegmentedColormap.from_list(

@@ -129,7 +129,7 @@ function TypeExplorer({
           </button>
         ))}
       </div>
-      <div className="type-axis-label">Social-condition level</div>
+      <div className="type-axis-label">Social-condition tier</div>
       <div className="type-matrix">
         <span />
         {vLevels.map((level) => <b key={`v-${level}`}>V{level}</b>)}

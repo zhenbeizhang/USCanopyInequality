@@ -57,6 +57,35 @@ class StaticReleaseTests(unittest.TestCase):
                         failures.append(f"{path.relative_to(ROOT)}:{node.lineno}")
         self.assertEqual([], failures)
 
+    def test_no_personal_workspace_markers(self) -> None:
+        forbidden = ("whu" + "zzb", "美国" + "树荫")
+        text_suffixes = {
+            ".cff",
+            ".csv",
+            ".example",
+            ".json",
+            ".md",
+            ".nginx",
+            ".ps1",
+            ".py",
+            ".service",
+            ".toml",
+            ".ts",
+            ".tsx",
+            ".txt",
+            ".yaml",
+            ".yml",
+        }
+        failures = []
+        for path in project_files("*"):
+            if not path.is_file() or path.suffix.lower() not in text_suffixes:
+                continue
+            text = path.read_text(encoding="utf-8", errors="replace").lower()
+            for token in forbidden:
+                if token.lower() in text:
+                    failures.append(f"{path.relative_to(ROOT)}: {token}")
+        self.assertEqual([], failures)
+
     def test_no_private_binary_artifacts(self) -> None:
         forbidden = {".pth", ".pt", ".onnx", ".tif", ".tiff", ".gpkg", ".docx"}
         files = [
@@ -131,6 +160,27 @@ class StaticReleaseTests(unittest.TestCase):
         for relative in PUBLIC_ATLAS_DOCS:
             text = (ROOT / relative).read_text(encoding="utf-8")
             self.assertIn(PUBLIC_ATLAS_URL, text, str(relative))
+
+    def test_public_terminology_contract(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        evidence = (ROOT / "atlas" / "src" / "evidence.ts").read_text(encoding="utf-8")
+        terminology = (ROOT / "docs" / "terminology.md").read_text(encoding="utf-8")
+        combined = readme + "\n" + evidence
+        controlled = combined + "\n" + terminology
+        required = (
+            "Not White alone",
+            "Social-context first",
+            "Canopy-deficit first",
+            "illustrative equal-weight",
+        )
+        forbidden = (
+            "People of colour",
+            "Social-condition first",
+            "Canopy-gap first",
+            "balanced ordering",
+        )
+        self.assertTrue(all(term in controlled for term in required))
+        self.assertTrue(all(term not in combined for term in forbidden))
 
     def test_public_release_has_no_manuscript_revision_traces(self) -> None:
         revision_pattern = re.compile(
@@ -240,6 +290,7 @@ class StaticReleaseTests(unittest.TestCase):
         for relative in (
             "docs/data_contract.md",
             "docs/workflow.md",
+            "docs/terminology.md",
             "docs/reproducibility_scope.md",
             "docs/release_plan.md",
             "CITATION.cff",

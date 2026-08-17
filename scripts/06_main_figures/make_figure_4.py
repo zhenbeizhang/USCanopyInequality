@@ -189,7 +189,7 @@ def main() -> None:
 
     caption = (
         "Fig. 4 | Canopy deficit, surface-heat context and social conditions overlap only partly across urban neighbourhoods. "
-        "a, Joint distribution of the density-stratified canopy deficit (G) and positive summer Landsat land-surface-temperature anomaly (H) across tertiles of the prespecified social-condition score (V) for 34,566 block groups in 50 cities. "
+        "a, Joint distribution of the density-stratified canopy deficit (G) and positive summer Landsat land-surface-temperature anomaly (H) across tertiles of the prespecified social-condition ordering (V) for 34,566 block groups in 50 cities. "
         "Dashed lines mark the positive-value medians used to separate G2/G3 and H2/H3; the outlined region in V3 identifies the joint G-positive, H3, V3 context. Values above the 99th percentile are retained in the outer density bins. "
         "b, Equal-city observed-to-expected prevalence ratios under leave-one-unit-out (LOO) city-marginal and spatial-block-conditioned benchmarks. For each analysed block group, marginal probabilities were estimated from other units in the same city or block. Spatial benchmarks exclude singleton blocks and retain 99.0%, 94.1% and 68.8% of units at the large, primary and small widths, respectively. "
         "Points are deterministic ratios and shading shows 95% intervals from 2,000 city and intact-block bootstrap draws. Block widths are medians of city-specific residual-range widths. These intervals describe sampling stability and are not tests against a generative spatial null. "

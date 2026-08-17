@@ -202,7 +202,7 @@ def freeze_analysis_sample() -> tuple[pd.DataFrame, gpd.GeoDataFrame]:
             "maximum_absolute_difference_percentage_points": float(canopy_diff.max()),
         },
         "people_of_color": {
-            "unique_formula": "100 - non-Hispanic White alone (%)",
+            "unique_formula": "100 - White alone (%)",
             "code_location": str(RESULT_ROOT / "Result4" / "scripts" / "prepare_result4_hvcg.py"),
             "rows_checked": int(poc_diff.notna().sum()),
             "maximum_absolute_formula_difference": float(poc_diff.max()),
@@ -1183,7 +1183,7 @@ def write_analysis_report(
         "",
         "- The analysis is fixed to the 38,447 Result 3 block groups in 50 cities.",
         "- Canopy exposure comes from the city-clipped binary U-Net masks in `predict_mosaic_clip2`; no morphological filtering entered block-group calculations.",
-        "- People of colour is fixed as 100 minus non-Hispanic White alone percentage.",
+        "- Not White alone is fixed as 100 minus the ACS White-alone percentage.",
         "- HVCG tiers are precedence-ordered and mutually exclusive.",
         "- Legacy HVCG slopes and their P-value fallback are retained only as an audit comparator.",
         "",

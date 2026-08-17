@@ -55,7 +55,7 @@ the interactive files compact.
 | `gl`, `hl`, `vl` | Frozen three-level classes for G, H and V |
 | `type` | One of 27 mutually exclusive nominal labels, `GxHyVz` |
 | `context` | One of six manuscript-facing combinations, A-F |
-| `a_u`, `a_g`, `a_h`, `a_v` | Fraction of local analytical capacity selected at the city-specific 10% budget under uniform, canopy-deficit-first, surface-heat-first and social-condition-first ranking |
+| `a_u`, `a_g`, `a_h`, `a_v` | Fraction of local analytical capacity selected at the city-specific 10% budget under uniform, canopy-deficit-first, surface-heat-first and social-context-first ranking |
 
 The social-condition ordering averages three domains: poverty; the mean of
 renter occupancy and households without vehicles; and the share aged 65 years
@@ -68,7 +68,7 @@ combinations, not an ordered risk score.
 |---|---|
 | A | G2/G3, H3 and V3: joint canopy-deficit, surface-heat and social context |
 | B | G2/G3, H3 and V1/V2: surface-heat canopy deficit |
-| C | G2/G3, H1/H2 and V3: social-condition canopy deficit |
+| C | G2/G3, H1/H2 and V3: social-context canopy deficit |
 | D | G2/G3, H1/H2 and V1/V2: canopy-deficit dominant |
 | E | G1 with H3 or V3: heat or social context with no measured canopy deficit |
 | F | G1, H1/H2 and V1/V2: lower or mixed reference |

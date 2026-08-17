@@ -65,7 +65,7 @@ def main() -> None:
         "caption_states_case_selection": "illustrative mechanism contrasts" in caption,
         "caption_denies_planting_and_realized_outcomes": all(phrase in caption for phrase in ("not parcel-level planting plans", "realized cooling", "health benefit")),
         "caption_uses_current_rule_names": all(phrase in caption for phrase in ("surface-heat-first", "social-context-first", "equal-weight")),
-        "no_old_rule_names": all(phrase not in caption.lower() for phrase in ("heat-context", "social-condition", "balanced rule")),
+        "no_old_rule_names": all(phrase not in caption.lower() for phrase in ("heat-context", "social-condition-first", "balanced rule")),
         "minimum_font_at_least_5p2pt": float(build["minimum_font_pt"]) >= 5.2,
         "no_text_text_overlap": int(build["text_text_overlap_count"]) == 0,
         "outer_margins_below_3pct": max(margins.values()) < 0.03,

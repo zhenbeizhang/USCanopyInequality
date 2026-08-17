@@ -78,7 +78,7 @@ PREDICTORS = [
     Predictor("z_public_transport", "Public transit", "Housing/urban form", "public_transport_commute_pct", 1.0),
     Predictor("z_density", "Density", "Housing/urban form", "log_pop_density", 1.0),
 ]
-POC = Predictor("z_poc", "People of colour", "Descriptive composite", "people_of_color_pct", 1.0)
+POC = Predictor("z_poc", "Not White alone", "Race/ethnicity", "people_of_color_pct", 1.0)
 ALL_MARGINAL = PREDICTORS[:6] + [POC] + PREDICTORS[6:]
 JOINT_Z = [p.z for p in PREDICTORS]
 ALL_Z = [p.z for p in ALL_MARGINAL]
@@ -1028,7 +1028,7 @@ def main() -> None:
         "primary_weighting": "block-group population, normalized to mean one",
         "fixed_effects": "city fixed effects implemented by population-weighted within-city demeaning",
         "inference": "city-cluster CR1 plus 9,999 city-level Rademacher wild-cluster score bootstrap draws",
-        "poc_joint_exclusion": "people_of_color_pct is a composite of race/ethnicity shares and is retained only in separate gradients",
+        "poc_joint_exclusion": "people_of_color_pct is 100 minus the ACS White-alone share and is retained only in separate gradients",
     }
     (QA / "provenance.json").write_text(json.dumps(provenance, indent=2, ensure_ascii=False), encoding="utf-8")
     summary = write_reports(

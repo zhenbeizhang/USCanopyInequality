@@ -43,7 +43,7 @@ LOW = "#5C83A7"
 HIGH = "#C86E55"
 
 GROUP_LABELS = {
-    "people_of_color_pct": "People of\ncolour",
+    "people_of_color_pct": "Not White\nalone",
     "hispanic_or_latino_pct": "Hispanic/\nLatino",
     "black_alone_pct": "Black",
     "asian_alone_pct": "Asian",

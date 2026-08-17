@@ -8,25 +8,25 @@ export const CONTEXT_META: Record<
     title: "Joint canopy-deficit, surface-heat and social context",
     shortTitle: "Joint context",
     color: "#a83f3f",
-    description: "Positive canopy deficit coincides with the upper surface-heat class and upper social-condition third.",
+    description: "Positive canopy deficit coincides with the upper surface-heat class and upper social-condition tier.",
   },
   B: {
     title: "Surface-heat canopy deficit",
     shortTitle: "Heat + canopy deficit",
     color: "#d47b2e",
-    description: "Canopy deficit and the upper surface-heat class coincide without the upper social-condition third.",
+    description: "Canopy deficit and the upper surface-heat class coincide without the upper social-condition tier.",
   },
   C: {
-    title: "Social-condition canopy deficit",
+    title: "Social-context canopy deficit",
     shortTitle: "Social context + canopy deficit",
     color: "#74578d",
-    description: "Canopy deficit and the upper social-condition third coincide without the upper surface-heat class.",
+    description: "Canopy deficit and the upper social-condition tier coincide without the upper surface-heat class.",
   },
   D: {
     title: "Canopy-deficit dominant",
     shortTitle: "Canopy-deficit dominant",
     color: "#2b8075",
-    description: "A positive canopy deficit occurs without either the upper surface-heat class or upper social-condition third.",
+    description: "A positive canopy deficit occurs without either the upper surface-heat class or upper social-condition tier.",
   },
   E: {
     title: "Heat or social context with no measured canopy deficit",
@@ -53,9 +53,9 @@ export const OVERLAY_LABELS: Record<NeighbourhoodOverlay, string> = {
 
 export const ALLOCATION_LABELS: Record<AllocationRule, string> = {
   uniform: "Uniform fraction",
-  canopy_gap: "Canopy-gap first",
+  canopy_gap: "Canopy-deficit first",
   surface_heat: "Surface-heat first",
-  social_constraint: "Social-condition first",
+  social_constraint: "Social-context first",
 };
 
 export const ALLOCATION_PROPERTIES: Record<AllocationRule, "a_u" | "a_g" | "a_h" | "a_v"> = {

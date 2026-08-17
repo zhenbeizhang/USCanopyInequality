@@ -23,17 +23,17 @@ select a city and inspect:
   surface-heat anomaly;
 - six interpretable neighbourhood contexts derived from the 27 nominal G/H/V
   combinations; and
-- equal-area analytical allocations under canopy-gap, surface-heat,
-  social-context and balanced ordering rules.
+- equal-area analytical allocations under canopy-deficit, surface-heat,
+  social-context and illustrative equal-weight ordering rules.
 
 The viewer is an evidence browser, not a parcel-level planting plan. Its
 display-only six-pixel component filter improves map legibility without
 changing the archived masks or any reported statistic.
 
-**[Open the live atlas](http://8.217.164.241/atlas/)** ·
-**[Read the atlas documentation](atlas/README.md)** ·
-**[View the full-size interface preview](atlas/docs/assets/atlas-preview.png)** ·
-**[Read the deployment design](atlas/docs/deployment.md)**
+- **[Open the live atlas](http://8.217.164.241/atlas/)**
+- **[Read the atlas documentation](atlas/README.md)**
+- **[View the full-size interface preview](atlas/docs/assets/atlas-preview.png)**
+- **[Read the deployment design](atlas/docs/deployment.md)**
 
 ![City-scale canopy and neighbourhood evidence viewer](atlas/docs/assets/atlas-preview.png)
 
@@ -134,8 +134,9 @@ Preview the execution order:
 python run_pipeline.py --dry-run --stages 1 2 3 4 5 transfer figures qa
 ```
 
-See `docs/data_contract.md` before running an analysis stage and
-`docs/workflow.md` for stage-level commands and outputs.
+See `docs/data_contract.md` before running an analysis stage,
+`docs/workflow.md` for stage-level commands and outputs, and
+`docs/terminology.md` for the controlled public vocabulary.
 
 ## Release checks
 

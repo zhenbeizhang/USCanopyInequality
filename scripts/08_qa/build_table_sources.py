@@ -276,7 +276,7 @@ RULE_LABELS = {
     "uniform": "Uniform fraction",
     "canopy_deficit_first": "Canopy-deficit first",
     "surface_heat_only": "Surface-heat score",
-    "social_condition_only": "Social-condition score",
+    "social_condition_only": "Social-condition ordering",
     "population_oracle": "Resident-context upper bound",
     "heat_context_oracle": "Surface-heat upper bound",
     "social_condition_oracle": "Social-context upper bound",
@@ -367,7 +367,7 @@ def build_table7d() -> pd.DataFrame:
     keep = ["uniform", "heat_context_oracle", "social_condition_oracle", "pareto_0.50"]
     source = source[source["rule"].isin(keep)]
     group_labels = {
-        "people_of_color_pct": "People of colour",
+        "people_of_color_pct": "Not White alone",
         "hispanic_or_latino_pct": "Hispanic/Latino",
         "black_alone_pct": "Black",
         "asian_alone_pct": "Asian",
