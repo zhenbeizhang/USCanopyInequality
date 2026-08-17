@@ -1,0 +1,358 @@
+{
+  "freezeId": "GHV27-2026-08-09",
+  "classificationSha256": "d04b798641c63c2788b073c8593e1d98a1f0c03017950bf892607db2b39713c6",
+  "allocationPolicy": "Four display rules recomputed from frozen G, H and V at a city-specific 10% area budget",
+  "totalFeatures": 34566,
+  "cityFiles": [
+    {
+      "slug": "new-york",
+      "features": 6391,
+      "file": "new-york.geojson",
+      "bytes": 3327126,
+      "sha256": "e2d2db0f5efb5a53c7032ab84229256d5dc5e34d596a31c6cc98067101278263"
+    },
+    {
+      "slug": "los-angeles",
+      "features": 2621,
+      "file": "los-angeles.geojson",
+      "bytes": 2210465,
+      "sha256": "50cc0de1bf2995a1e143117db3aea5ea5cfc696cb322e840e3f02224ecb7101b"
+    },
+    {
+      "slug": "chicago",
+      "features": 2124,
+      "file": "chicago.geojson",
+      "bytes": 1079413,
+      "sha256": "dde5f2d4ec647f9ef0323e5d9e8a23babd7bd3d6a5b88b4410e84ebc9b1e0a6b"
+    },
+    {
+      "slug": "houston",
+      "features": 1480,
+      "file": "houston.geojson",
+      "bytes": 1406726,
+      "sha256": "283d95068c6446fc43380b4d1a24ddfeaf3483f6fa538e68d8de40821988252c"
+    },
+    {
+      "slug": "phoenix",
+      "features": 934,
+      "file": "phoenix.geojson",
+      "bytes": 775716,
+      "sha256": "176a9dddfb48a5caed7fdd913854e2f43543c02bdd9ae1e8fccde605e94c5ff7"
+    },
+    {
+      "slug": "philadelphia",
+      "features": 1276,
+      "file": "philadelphia.geojson",
+      "bytes": 794797,
+      "sha256": "63b80dc7c1d17ee112cbc37125d7d5957c31987861c657c66a3f07900adc34a5"
+    },
+    {
+      "slug": "san-antonio",
+      "features": 874,
+      "file": "san-antonio.geojson",
+      "bytes": 1033834,
+      "sha256": "f31dd09925ef34244d6b18703a6ce76bd377116df204820d9d5ad942f07c4dfc"
+    },
+    {
+      "slug": "san-diego",
+      "features": 898,
+      "file": "san-diego.geojson",
+      "bytes": 1176701,
+      "sha256": "7c0a81de00cd876e346f8b9b73111b10f6f7c4f976d88fad291b3a2b0205d845"
+    },
+    {
+      "slug": "dallas",
+      "features": 795,
+      "file": "dallas.geojson",
+      "bytes": 854849,
+      "sha256": "f57997e3e6c2c2ae53484728ab87da7447f9b9c39be32a0103e5287cb51e3736"
+    },
+    {
+      "slug": "jacksonville",
+      "features": 546,
+      "file": "jacksonville.geojson",
+      "bytes": 767538,
+      "sha256": "1296dfd69a9163a4c882d4d44a8075f13e7c1d6c12ae79d35c903d1931e7a812"
+    },
+    {
+      "slug": "fort-worth",
+      "features": 463,
+      "file": "fort-worth.geojson",
+      "bytes": 595567,
+      "sha256": "04b909b3be30bf8326d7561857dbe991a03871b6e5da9707ba0d18a21aa67ba3"
+    },
+    {
+      "slug": "san-jose",
+      "features": 524,
+      "file": "san-jose.geojson",
+      "bytes": 535628,
+      "sha256": "74110634e5818a5146919f911f83ec41fdf295f507923578df551f2b23d70539"
+    },
+    {
+      "slug": "austin",
+      "features": 523,
+      "file": "austin.geojson",
+      "bytes": 706213,
+      "sha256": "f45e3fca5da3a46b8aef5cee746e852f929631746e0e848aa0b93126aac590ad"
+    },
+    {
+      "slug": "charlotte",
+      "features": 446,
+      "file": "charlotte.geojson",
+      "bytes": 828247,
+      "sha256": "d43822c90e6e297cfbb3c96a11da079907192026e5153d942bb24b6e45b78b35"
+    },
+    {
+      "slug": "columbus",
+      "features": 442,
+      "file": "columbus.geojson",
+      "bytes": 390862,
+      "sha256": "1c7db81dcb81210f62d79f26261e4af5950e08449c3c6595b00eca9f372d670e"
+    },
+    {
+      "slug": "indianapolis",
+      "features": 654,
+      "file": "indianapolis.geojson",
+      "bytes": 519438,
+      "sha256": "e3707e161e269ac8af66481b95bd382b4b5667e33f40f172cc5a002cee60c34e"
+    },
+    {
+      "slug": "san-francisco",
+      "features": 674,
+      "file": "san-francisco.geojson",
+      "bytes": 444181,
+      "sha256": "3064d1169b4432adf559e148c994bbbea9534a1d7ab75d7c28921f7e1c0f0d2d"
+    },
+    {
+      "slug": "seattle",
+      "features": 530,
+      "file": "seattle.geojson",
+      "bytes": 434948,
+      "sha256": "ad7d6db01e40596cd726fc9f65aa32bd16acd1f476c49764a7c89e8865e9eaa1"
+    },
+    {
+      "slug": "denver",
+      "features": 558,
+      "file": "denver.geojson",
+      "bytes": 444439,
+      "sha256": "2ae285f65b479d4866fb7a08819e2034e4a03206db32d1731127ece299e56378"
+    },
+    {
+      "slug": "oklahoma-city",
+      "features": 538,
+      "file": "oklahoma-city.geojson",
+      "bytes": 450910,
+      "sha256": "64b72d0b0443923aadb228f412ae438e968a15b814b164c5ebc444ed3c3ed7d9"
+    },
+    {
+      "slug": "nashville",
+      "features": 453,
+      "file": "nashville.geojson",
+      "bytes": 822182,
+      "sha256": "a8c09cf5a9086029c2a605613abb1a12485db0b9c1958528e95d3494cfee7f27"
+    },
+    {
+      "slug": "washington",
+      "features": 529,
+      "file": "washington.geojson",
+      "bytes": 418763,
+      "sha256": "204863269af0c57f697d975cf19ce5572cde5d5dbab39f173b4250f888a32499"
+    },
+    {
+      "slug": "el-paso",
+      "features": 456,
+      "file": "el-paso.geojson",
+      "bytes": 499233,
+      "sha256": "02b35f9d300a57eacfffeaa5d924d0a70bfad07bd62c5851ae1dfc48bd42c939"
+    },
+    {
+      "slug": "las-vegas",
+      "features": 384,
+      "file": "las-vegas.geojson",
+      "bytes": 318728,
+      "sha256": "a5469de34a9015680cfbe8784520280360e7dfe2c6cc4ac5cc471e2954c57528"
+    },
+    {
+      "slug": "boston",
+      "features": 567,
+      "file": "boston.geojson",
+      "bytes": 487348,
+      "sha256": "3b95da831590b04da4a9783430c69ccc0191d2cdef3be6a6bfd0c41b17fe9d12"
+    },
+    {
+      "slug": "detroit",
+      "features": 598,
+      "file": "detroit.geojson",
+      "bytes": 333001,
+      "sha256": "dceeea0806940c5880b3cb20e9928087d3360eb8a28d39f119edd1fc5c23d043"
+    },
+    {
+      "slug": "louisville",
+      "features": 216,
+      "file": "louisville.geojson",
+      "bytes": 436553,
+      "sha256": "fd037cbbb6f8ff584cedbfd589b413cc262693ca2af7b38f4916852cf5c948fb"
+    },
+    {
+      "slug": "portland",
+      "features": 468,
+      "file": "portland.geojson",
+      "bytes": 417080,
+      "sha256": "7ea93f300c469233db229c29a52a1d016fdf4165fdd692c4621124f84f3f91b2"
+    },
+    {
+      "slug": "memphis",
+      "features": 481,
+      "file": "memphis.geojson",
+      "bytes": 490939,
+      "sha256": "d9318eb4da83c4e492d7806c8c70134dc5aa34061d2324118747cba370c249ba"
+    },
+    {
+      "slug": "baltimore",
+      "features": 616,
+      "file": "baltimore.geojson",
+      "bytes": 515842,
+      "sha256": "c5d441b9b4f7022969cbba8710f45119364eacefb95c439edcb96b7e5e9ce16d"
+    },
+    {
+      "slug": "milwaukee",
+      "features": 557,
+      "file": "milwaukee.geojson",
+      "bytes": 348269,
+      "sha256": "9cb045324670acbfe12875b9bfe3f5e165f5310d5277f28fe45cf0059f0c1730"
+    },
+    {
+      "slug": "albuquerque",
+      "features": 333,
+      "file": "albuquerque.geojson",
+      "bytes": 314653,
+      "sha256": "eea353a58c4814324d8ef913abee60df35b75766b821841f7c83ac8463e18ba5"
+    },
+    {
+      "slug": "tucson",
+      "features": 349,
+      "file": "tucson.geojson",
+      "bytes": 294794,
+      "sha256": "69f82376074dbce1cc067a1848de23d7feefe07c174cbf47af812af49a59ea2d"
+    },
+    {
+      "slug": "fresno",
+      "features": 261,
+      "file": "fresno.geojson",
+      "bytes": 188856,
+      "sha256": "e138458f4bd5bc8b1b11bc0a1e8dd2957ee43b9771968ad20f4c85ce254d3125"
+    },
+    {
+      "slug": "sacramento",
+      "features": 345,
+      "file": "sacramento.geojson",
+      "bytes": 303395,
+      "sha256": "d6ca01b1b42f420ca971df77f7fa91c870cc5b47e37c4eb7e9372eaeabbb148a"
+    },
+    {
+      "slug": "atlanta",
+      "features": 400,
+      "file": "atlanta.geojson",
+      "bytes": 505413,
+      "sha256": "a0003551138f4e355e512ba1248613a4f1d338304b4780d9e6f2e510c089079d"
+    },
+    {
+      "slug": "mesa",
+      "features": 277,
+      "file": "mesa.geojson",
+      "bytes": 213467,
+      "sha256": "b5aaa12b4b90a133c254acfb489beaaeac2cbba7ba41e9136f0ed4b58822dd57"
+    },
+    {
+      "slug": "kansas-city",
+      "features": 435,
+      "file": "kansas-city.geojson",
+      "bytes": 445035,
+      "sha256": "a1d45cac8f199e117d1eb204eeb2ae845d36943ab4240bc4e9550c2903279d3a"
+    },
+    {
+      "slug": "raleigh",
+      "features": 155,
+      "file": "raleigh.geojson",
+      "bytes": 250935,
+      "sha256": "632f6bc5f9041319792a5bcc7db817e55d477c8badeb897dc49eb0429780910b"
+    },
+    {
+      "slug": "colorado-springs",
+      "features": 277,
+      "file": "colorado-springs.geojson",
+      "bytes": 416120,
+      "sha256": "3750dabd81331ea83f40bd1d4444473ec797cdb191b723d902556ef10a2c4632"
+    },
+    {
+      "slug": "omaha",
+      "features": 400,
+      "file": "omaha.geojson",
+      "bytes": 406819,
+      "sha256": "cde472804158b0133cb1787f77039018ad9654e8a26533436a474f08bb802002"
+    },
+    {
+      "slug": "miami",
+      "features": 320,
+      "file": "miami.geojson",
+      "bytes": 201682,
+      "sha256": "551caf60e9e9e611e57d8b630a57f8380fbacd0e84a72b6c3b0ff5cd791c3e19"
+    },
+    {
+      "slug": "virginia-beach",
+      "features": 322,
+      "file": "virginia-beach.geojson",
+      "bytes": 494784,
+      "sha256": "3e257a15a94d08a777213d6777bd40fa3d64b22f0451f2e86fdd9d57550e0ba8"
+    },
+    {
+      "slug": "long-beach",
+      "features": 311,
+      "file": "long-beach.geojson",
+      "bytes": 186625,
+      "sha256": "6803b97f5227ad38af11ac20d822cf73fcad1d71bbd77073757a446318c9bbb9"
+    },
+    {
+      "slug": "oakland",
+      "features": 352,
+      "file": "oakland.geojson",
+      "bytes": 396225,
+      "sha256": "99260aa23d899a7b2f62b65c02c17ed2204998553706361163a76f080ebc31a9"
+    },
+    {
+      "slug": "minneapolis",
+      "features": 380,
+      "file": "minneapolis.geojson",
+      "bytes": 247296,
+      "sha256": "1bc8eff759cc5e2878e92c608d6378d7cb6df0dd3992cdbabfb4623a3146bdd3"
+    },
+    {
+      "slug": "bakersfield",
+      "features": 210,
+      "file": "bakersfield.geojson",
+      "bytes": 160787,
+      "sha256": "bdfaced583b24f1ea620bbb03d72dab529cfc19c29645d7ee961b7aa43afd427"
+    },
+    {
+      "slug": "tulsa",
+      "features": 309,
+      "file": "tulsa.geojson",
+      "bytes": 270622,
+      "sha256": "a7400f08f7380fecbcb8286b3aac3db9437d3ad53df348ad184fa3c0ef49856c"
+    },
+    {
+      "slug": "tampa",
+      "features": 301,
+      "file": "tampa.geojson",
+      "bytes": 268258,
+      "sha256": "67cdf8fde96c3dfcfae2e2cca1e1f146c30d6bbca05e2b950843a9371dd0f05f"
+    },
+    {
+      "slug": "arlington",
+      "features": 213,
+      "file": "arlington.geojson",
+      "bytes": 263087,
+      "sha256": "401a5040d5a71bf3bd473e793787e99fd0d08862d068e1f0df7fccb02c1fab3a"
+    }
+  ]
+}

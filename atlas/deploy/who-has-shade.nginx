@@ -1,0 +1,128 @@
+proxy_cache_path /var/cache/nginx/canopy levels=1:2 keys_zone=canopy_tiles:32m max_size=8g inactive=14d use_temp_path=off;
+proxy_cache_path /var/cache/nginx/basemap levels=1:2 keys_zone=basemap_tiles:32m max_size=12g inactive=30d use_temp_path=off;
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+
+    resolver 223.5.5.5 1.1.1.1 ipv6=off valid=300s;
+    resolver_timeout 3s;
+    set $basemap_host tiles.openfreemap.org;
+
+    location = /atlas {
+        return 301 /atlas/;
+    }
+
+    location = /atlas/vendor/maplibre-gl-worker.mjs {
+        root /srv/who-has-shade;
+        default_type application/javascript;
+    }
+
+    location = /atlas/vendor/maplibre-gl-shared.mjs {
+        root /srv/who-has-shade;
+        default_type application/javascript;
+    }
+
+    location = /atlas/vendor-v2/maplibre-gl-worker.mjs {
+        root /srv/who-has-shade;
+        default_type application/javascript;
+    }
+
+    location = /atlas/vendor-v2/maplibre-gl-shared.mjs {
+        root /srv/who-has-shade;
+        default_type application/javascript;
+    }
+
+    location ^~ /atlas/assets/ {
+        root /srv/who-has-shade;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    location ^~ /atlas/vendor-v2/ {
+        root /srv/who-has-shade;
+        default_type application/javascript;
+        expires 30d;
+        add_header Cache-Control "public";
+    }
+
+    location ^~ /atlas/catalog/ {
+        root /srv/who-has-shade;
+        types {
+            application/json json;
+            application/geo+json geojson;
+        }
+        gzip_static on;
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+
+    location ^~ /atlas/neighbourhoods/ {
+        root /srv/who-has-shade;
+        default_type application/geo+json;
+        gzip_static on;
+        expires 7d;
+        add_header Cache-Control "public";
+    }
+
+    location ^~ /atlas/ {
+        root /srv/who-has-shade;
+        try_files $uri $uri/ /atlas/index.html;
+    }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /tiles/ {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_cache canopy_tiles;
+        proxy_cache_valid 200 14d;
+        proxy_cache_valid 404 10m;
+        proxy_cache_lock on;
+        add_header X-Tile-Cache $upstream_cache_status always;
+    }
+
+    location /basemap/ {
+        rewrite ^/basemap/(.*)$ /$1 break;
+        proxy_pass https://$basemap_host;
+        proxy_ssl_server_name on;
+        proxy_ssl_name $basemap_host;
+        proxy_set_header Host $basemap_host;
+        proxy_set_header Accept-Encoding "";
+        proxy_connect_timeout 4s;
+        proxy_read_timeout 15s;
+        proxy_next_upstream error timeout http_502 http_503 http_504;
+        proxy_next_upstream_tries 3;
+        proxy_cache basemap_tiles;
+        proxy_cache_valid 200 30d;
+        proxy_cache_valid 404 10m;
+        proxy_cache_lock on;
+        proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
+        proxy_cache_background_update on;
+        sub_filter_types application/json;
+        sub_filter_once off;
+        sub_filter 'https://tiles.openfreemap.org/' '$scheme://$host/basemap/';
+        add_header X-Basemap-Cache $upstream_cache_status always;
+    }
+
+    location / {
+        return 302 /atlas/;
+    }
+
+    client_max_body_size 16m;
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_comp_level 6;
+    gzip_types text/plain text/css application/json application/javascript application/geo+json image/svg+xml;
+}

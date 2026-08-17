@@ -1,0 +1,10 @@
+# Absolute path to the extracted dataset record.
+USCANOPY_ANALYSIS_ROOT=/path/to/USCanopyInequalityData
+
+# Path containing the model checkpoint and recovered training records.
+USCANOPY_MODEL_ROOT=/path/to/USCanopyInequalityModel
+
+# Optional paths used only by manuscript/reporting audits.
+USCANOPY_MANUSCRIPT_ROOT=/path/to/manuscript
+USCANOPY_EXTERNAL_ROOT=/path/to/third_party_inputs
+

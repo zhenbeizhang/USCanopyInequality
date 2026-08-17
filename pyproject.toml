@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uscanopyinequality"
+version = "0.3.0"
+description = "Reproducible analysis of urban canopy inequality, surface heat and allocation trade-offs across 50 US cities"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = {text = "MIT"}
+authors = [{name = "Zhenbei Zhang"}]
+dependencies = [
+  "numpy==2.4.6",
+  "pandas==2.3.0",
+  "scipy==1.15.3",
+  "statsmodels==0.14.5",
+  "scikit-learn==1.7.0",
+]
+
+[project.urls]
+Repository = "https://github.com/zhenbeizhang/USCanopyInequality"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

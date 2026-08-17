@@ -1,0 +1,2116 @@
+{
+  "freezeId": "GHV27-2026-08-09",
+  "spatialUnit": "2020 census block group",
+  "totalNeighbourhoods": 34566,
+  "cities": {
+    "new-york": {
+      "slug": "new-york",
+      "name": "New York",
+      "neighbourhoods": 6391,
+      "population": 8480294,
+      "jointContext": {
+        "neighbourhoods": 752,
+        "population": 1014456,
+        "observedExpectedRatio": 1.118
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 493,
+        "population": 647637,
+        "observedExpectedRatio": 1.204
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 752,
+          "population": 1014456
+        },
+        "B": {
+          "neighbourhoods": 536,
+          "population": 687210
+        },
+        "C": {
+          "neighbourhoods": 2360,
+          "population": 3087903
+        },
+        "D": {
+          "neighbourhoods": 1143,
+          "population": 1526950
+        },
+        "E": {
+          "neighbourhoods": 1031,
+          "population": 1458509
+        },
+        "F": {
+          "neighbourhoods": 569,
+          "population": 705266
+        }
+      }
+    },
+    "los-angeles": {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "neighbourhoods": 2621,
+      "population": 3791774,
+      "jointContext": {
+        "neighbourhoods": 322,
+        "population": 507154,
+        "observedExpectedRatio": 1.209
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 108,
+        "population": 144621,
+        "observedExpectedRatio": 1.226
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 322,
+          "population": 507154
+        },
+        "B": {
+          "neighbourhoods": 441,
+          "population": 675997
+        },
+        "C": {
+          "neighbourhoods": 531,
+          "population": 736498
+        },
+        "D": {
+          "neighbourhoods": 671,
+          "population": 892656
+        },
+        "E": {
+          "neighbourhoods": 283,
+          "population": 461005
+        },
+        "F": {
+          "neighbourhoods": 373,
+          "population": 518464
+        }
+      }
+    },
+    "chicago": {
+      "slug": "chicago",
+      "name": "Chicago",
+      "neighbourhoods": 2124,
+      "population": 2659126,
+      "jointContext": {
+        "neighbourhoods": 208,
+        "population": 258140,
+        "observedExpectedRatio": 0.992
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 138,
+        "population": 163276,
+        "observedExpectedRatio": 1.236
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 208,
+          "population": 258140
+        },
+        "B": {
+          "neighbourhoods": 388,
+          "population": 511540
+        },
+        "C": {
+          "neighbourhoods": 493,
+          "population": 561606
+        },
+        "D": {
+          "neighbourhoods": 501,
+          "population": 694682
+        },
+        "E": {
+          "neighbourhoods": 280,
+          "population": 323761
+        },
+        "F": {
+          "neighbourhoods": 254,
+          "population": 309397
+        }
+      }
+    },
+    "houston": {
+      "slug": "houston",
+      "name": "Houston",
+      "neighbourhoods": 1480,
+      "population": 2108341,
+      "jointContext": {
+        "neighbourhoods": 196,
+        "population": 256004,
+        "observedExpectedRatio": 1.431
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 160,
+        "population": 205817,
+        "observedExpectedRatio": 1.702
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 196,
+          "population": 256004
+        },
+        "B": {
+          "neighbourhoods": 229,
+          "population": 321384
+        },
+        "C": {
+          "neighbourhoods": 271,
+          "population": 360376
+        },
+        "D": {
+          "neighbourhoods": 414,
+          "population": 655166
+        },
+        "E": {
+          "neighbourhoods": 137,
+          "population": 196737
+        },
+        "F": {
+          "neighbourhoods": 233,
+          "population": 318674
+        }
+      }
+    },
+    "phoenix": {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "neighbourhoods": 934,
+      "population": 1458412,
+      "jointContext": {
+        "neighbourhoods": 49,
+        "population": 73519,
+        "observedExpectedRatio": 1.641
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 12,
+        "population": 12473,
+        "observedExpectedRatio": 2.701
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 49,
+          "population": 73519
+        },
+        "B": {
+          "neighbourhoods": 156,
+          "population": 268379
+        },
+        "C": {
+          "neighbourhoods": 97,
+          "population": 127359
+        },
+        "D": {
+          "neighbourhoods": 397,
+          "population": 648224
+        },
+        "E": {
+          "neighbourhoods": 36,
+          "population": 56872
+        },
+        "F": {
+          "neighbourhoods": 199,
+          "population": 284059
+        }
+      }
+    },
+    "philadelphia": {
+      "slug": "philadelphia",
+      "name": "Philadelphia",
+      "neighbourhoods": 1276,
+      "population": 1579706,
+      "jointContext": {
+        "neighbourhoods": 189,
+        "population": 204805,
+        "observedExpectedRatio": 1.233
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 12,
+        "population": 11377,
+        "observedExpectedRatio": 1.101
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 189,
+          "population": 204805
+        },
+        "B": {
+          "neighbourhoods": 163,
+          "population": 197420
+        },
+        "C": {
+          "neighbourhoods": 291,
+          "population": 338890
+        },
+        "D": {
+          "neighbourhoods": 313,
+          "population": 391011
+        },
+        "E": {
+          "neighbourhoods": 185,
+          "population": 249621
+        },
+        "F": {
+          "neighbourhoods": 135,
+          "population": 197959
+        }
+      }
+    },
+    "san-antonio": {
+      "slug": "san-antonio",
+      "name": "San Antonio",
+      "neighbourhoods": 874,
+      "population": 1364938,
+      "jointContext": {
+        "neighbourhoods": 119,
+        "population": 161164,
+        "observedExpectedRatio": 1.793
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 111,
+        "population": 146210,
+        "observedExpectedRatio": 2.019
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 119,
+          "population": 161164
+        },
+        "B": {
+          "neighbourhoods": 127,
+          "population": 192466
+        },
+        "C": {
+          "neighbourhoods": 158,
+          "population": 207965
+        },
+        "D": {
+          "neighbourhoods": 250,
+          "population": 429012
+        },
+        "E": {
+          "neighbourhoods": 35,
+          "population": 52750
+        },
+        "F": {
+          "neighbourhoods": 185,
+          "population": 321581
+        }
+      }
+    },
+    "san-diego": {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "neighbourhoods": 898,
+      "population": 1305512,
+      "jointContext": {
+        "neighbourhoods": 47,
+        "population": 66115,
+        "observedExpectedRatio": 1.139
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 18,
+        "population": 19425,
+        "observedExpectedRatio": 1.161
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 47,
+          "population": 66115
+        },
+        "B": {
+          "neighbourhoods": 215,
+          "population": 296103
+        },
+        "C": {
+          "neighbourhoods": 82,
+          "population": 119802
+        },
+        "D": {
+          "neighbourhoods": 329,
+          "population": 482942
+        },
+        "E": {
+          "neighbourhoods": 66,
+          "population": 98392
+        },
+        "F": {
+          "neighbourhoods": 159,
+          "population": 242158
+        }
+      }
+    },
+    "dallas": {
+      "slug": "dallas",
+      "name": "Dallas",
+      "neighbourhoods": 795,
+      "population": 1223931,
+      "jointContext": {
+        "neighbourhoods": 74,
+        "population": 110307,
+        "observedExpectedRatio": 1.52
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 56,
+        "population": 81991,
+        "observedExpectedRatio": 1.69
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 74,
+          "population": 110307
+        },
+        "B": {
+          "neighbourhoods": 153,
+          "population": 207846
+        },
+        "C": {
+          "neighbourhoods": 92,
+          "population": 144317
+        },
+        "D": {
+          "neighbourhoods": 276,
+          "population": 458417
+        },
+        "E": {
+          "neighbourhoods": 61,
+          "population": 92067
+        },
+        "F": {
+          "neighbourhoods": 139,
+          "population": 210977
+        }
+      }
+    },
+    "jacksonville": {
+      "slug": "jacksonville",
+      "name": "Jacksonville",
+      "neighbourhoods": 546,
+      "population": 972074,
+      "jointContext": {
+        "neighbourhoods": 66,
+        "population": 102146,
+        "observedExpectedRatio": 1.438
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 49,
+        "population": 71902,
+        "observedExpectedRatio": 1.571
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 66,
+          "population": 102146
+        },
+        "B": {
+          "neighbourhoods": 115,
+          "population": 209769
+        },
+        "C": {
+          "neighbourhoods": 54,
+          "population": 86387
+        },
+        "D": {
+          "neighbourhoods": 171,
+          "population": 368576
+        },
+        "E": {
+          "neighbourhoods": 57,
+          "population": 75079
+        },
+        "F": {
+          "neighbourhoods": 83,
+          "population": 130117
+        }
+      }
+    },
+    "fort-worth": {
+      "slug": "fort-worth",
+      "name": "Fort Worth",
+      "neighbourhoods": 463,
+      "population": 805554,
+      "jointContext": {
+        "neighbourhoods": 29,
+        "population": 35211,
+        "observedExpectedRatio": 1.635
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 22,
+        "population": 26560,
+        "observedExpectedRatio": 1.678
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 29,
+          "population": 35211
+        },
+        "B": {
+          "neighbourhoods": 72,
+          "population": 139926
+        },
+        "C": {
+          "neighbourhoods": 46,
+          "population": 74901
+        },
+        "D": {
+          "neighbourhoods": 198,
+          "population": 369064
+        },
+        "E": {
+          "neighbourhoods": 32,
+          "population": 46308
+        },
+        "F": {
+          "neighbourhoods": 86,
+          "population": 140144
+        }
+      }
+    },
+    "san-jose": {
+      "slug": "san-jose",
+      "name": "San Jose",
+      "neighbourhoods": 524,
+      "population": 860927,
+      "jointContext": {
+        "neighbourhoods": 4,
+        "population": 5498,
+        "observedExpectedRatio": 0.56
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 2,
+        "population": 3934,
+        "observedExpectedRatio": 0.737
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 4,
+          "population": 5498
+        },
+        "B": {
+          "neighbourhoods": 61,
+          "population": 103557
+        },
+        "C": {
+          "neighbourhoods": 52,
+          "population": 81838
+        },
+        "D": {
+          "neighbourhoods": 273,
+          "population": 460885
+        },
+        "E": {
+          "neighbourhoods": 21,
+          "population": 29670
+        },
+        "F": {
+          "neighbourhoods": 113,
+          "population": 179479
+        }
+      }
+    },
+    "austin": {
+      "slug": "austin",
+      "name": "Austin",
+      "neighbourhoods": 523,
+      "population": 760625,
+      "jointContext": {
+        "neighbourhoods": 42,
+        "population": 61405,
+        "observedExpectedRatio": 2.132
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 35,
+        "population": 52154,
+        "observedExpectedRatio": 2.406
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 42,
+          "population": 61405
+        },
+        "B": {
+          "neighbourhoods": 91,
+          "population": 142588
+        },
+        "C": {
+          "neighbourhoods": 45,
+          "population": 67256
+        },
+        "D": {
+          "neighbourhoods": 212,
+          "population": 304588
+        },
+        "E": {
+          "neighbourhoods": 17,
+          "population": 23423
+        },
+        "F": {
+          "neighbourhoods": 116,
+          "population": 161365
+        }
+      }
+    },
+    "charlotte": {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "neighbourhoods": 446,
+      "population": 757061,
+      "jointContext": {
+        "neighbourhoods": 19,
+        "population": 24941,
+        "observedExpectedRatio": 1.114
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 18,
+        "population": 21223,
+        "observedExpectedRatio": 1.633
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 19,
+          "population": 24941
+        },
+        "B": {
+          "neighbourhoods": 101,
+          "population": 150542
+        },
+        "C": {
+          "neighbourhoods": 51,
+          "population": 73389
+        },
+        "D": {
+          "neighbourhoods": 160,
+          "population": 307157
+        },
+        "E": {
+          "neighbourhoods": 16,
+          "population": 29671
+        },
+        "F": {
+          "neighbourhoods": 99,
+          "population": 171361
+        }
+      }
+    },
+    "columbus": {
+      "slug": "columbus",
+      "name": "Columbus",
+      "neighbourhoods": 442,
+      "population": 511960,
+      "jointContext": {
+        "neighbourhoods": 54,
+        "population": 56596,
+        "observedExpectedRatio": 1.635
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 43,
+        "population": 45610,
+        "observedExpectedRatio": 1.98
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 54,
+          "population": 56596
+        },
+        "B": {
+          "neighbourhoods": 54,
+          "population": 60284
+        },
+        "C": {
+          "neighbourhoods": 84,
+          "population": 96974
+        },
+        "D": {
+          "neighbourhoods": 138,
+          "population": 171497
+        },
+        "E": {
+          "neighbourhoods": 37,
+          "population": 40373
+        },
+        "F": {
+          "neighbourhoods": 75,
+          "population": 86236
+        }
+      }
+    },
+    "indianapolis": {
+      "slug": "indianapolis",
+      "name": "Indianapolis",
+      "neighbourhoods": 654,
+      "population": 838251,
+      "jointContext": {
+        "neighbourhoods": 73,
+        "population": 83616,
+        "observedExpectedRatio": 1.675
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 53,
+        "population": 61902,
+        "observedExpectedRatio": 1.77
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 73,
+          "population": 83616
+        },
+        "B": {
+          "neighbourhoods": 122,
+          "population": 125651
+        },
+        "C": {
+          "neighbourhoods": 65,
+          "population": 78595
+        },
+        "D": {
+          "neighbourhoods": 229,
+          "population": 350855
+        },
+        "E": {
+          "neighbourhoods": 54,
+          "population": 57497
+        },
+        "F": {
+          "neighbourhoods": 111,
+          "population": 142037
+        }
+      }
+    },
+    "san-francisco": {
+      "slug": "san-francisco",
+      "name": "San Francisco",
+      "neighbourhoods": 674,
+      "population": 826416,
+      "jointContext": {
+        "neighbourhoods": 57,
+        "population": 69332,
+        "observedExpectedRatio": 1.346
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 37,
+        "population": 45344,
+        "observedExpectedRatio": 1.89
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 57,
+          "population": 69332
+        },
+        "B": {
+          "neighbourhoods": 49,
+          "population": 56514
+        },
+        "C": {
+          "neighbourhoods": 199,
+          "population": 232884
+        },
+        "D": {
+          "neighbourhoods": 199,
+          "population": 256053
+        },
+        "E": {
+          "neighbourhoods": 62,
+          "population": 76378
+        },
+        "F": {
+          "neighbourhoods": 108,
+          "population": 135255
+        }
+      }
+    },
+    "seattle": {
+      "slug": "seattle",
+      "name": "Seattle",
+      "neighbourhoods": 530,
+      "population": 748581,
+      "jointContext": {
+        "neighbourhoods": 48,
+        "population": 68398,
+        "observedExpectedRatio": 1.619
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 27,
+        "population": 36983,
+        "observedExpectedRatio": 1.627
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 48,
+          "population": 68398
+        },
+        "B": {
+          "neighbourhoods": 116,
+          "population": 158048
+        },
+        "C": {
+          "neighbourhoods": 38,
+          "population": 51697
+        },
+        "D": {
+          "neighbourhoods": 193,
+          "population": 266854
+        },
+        "E": {
+          "neighbourhoods": 41,
+          "population": 62940
+        },
+        "F": {
+          "neighbourhoods": 94,
+          "population": 140644
+        }
+      }
+    },
+    "denver": {
+      "slug": "denver",
+      "name": "Denver",
+      "neighbourhoods": 558,
+      "population": 717469,
+      "jointContext": {
+        "neighbourhoods": 27,
+        "population": 37011,
+        "observedExpectedRatio": 1.496
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 25,
+        "population": 33017,
+        "observedExpectedRatio": 2.219
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 27,
+          "population": 37011
+        },
+        "B": {
+          "neighbourhoods": 85,
+          "population": 123470
+        },
+        "C": {
+          "neighbourhoods": 77,
+          "population": 93315
+        },
+        "D": {
+          "neighbourhoods": 229,
+          "population": 301369
+        },
+        "E": {
+          "neighbourhoods": 16,
+          "population": 21964
+        },
+        "F": {
+          "neighbourhoods": 124,
+          "population": 140340
+        }
+      }
+    },
+    "oklahoma-city": {
+      "slug": "oklahoma-city",
+      "name": "Oklahoma City",
+      "neighbourhoods": 538,
+      "population": 653420,
+      "jointContext": {
+        "neighbourhoods": 41,
+        "population": 36696,
+        "observedExpectedRatio": 1.301
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 7,
+        "population": 4051,
+        "observedExpectedRatio": 0.952
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 41,
+          "population": 36696
+        },
+        "B": {
+          "neighbourhoods": 103,
+          "population": 137232
+        },
+        "C": {
+          "neighbourhoods": 67,
+          "population": 67761
+        },
+        "D": {
+          "neighbourhoods": 192,
+          "population": 255984
+        },
+        "E": {
+          "neighbourhoods": 48,
+          "population": 49002
+        },
+        "F": {
+          "neighbourhoods": 87,
+          "population": 106745
+        }
+      }
+    },
+    "nashville": {
+      "slug": "nashville",
+      "name": "Nashville-Davidson",
+      "neighbourhoods": 453,
+      "population": 675706,
+      "jointContext": {
+        "neighbourhoods": 37,
+        "population": 51737,
+        "observedExpectedRatio": 1.537
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 1,
+        "population": 553,
+        "observedExpectedRatio": 7.02
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 37,
+          "population": 51737
+        },
+        "B": {
+          "neighbourhoods": 107,
+          "population": 145079
+        },
+        "C": {
+          "neighbourhoods": 28,
+          "population": 49157
+        },
+        "D": {
+          "neighbourhoods": 166,
+          "population": 247788
+        },
+        "E": {
+          "neighbourhoods": 38,
+          "population": 58374
+        },
+        "F": {
+          "neighbourhoods": 77,
+          "population": 123571
+        }
+      }
+    },
+    "washington": {
+      "slug": "washington",
+      "name": "Washington",
+      "neighbourhoods": 529,
+      "population": 653556,
+      "jointContext": {
+        "neighbourhoods": 63,
+        "population": 79167,
+        "observedExpectedRatio": 1.029
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 22,
+        "population": 21616,
+        "observedExpectedRatio": 0.684
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 63,
+          "population": 79167
+        },
+        "B": {
+          "neighbourhoods": 105,
+          "population": 122572
+        },
+        "C": {
+          "neighbourhoods": 112,
+          "population": 144530
+        },
+        "D": {
+          "neighbourhoods": 114,
+          "population": 131540
+        },
+        "E": {
+          "neighbourhoods": 70,
+          "population": 90579
+        },
+        "F": {
+          "neighbourhoods": 65,
+          "population": 85168
+        }
+      }
+    },
+    "el-paso": {
+      "slug": "el-paso",
+      "name": "El Paso",
+      "neighbourhoods": 456,
+      "population": 595484,
+      "jointContext": {
+        "neighbourhoods": 12,
+        "population": 19887,
+        "observedExpectedRatio": 0.553
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 0,
+        "population": 0,
+        "observedExpectedRatio": null
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 12,
+          "population": 19887
+        },
+        "B": {
+          "neighbourhoods": 45,
+          "population": 85803
+        },
+        "C": {
+          "neighbourhoods": 160,
+          "population": 157887
+        },
+        "D": {
+          "neighbourhoods": 124,
+          "population": 182615
+        },
+        "E": {
+          "neighbourhoods": 42,
+          "population": 50207
+        },
+        "F": {
+          "neighbourhoods": 73,
+          "population": 99085
+        }
+      }
+    },
+    "las-vegas": {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "neighbourhoods": 384,
+      "population": 527324,
+      "jointContext": {
+        "neighbourhoods": 60,
+        "population": 64895,
+        "observedExpectedRatio": 1.817
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 15,
+        "population": 13551,
+        "observedExpectedRatio": 3.407
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 60,
+          "population": 64895
+        },
+        "B": {
+          "neighbourhoods": 72,
+          "population": 90314
+        },
+        "C": {
+          "neighbourhoods": 28,
+          "population": 45046
+        },
+        "D": {
+          "neighbourhoods": 125,
+          "population": 198907
+        },
+        "E": {
+          "neighbourhoods": 38,
+          "population": 48421
+        },
+        "F": {
+          "neighbourhoods": 61,
+          "population": 79741
+        }
+      }
+    },
+    "boston": {
+      "slug": "boston",
+      "name": "Boston",
+      "neighbourhoods": 567,
+      "population": 666392,
+      "jointContext": {
+        "neighbourhoods": 87,
+        "population": 97139,
+        "observedExpectedRatio": 1.303
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 59,
+        "population": 63878,
+        "observedExpectedRatio": 1.498
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 87,
+          "population": 97139
+        },
+        "B": {
+          "neighbourhoods": 76,
+          "population": 89559
+        },
+        "C": {
+          "neighbourhoods": 132,
+          "population": 152639
+        },
+        "D": {
+          "neighbourhoods": 127,
+          "population": 148116
+        },
+        "E": {
+          "neighbourhoods": 72,
+          "population": 90336
+        },
+        "F": {
+          "neighbourhoods": 73,
+          "population": 88603
+        }
+      }
+    },
+    "detroit": {
+      "slug": "detroit",
+      "name": "Detroit",
+      "neighbourhoods": 598,
+      "population": 636219,
+      "jointContext": {
+        "neighbourhoods": 77,
+        "population": 87351,
+        "observedExpectedRatio": 1.197
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 72,
+        "population": 78619,
+        "observedExpectedRatio": 1.765
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 77,
+          "population": 87351
+        },
+        "B": {
+          "neighbourhoods": 45,
+          "population": 48546
+        },
+        "C": {
+          "neighbourhoods": 248,
+          "population": 252524
+        },
+        "D": {
+          "neighbourhoods": 78,
+          "population": 87771
+        },
+        "E": {
+          "neighbourhoods": 96,
+          "population": 93823
+        },
+        "F": {
+          "neighbourhoods": 54,
+          "population": 66204
+        }
+      }
+    },
+    "louisville": {
+      "slug": "louisville",
+      "name": "Louisville/Jefferson County",
+      "neighbourhoods": 216,
+      "population": 317378,
+      "jointContext": {
+        "neighbourhoods": 17,
+        "population": 23093,
+        "observedExpectedRatio": 1.648
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 14,
+        "population": 20223,
+        "observedExpectedRatio": 1.836
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 17,
+          "population": 23093
+        },
+        "B": {
+          "neighbourhoods": 43,
+          "population": 66211
+        },
+        "C": {
+          "neighbourhoods": 18,
+          "population": 25270
+        },
+        "D": {
+          "neighbourhoods": 83,
+          "population": 128010
+        },
+        "E": {
+          "neighbourhoods": 15,
+          "population": 20421
+        },
+        "F": {
+          "neighbourhoods": 40,
+          "population": 54373
+        }
+      }
+    },
+    "portland": {
+      "slug": "portland",
+      "name": "Portland",
+      "neighbourhoods": 468,
+      "population": 590485,
+      "jointContext": {
+        "neighbourhoods": 47,
+        "population": 65547,
+        "observedExpectedRatio": 1.468
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 41,
+        "population": 55514,
+        "observedExpectedRatio": 2.143
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 47,
+          "population": 65547
+        },
+        "B": {
+          "neighbourhoods": 104,
+          "population": 127604
+        },
+        "C": {
+          "neighbourhoods": 63,
+          "population": 82228
+        },
+        "D": {
+          "neighbourhoods": 134,
+          "population": 166085
+        },
+        "E": {
+          "neighbourhoods": 24,
+          "population": 31888
+        },
+        "F": {
+          "neighbourhoods": 96,
+          "population": 117133
+        }
+      }
+    },
+    "memphis": {
+      "slug": "memphis",
+      "name": "Memphis",
+      "neighbourhoods": 481,
+      "population": 570862,
+      "jointContext": {
+        "neighbourhoods": 77,
+        "population": 77976,
+        "observedExpectedRatio": 1.332
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 66,
+        "population": 66659,
+        "observedExpectedRatio": 1.506
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 77,
+          "population": 77976
+        },
+        "B": {
+          "neighbourhoods": 66,
+          "population": 85805
+        },
+        "C": {
+          "neighbourhoods": 132,
+          "population": 148590
+        },
+        "D": {
+          "neighbourhoods": 85,
+          "population": 117139
+        },
+        "E": {
+          "neighbourhoods": 49,
+          "population": 44103
+        },
+        "F": {
+          "neighbourhoods": 72,
+          "population": 97249
+        }
+      }
+    },
+    "baltimore": {
+      "slug": "baltimore",
+      "name": "Baltimore",
+      "neighbourhoods": 616,
+      "population": 573243,
+      "jointContext": {
+        "neighbourhoods": 146,
+        "population": 110002,
+        "observedExpectedRatio": 1.415
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 103,
+        "population": 72032,
+        "observedExpectedRatio": 1.452
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 146,
+          "population": 110002
+        },
+        "B": {
+          "neighbourhoods": 91,
+          "population": 80890
+        },
+        "C": {
+          "neighbourhoods": 115,
+          "population": 102872
+        },
+        "D": {
+          "neighbourhoods": 109,
+          "population": 104994
+        },
+        "E": {
+          "neighbourhoods": 77,
+          "population": 84076
+        },
+        "F": {
+          "neighbourhoods": 78,
+          "population": 90409
+        }
+      }
+    },
+    "milwaukee": {
+      "slug": "milwaukee",
+      "name": "Milwaukee",
+      "neighbourhoods": 557,
+      "population": 557693,
+      "jointContext": {
+        "neighbourhoods": 53,
+        "population": 53502,
+        "observedExpectedRatio": 1.554
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 49,
+        "population": 50275,
+        "observedExpectedRatio": 2.277
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 53,
+          "population": 53502
+        },
+        "B": {
+          "neighbourhoods": 43,
+          "population": 50202
+        },
+        "C": {
+          "neighbourhoods": 141,
+          "population": 135380
+        },
+        "D": {
+          "neighbourhoods": 180,
+          "population": 175118
+        },
+        "E": {
+          "neighbourhoods": 66,
+          "population": 62360
+        },
+        "F": {
+          "neighbourhoods": 74,
+          "population": 81131
+        }
+      }
+    },
+    "albuquerque": {
+      "slug": "albuquerque",
+      "name": "Albuquerque",
+      "neighbourhoods": 333,
+      "population": 467067,
+      "jointContext": {
+        "neighbourhoods": 8,
+        "population": 13190,
+        "observedExpectedRatio": 0.632
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 6,
+        "population": 9783,
+        "observedExpectedRatio": 1.321
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 8,
+          "population": 13190
+        },
+        "B": {
+          "neighbourhoods": 43,
+          "population": 86919
+        },
+        "C": {
+          "neighbourhoods": 81,
+          "population": 103570
+        },
+        "D": {
+          "neighbourhoods": 116,
+          "population": 162349
+        },
+        "E": {
+          "neighbourhoods": 22,
+          "population": 26630
+        },
+        "F": {
+          "neighbourhoods": 63,
+          "population": 74409
+        }
+      }
+    },
+    "tucson": {
+      "slug": "tucson",
+      "name": "Tucson",
+      "neighbourhoods": 349,
+      "population": 482257,
+      "jointContext": {
+        "neighbourhoods": 5,
+        "population": 6581,
+        "observedExpectedRatio": 0.441
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 1,
+        "population": 1016,
+        "observedExpectedRatio": 0.692
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 5,
+          "population": 6581
+        },
+        "B": {
+          "neighbourhoods": 25,
+          "population": 44015
+        },
+        "C": {
+          "neighbourhoods": 122,
+          "population": 153580
+        },
+        "D": {
+          "neighbourhoods": 107,
+          "population": 165594
+        },
+        "E": {
+          "neighbourhoods": 46,
+          "population": 55971
+        },
+        "F": {
+          "neighbourhoods": 44,
+          "population": 56516
+        }
+      }
+    },
+    "fresno": {
+      "slug": "fresno",
+      "name": "Fresno",
+      "neighbourhoods": 261,
+      "population": 406170,
+      "jointContext": {
+        "neighbourhoods": 28,
+        "population": 38147,
+        "observedExpectedRatio": 2.518
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 12,
+        "population": 15183,
+        "observedExpectedRatio": 4.574
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 28,
+          "population": 38147
+        },
+        "B": {
+          "neighbourhoods": 9,
+          "population": 13252
+        },
+        "C": {
+          "neighbourhoods": 58,
+          "population": 85651
+        },
+        "D": {
+          "neighbourhoods": 100,
+          "population": 175561
+        },
+        "E": {
+          "neighbourhoods": 19,
+          "population": 23740
+        },
+        "F": {
+          "neighbourhoods": 47,
+          "population": 69819
+        }
+      }
+    },
+    "sacramento": {
+      "slug": "sacramento",
+      "name": "Sacramento",
+      "neighbourhoods": 345,
+      "population": 484182,
+      "jointContext": {
+        "neighbourhoods": 25,
+        "population": 36760,
+        "observedExpectedRatio": 1.46
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 19,
+        "population": 28079,
+        "observedExpectedRatio": 1.814
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 25,
+          "population": 36760
+        },
+        "B": {
+          "neighbourhoods": 58,
+          "population": 98784
+        },
+        "C": {
+          "neighbourhoods": 47,
+          "population": 55636
+        },
+        "D": {
+          "neighbourhoods": 125,
+          "population": 185534
+        },
+        "E": {
+          "neighbourhoods": 24,
+          "population": 28626
+        },
+        "F": {
+          "neighbourhoods": 66,
+          "population": 78842
+        }
+      }
+    },
+    "atlanta": {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "neighbourhoods": 400,
+      "population": 472379,
+      "jointContext": {
+        "neighbourhoods": 44,
+        "population": 44345,
+        "observedExpectedRatio": 1.11
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 40,
+        "population": 40305,
+        "observedExpectedRatio": 1.241
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 44,
+          "population": 44345
+        },
+        "B": {
+          "neighbourhoods": 83,
+          "population": 114904
+        },
+        "C": {
+          "neighbourhoods": 66,
+          "population": 60481
+        },
+        "D": {
+          "neighbourhoods": 107,
+          "population": 130878
+        },
+        "E": {
+          "neighbourhoods": 48,
+          "population": 56559
+        },
+        "F": {
+          "neighbourhoods": 52,
+          "population": 65212
+        }
+      }
+    },
+    "mesa": {
+      "slug": "mesa",
+      "name": "Mesa",
+      "neighbourhoods": 277,
+      "population": 454436,
+      "jointContext": {
+        "neighbourhoods": 10,
+        "population": 13044,
+        "observedExpectedRatio": 1.295
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 2,
+        "population": 2034,
+        "observedExpectedRatio": 1.449
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 10,
+          "population": 13044
+        },
+        "B": {
+          "neighbourhoods": 43,
+          "population": 74874
+        },
+        "C": {
+          "neighbourhoods": 34,
+          "population": 46790
+        },
+        "D": {
+          "neighbourhoods": 120,
+          "population": 201613
+        },
+        "E": {
+          "neighbourhoods": 10,
+          "population": 15016
+        },
+        "F": {
+          "neighbourhoods": 60,
+          "population": 103099
+        }
+      }
+    },
+    "kansas-city": {
+      "slug": "kansas-city",
+      "name": "Kansas City",
+      "neighbourhoods": 435,
+      "population": 470777,
+      "jointContext": {
+        "neighbourhoods": 58,
+        "population": 51424,
+        "observedExpectedRatio": 1.664
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 40,
+        "population": 34580,
+        "observedExpectedRatio": 1.376
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 58,
+          "population": 51424
+        },
+        "B": {
+          "neighbourhoods": 60,
+          "population": 61829
+        },
+        "C": {
+          "neighbourhoods": 52,
+          "population": 55878
+        },
+        "D": {
+          "neighbourhoods": 155,
+          "population": 197230
+        },
+        "E": {
+          "neighbourhoods": 51,
+          "population": 44440
+        },
+        "F": {
+          "neighbourhoods": 59,
+          "population": 59976
+        }
+      }
+    },
+    "raleigh": {
+      "slug": "raleigh",
+      "name": "Raleigh",
+      "neighbourhoods": 155,
+      "population": 225728,
+      "jointContext": {
+        "neighbourhoods": 13,
+        "population": 14721,
+        "observedExpectedRatio": 1.741
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 12,
+        "population": 13409,
+        "observedExpectedRatio": 2.4
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 13,
+          "population": 14721
+        },
+        "B": {
+          "neighbourhoods": 27,
+          "population": 45196
+        },
+        "C": {
+          "neighbourhoods": 20,
+          "population": 27733
+        },
+        "D": {
+          "neighbourhoods": 55,
+          "population": 81934
+        },
+        "E": {
+          "neighbourhoods": 6,
+          "population": 9039
+        },
+        "F": {
+          "neighbourhoods": 34,
+          "population": 47105
+        }
+      }
+    },
+    "colorado-springs": {
+      "slug": "colorado-springs",
+      "name": "Colorado Springs",
+      "neighbourhoods": 277,
+      "population": 391076,
+      "jointContext": {
+        "neighbourhoods": 7,
+        "population": 9563,
+        "observedExpectedRatio": 0.943
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 5,
+        "population": 6348,
+        "observedExpectedRatio": 1.162
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 7,
+          "population": 9563
+        },
+        "B": {
+          "neighbourhoods": 31,
+          "population": 52693
+        },
+        "C": {
+          "neighbourhoods": 32,
+          "population": 36764
+        },
+        "D": {
+          "neighbourhoods": 137,
+          "population": 214296
+        },
+        "E": {
+          "neighbourhoods": 28,
+          "population": 34185
+        },
+        "F": {
+          "neighbourhoods": 42,
+          "population": 43575
+        }
+      }
+    },
+    "omaha": {
+      "slug": "omaha",
+      "name": "Omaha",
+      "neighbourhoods": 400,
+      "population": 443327,
+      "jointContext": {
+        "neighbourhoods": 33,
+        "population": 38681,
+        "observedExpectedRatio": 2.178
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 32,
+        "population": 37572,
+        "observedExpectedRatio": 3.425
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 33,
+          "population": 38681
+        },
+        "B": {
+          "neighbourhoods": 46,
+          "population": 52821
+        },
+        "C": {
+          "neighbourhoods": 49,
+          "population": 52308
+        },
+        "D": {
+          "neighbourhoods": 172,
+          "population": 190922
+        },
+        "E": {
+          "neighbourhoods": 20,
+          "population": 22008
+        },
+        "F": {
+          "neighbourhoods": 80,
+          "population": 86587
+        }
+      }
+    },
+    "miami": {
+      "slug": "miami",
+      "name": "Miami",
+      "neighbourhoods": 320,
+      "population": 442156,
+      "jointContext": {
+        "neighbourhoods": 61,
+        "population": 86455,
+        "observedExpectedRatio": 1.58
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 31,
+        "population": 37307,
+        "observedExpectedRatio": 1.633
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 61,
+          "population": 86455
+        },
+        "B": {
+          "neighbourhoods": 18,
+          "population": 25935
+        },
+        "C": {
+          "neighbourhoods": 83,
+          "population": 109943
+        },
+        "D": {
+          "neighbourhoods": 78,
+          "population": 108086
+        },
+        "E": {
+          "neighbourhoods": 40,
+          "population": 62303
+        },
+        "F": {
+          "neighbourhoods": 40,
+          "population": 49434
+        }
+      }
+    },
+    "virginia-beach": {
+      "slug": "virginia-beach",
+      "name": "Virginia Beach",
+      "neighbourhoods": 322,
+      "population": 456349,
+      "jointContext": {
+        "neighbourhoods": 12,
+        "population": 15156,
+        "observedExpectedRatio": 1.112
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 7,
+        "population": 7342,
+        "observedExpectedRatio": 1.622
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 12,
+          "population": 15156
+        },
+        "B": {
+          "neighbourhoods": 94,
+          "population": 130099
+        },
+        "C": {
+          "neighbourhoods": 14,
+          "population": 16577
+        },
+        "D": {
+          "neighbourhoods": 120,
+          "population": 171650
+        },
+        "E": {
+          "neighbourhoods": 26,
+          "population": 42567
+        },
+        "F": {
+          "neighbourhoods": 56,
+          "population": 80300
+        }
+      }
+    },
+    "long-beach": {
+      "slug": "long-beach",
+      "name": "Long Beach",
+      "neighbourhoods": 311,
+      "population": 440233,
+      "jointContext": {
+        "neighbourhoods": 11,
+        "population": 18202,
+        "observedExpectedRatio": 0.964
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 0,
+        "population": 0,
+        "observedExpectedRatio": 0.0
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 11,
+          "population": 18202
+        },
+        "B": {
+          "neighbourhoods": 39,
+          "population": 61486
+        },
+        "C": {
+          "neighbourhoods": 51,
+          "population": 67841
+        },
+        "D": {
+          "neighbourhoods": 130,
+          "population": 181108
+        },
+        "E": {
+          "neighbourhoods": 25,
+          "population": 43127
+        },
+        "F": {
+          "neighbourhoods": 55,
+          "population": 68469
+        }
+      }
+    },
+    "oakland": {
+      "slug": "oakland",
+      "name": "Oakland",
+      "neighbourhoods": 352,
+      "population": 439418,
+      "jointContext": {
+        "neighbourhoods": 44,
+        "population": 62269,
+        "observedExpectedRatio": 1.578
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 35,
+        "population": 48252,
+        "observedExpectedRatio": 1.993
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 44,
+          "population": 62269
+        },
+        "B": {
+          "neighbourhoods": 64,
+          "population": 86512
+        },
+        "C": {
+          "neighbourhoods": 50,
+          "population": 56680
+        },
+        "D": {
+          "neighbourhoods": 104,
+          "population": 120233
+        },
+        "E": {
+          "neighbourhoods": 28,
+          "population": 37933
+        },
+        "F": {
+          "neighbourhoods": 62,
+          "population": 75791
+        }
+      }
+    },
+    "minneapolis": {
+      "slug": "minneapolis",
+      "name": "Minneapolis",
+      "neighbourhoods": 380,
+      "population": 418392,
+      "jointContext": {
+        "neighbourhoods": 45,
+        "population": 52928,
+        "observedExpectedRatio": 2.651
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 41,
+        "population": 47861,
+        "observedExpectedRatio": 4.62
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 45,
+          "population": 52928
+        },
+        "B": {
+          "neighbourhoods": 39,
+          "population": 50744
+        },
+        "C": {
+          "neighbourhoods": 37,
+          "population": 39109
+        },
+        "D": {
+          "neighbourhoods": 164,
+          "population": 167640
+        },
+        "E": {
+          "neighbourhoods": 19,
+          "population": 28619
+        },
+        "F": {
+          "neighbourhoods": 76,
+          "population": 79352
+        }
+      }
+    },
+    "bakersfield": {
+      "slug": "bakersfield",
+      "name": "Bakersfield",
+      "neighbourhoods": 210,
+      "population": 317860,
+      "jointContext": {
+        "neighbourhoods": 19,
+        "population": 25471,
+        "observedExpectedRatio": 2.475
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 3,
+        "population": 5028,
+        "observedExpectedRatio": 2.163
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 19,
+          "population": 25471
+        },
+        "B": {
+          "neighbourhoods": 15,
+          "population": 26917
+        },
+        "C": {
+          "neighbourhoods": 22,
+          "population": 26538
+        },
+        "D": {
+          "neighbourhoods": 99,
+          "population": 167120
+        },
+        "E": {
+          "neighbourhoods": 19,
+          "population": 22179
+        },
+        "F": {
+          "neighbourhoods": 36,
+          "population": 49635
+        }
+      }
+    },
+    "tulsa": {
+      "slug": "tulsa",
+      "name": "Tulsa",
+      "neighbourhoods": 309,
+      "population": 365985,
+      "jointContext": {
+        "neighbourhoods": 40,
+        "population": 46786,
+        "observedExpectedRatio": 1.673
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 39,
+        "population": 45800,
+        "observedExpectedRatio": 2.49
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 40,
+          "population": 46786
+        },
+        "B": {
+          "neighbourhoods": 47,
+          "population": 56774
+        },
+        "C": {
+          "neighbourhoods": 47,
+          "population": 57682
+        },
+        "D": {
+          "neighbourhoods": 95,
+          "population": 115763
+        },
+        "E": {
+          "neighbourhoods": 25,
+          "population": 30344
+        },
+        "F": {
+          "neighbourhoods": 55,
+          "population": 58636
+        }
+      }
+    },
+    "tampa": {
+      "slug": "tampa",
+      "name": "Tampa",
+      "neighbourhoods": 301,
+      "population": 349682,
+      "jointContext": {
+        "neighbourhoods": 36,
+        "population": 38546,
+        "observedExpectedRatio": 1.496
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 34,
+        "population": 36130,
+        "observedExpectedRatio": 1.737
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 36,
+          "population": 38546
+        },
+        "B": {
+          "neighbourhoods": 52,
+          "population": 63533
+        },
+        "C": {
+          "neighbourhoods": 52,
+          "population": 61127
+        },
+        "D": {
+          "neighbourhoods": 85,
+          "population": 110561
+        },
+        "E": {
+          "neighbourhoods": 18,
+          "population": 14847
+        },
+        "F": {
+          "neighbourhoods": 58,
+          "population": 61068
+        }
+      }
+    },
+    "arlington": {
+      "slug": "arlington",
+      "name": "Arlington",
+      "neighbourhoods": 213,
+      "population": 359727,
+      "jointContext": {
+        "neighbourhoods": 11,
+        "population": 17174,
+        "observedExpectedRatio": 1.673
+      },
+      "strictTripleHigh": {
+        "neighbourhoods": 1,
+        "population": 1817,
+        "observedExpectedRatio": 1.001
+      },
+      "contexts": {
+        "A": {
+          "neighbourhoods": 11,
+          "population": 17174
+        },
+        "B": {
+          "neighbourhoods": 39,
+          "population": 61510
+        },
+        "C": {
+          "neighbourhoods": 12,
+          "population": 14579
+        },
+        "D": {
+          "neighbourhoods": 96,
+          "population": 178491
+        },
+        "E": {
+          "neighbourhoods": 14,
+          "population": 22815
+        },
+        "F": {
+          "neighbourhoods": 41,
+          "population": 65158
+        }
+      }
+    }
+  },
+  "contextLabels": {
+    "A": "Joint canopy-deficit, surface-heat and social context",
+    "B": "Surface-heat canopy deficit",
+    "C": "Social-condition canopy deficit",
+    "D": "Canopy-deficit dominant",
+    "E": "Heat or social context with no measured canopy deficit",
+    "F": "Lower or mixed reference"
+  },
+  "primaryBudgetPct": 10.0
+}

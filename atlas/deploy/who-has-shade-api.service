@@ -1,0 +1,24 @@
+[Unit]
+Description=Who Has Shade canopy tile API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/srv/who-has-shade/api
+Environment=ATLAS_COG_ROOT=/srv/who-has-shade/data/cogs
+Environment=ATLAS_CATALOG=/srv/who-has-shade/atlas/catalog/cities.json
+Environment=ATLAS_ALLOWED_ORIGINS=https://atlas.example.org
+Environment=ATLAS_TILE_CACHE_SIZE=256
+Environment=ATLAS_MIN_CANOPY_COMPONENT_PIXELS=6
+Environment=ATLAS_CANOPY_FILTER_MIN_ZOOM=15
+ExecStart=/srv/who-has-shade/api/.venv/bin/uvicorn app:app --host 127.0.0.1 --port 8000 --workers 2
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

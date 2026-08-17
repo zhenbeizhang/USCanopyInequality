@@ -1,0 +1,88 @@
+relative_path,module,role,description
+scripts/01_canopy_mapping/aggregate_canopy_context.py,01_canopy_mapping,analysis,Aggregate canopy context.
+scripts/01_canopy_mapping/model/infer_canopy.py,01_canopy_mapping,analysis,Run checkpoint-compatible sliding-window canopy inference.
+scripts/01_canopy_mapping/model/train_model.py,01_canopy_mapping,analysis,Reproduce the recovered canopy-model training configuration.
+scripts/01_canopy_mapping/validation/audit_geographic_split.py,01_canopy_mapping,model validation,Audit geographic separation of the recovered untouched test subset.
+scripts/01_canopy_mapping/validation/audit_inference_seams.py,01_canopy_mapping,model validation,Audit inference seams.
+scripts/01_canopy_mapping/validation/audit_overlap_inference.py,01_canopy_mapping,model validation,Audit overlap inference.
+scripts/01_canopy_mapping/validation/benchmark_overlap_inference.py,01_canopy_mapping,model validation,Benchmark exact float32 overlap inference for a representative city tile.
+scripts/01_canopy_mapping/validation/check_checkpoint_compatibility.py,01_canopy_mapping,model validation,Verify that the public model definition strictly loads the frozen checkpoint.
+scripts/01_canopy_mapping/validation/summarize_imagery_timing.py,01_canopy_mapping,model validation,"Summarise the recovered, incomplete tile-level acquisition dates."
+scripts/01_canopy_mapping/validation/validate_annotation_patches.py,01_canopy_mapping,model validation,Validate annotation patches.
+scripts/02_social_inequality/audit_complete_case_models.py,02_social_inequality,analysis,Audit complete case models.
+scripts/02_social_inequality/audit_complete_case_suppression.py,02_social_inequality,analysis,Audit complete case suppression.
+scripts/02_social_inequality/audit_cross_scale_transferability.py,02_social_inequality,analysis,Audit cross scale transferability.
+scripts/02_social_inequality/build_boundary_population_frame.py,02_social_inequality,analysis,Build boundary population frame.
+scripts/02_social_inequality/complete_case_model_core.py,02_social_inequality,analysis,Complete case model core.
+scripts/02_social_inequality/run_boundary_sensitivity.py,02_social_inequality,analysis,Run boundary sensitivity.
+scripts/02_social_inequality/run_cross_scale_transferability.py,02_social_inequality,analysis,Run cross scale transferability.
+scripts/02_social_inequality/run_primary_social_models.py,02_social_inequality,analysis,"Module 1 audit for Result 2: boundary definition, weights and inference."
+scripts/02_social_inequality/summarize_cross_scale_transferability.py,02_social_inequality,analysis,Summarize cross scale transferability.
+scripts/03_surface_heat/audit_nonlinearity.py,03_surface_heat,analysis,Audit nonlinearity.
+scripts/03_surface_heat/run_paired_model_bootstrap.py,03_surface_heat,analysis,Run paired model bootstrap.
+scripts/03_surface_heat/run_spatial_block_bootstrap.py,03_surface_heat,analysis,Run spatial block bootstrap.
+scripts/03_surface_heat/run_support_aligned_models.py,03_surface_heat,analysis,Run support aligned models.
+scripts/03_surface_heat/spatial_model_core.py,03_surface_heat,analysis,Spatial model core.
+scripts/04_neighbourhood_typology/audit_neighbourhood_typology.py,04_neighbourhood_typology,analysis,Audit neighbourhood typology.
+scripts/04_neighbourhood_typology/build_neighbourhood_typology.py,04_neighbourhood_typology,analysis,Build neighbourhood typology.
+scripts/04_neighbourhood_typology/run_leave_one_unit_out_benchmarks.py,04_neighbourhood_typology,analysis,Run leave one unit out benchmarks.
+scripts/04_neighbourhood_typology/run_threshold_sensitivity.py,04_neighbourhood_typology,analysis,Run threshold sensitivity.
+scripts/05_allocation/assess_cross_city_transferability.py,05_allocation,analysis,Scientific audit of the completed Step 3 analysis.
+scripts/05_allocation/audit_cross_city_transferability.py,05_allocation,analysis,Independent implementation and integrity audit for Step 3 outputs.
+scripts/05_allocation/audit_divergence_decomposition.py,05_allocation,analysis,Audit divergence decomposition.
+scripts/05_allocation/audit_weighting_heterogeneity.py,05_allocation,analysis,Audit weighting heterogeneity.
+scripts/05_allocation/build_transferability_predictors.py,05_allocation,analysis,Build transferability predictors.
+scripts/05_allocation/freeze_allocation_protocol.py,05_allocation,analysis,Freeze allocation protocol.
+scripts/05_allocation/freeze_tradeoff_outcomes.py,05_allocation,analysis,Freeze tradeoff outcomes.
+scripts/05_allocation/run_budget_sensitivity.py,05_allocation,analysis,Run budget sensitivity.
+scripts/05_allocation/run_cross_city_transferability.py,05_allocation,analysis,Run the frozen Step 3 cross-city transferability audit.
+scripts/05_allocation/run_divergence_decomposition.py,05_allocation,analysis,Run divergence decomposition.
+scripts/05_allocation/run_equal_budget_allocation.py,05_allocation,analysis,Run equal budget allocation.
+scripts/05_allocation/run_group_distribution_sensitivity.py,05_allocation,analysis,Run group distribution sensitivity.
+scripts/05_allocation/verify_allocation_protocol.py,05_allocation,analysis,Verify allocation protocol.
+scripts/05_allocation/verify_cross_city_transferability.py,05_allocation,analysis,"Verify Step 3 table schemas, dimensions and cross-file conclusions."
+scripts/06_main_figures/figure4_style_helpers.py,06_main_figures,figure support,Figure4 style helpers.
+scripts/06_main_figures/make_figure_1.py,06_main_figures,main figure,Make figure 1.
+scripts/06_main_figures/make_figure_2.py,06_main_figures,main figure,Make figure 2.
+scripts/06_main_figures/make_figure_3.py,06_main_figures,main figure,Make figure 3.
+scripts/06_main_figures/make_figure_4.py,06_main_figures,main figure,Make figure 4.
+scripts/06_main_figures/make_figure_5.py,06_main_figures,main figure,Make figure 5.
+scripts/07_supplementary_figures/make_supplementary_figure_01.py,07_supplementary_figures,supplementary figure,Make supplementary figure 01.
+scripts/07_supplementary_figures/make_supplementary_figure_02.py,07_supplementary_figures,supplementary figure,Make supplementary figure 02.
+scripts/07_supplementary_figures/make_supplementary_figure_03.py,07_supplementary_figures,supplementary figure,Make supplementary figure 03.
+scripts/07_supplementary_figures/make_supplementary_figure_04.py,07_supplementary_figures,supplementary figure,Make supplementary figure 04.
+scripts/07_supplementary_figures/make_supplementary_figure_05.py,07_supplementary_figures,supplementary figure,Make supplementary figure 05.
+scripts/07_supplementary_figures/make_supplementary_figure_06.py,07_supplementary_figures,supplementary figure,Make supplementary figure 06.
+scripts/07_supplementary_figures/make_supplementary_figure_07.py,07_supplementary_figures,supplementary figure,Make supplementary figure 07.
+scripts/07_supplementary_figures/make_supplementary_figure_08.py,07_supplementary_figures,supplementary figure,Make supplementary figure 08.
+scripts/07_supplementary_figures/make_supplementary_figure_09.py,07_supplementary_figures,supplementary figure,Make supplementary figure 09.
+scripts/07_supplementary_figures/make_supplementary_figure_10.py,07_supplementary_figures,supplementary figure,Make supplementary figure 10.
+scripts/07_supplementary_figures/make_supplementary_figure_11.py,07_supplementary_figures,supplementary figure,Make supplementary figure 11.
+scripts/07_supplementary_figures/make_supplementary_figure_12.py,07_supplementary_figures,supplementary figure,Make supplementary figure 12.
+scripts/07_supplementary_figures/make_supplementary_figure_13.py,07_supplementary_figures,supplementary figure,Make supplementary figure 13.
+scripts/07_supplementary_figures/make_supplementary_figure_14.py,07_supplementary_figures,supplementary figure,Make supplementary figure 14.
+scripts/07_supplementary_figures/make_supplementary_figure_15.py,07_supplementary_figures,supplementary figure,Make supplementary figure 15.
+scripts/07_supplementary_figures/make_supplementary_figure_16.py,07_supplementary_figures,supplementary figure,Make supplementary figure 16.
+scripts/08_qa/audit_figure_1.py,08_qa,quality assurance,Audit figure 1.
+scripts/08_qa/audit_figure_5.py,08_qa,quality assurance,Audit figure 5.
+scripts/08_qa/audit_reporting_consistency.py,08_qa,quality assurance,Audit reporting consistency.
+scripts/08_qa/audit_result_4.py,08_qa,quality assurance,Audit result 4.
+scripts/08_qa/audit_supplementary_figure_01.py,08_qa,quality assurance,Audit supplementary figure 01.
+scripts/08_qa/audit_supplementary_figure_02.py,08_qa,quality assurance,Audit supplementary figure 02.
+scripts/08_qa/audit_supplementary_figure_03.py,08_qa,quality assurance,Audit supplementary figure 03.
+scripts/08_qa/audit_supplementary_figure_04.py,08_qa,quality assurance,Audit supplementary figure 04.
+scripts/08_qa/audit_supplementary_figure_05.py,08_qa,quality assurance,Audit supplementary figure 05.
+scripts/08_qa/audit_supplementary_figure_06.py,08_qa,quality assurance,Audit supplementary figure 06.
+scripts/08_qa/audit_supplementary_figure_07.py,08_qa,quality assurance,Audit supplementary figure 07.
+scripts/08_qa/audit_supplementary_figure_08.py,08_qa,quality assurance,Audit supplementary figure 08.
+scripts/08_qa/audit_supplementary_figure_09.py,08_qa,quality assurance,Audit supplementary figure 09.
+scripts/08_qa/audit_supplementary_figure_10.py,08_qa,quality assurance,Audit supplementary figure 10.
+scripts/08_qa/audit_supplementary_figure_11.py,08_qa,quality assurance,Audit supplementary figure 11.
+scripts/08_qa/audit_supplementary_figure_12.py,08_qa,quality assurance,Audit supplementary figure 12.
+scripts/08_qa/audit_supplementary_figure_13.py,08_qa,quality assurance,Audit supplementary figure 13.
+scripts/08_qa/audit_supplementary_figure_14.py,08_qa,quality assurance,Audit supplementary figure 14.
+scripts/08_qa/audit_supplementary_figure_15.py,08_qa,quality assurance,Audit supplementary figure 15.
+scripts/08_qa/audit_supplementary_figure_16.py,08_qa,quality assurance,Audit supplementary figure 16.
+scripts/08_qa/audit_table_sources.py,08_qa,quality assurance,Audit table sources.
+scripts/08_qa/build_code_manifest.py,08_qa,quality assurance,Build a file-level SHA-256 manifest for the code release.
+scripts/08_qa/build_table_sources.py,08_qa,quality assurance,Build table sources.

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated article."
+title: "USCanopyInequality"
+type: software
+authors:
+  - family-names: "Zhang"
+    given-names: "Zhenbei"
+version: 0.3.0
+date-released: 2026-08-17
+repository-code: "https://github.com/zhenbeizhang/USCanopyInequality"
+url: "https://github.com/zhenbeizhang/USCanopyInequality"
+license: MIT
+keywords:
+  - urban tree canopy
+  - environmental inequality
+  - land surface temperature
+  - neighbourhood typology
+  - spatial bootstrap
+  - multiobjective allocation

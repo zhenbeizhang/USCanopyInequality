@@ -1,0 +1,2238 @@
+[
+  {
+    "rank": 1,
+    "slug": "new-york",
+    "cityKey": "NewYorkcity",
+    "name": "New York",
+    "state": "NY",
+    "bounds": [
+      -74.258843,
+      40.476578,
+      -73.700169,
+      40.917705
+    ],
+    "center": [
+      -73.979506,
+      40.6971415
+    ],
+    "areaWeightedCanopyPct": 18.11,
+    "populationWeightedCanopyPct": 15.66,
+    "population": 8483844,
+    "tracts": 2243,
+    "blockGroups": 6396,
+    "imagery": {
+      "earliest": "2020-08-17",
+      "median": "2022-06-20",
+      "latest": "2023-06-11",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "new-york.tif",
+      "width": 104145,
+      "height": 82232,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 2,
+    "slug": "los-angeles",
+    "cityKey": "LosAngelescity",
+    "name": "Los Angeles",
+    "state": "CA",
+    "bounds": [
+      -118.668176,
+      33.7036466,
+      -118.155289,
+      34.337306
+    ],
+    "center": [
+      -118.4117325,
+      34.0204763
+    ],
+    "areaWeightedCanopyPct": 14.44,
+    "populationWeightedCanopyPct": 12.66,
+    "population": 3857263,
+    "tracts": 1092,
+    "blockGroups": 2676,
+    "imagery": {
+      "earliest": "2017-04-30",
+      "median": "2020-03-09",
+      "latest": "2022-09-24",
+      "uniqueDates": 12
+    },
+    "raster": {
+      "file": "los-angeles.tif",
+      "width": 95609,
+      "height": 118123,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 3,
+    "slug": "chicago",
+    "cityKey": "Chicagocity",
+    "name": "Chicago",
+    "state": "IL",
+    "bounds": [
+      -87.940097,
+      41.644286,
+      -87.523661,
+      42.023135
+    ],
+    "center": [
+      -87.731879,
+      41.8337105
+    ],
+    "areaWeightedCanopyPct": 18.54,
+    "populationWeightedCanopyPct": 18.28,
+    "population": 2711226,
+    "tracts": 760,
+    "blockGroups": 2165,
+    "imagery": {
+      "earliest": "2019-05-05",
+      "median": "2022-06-14",
+      "latest": "2023-05-26",
+      "uniqueDates": 7
+    },
+    "raster": {
+      "file": "chicago.tif",
+      "width": 77629,
+      "height": 70622,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 4,
+    "slug": "houston",
+    "cityKey": "Houstoncity",
+    "name": "Houston",
+    "state": "TX",
+    "bounds": [
+      -95.909743,
+      29.516282,
+      -95.012637,
+      30.155908
+    ],
+    "center": [
+      -95.46119,
+      29.836095
+    ],
+    "areaWeightedCanopyPct": 20.27,
+    "populationWeightedCanopyPct": 19.11,
+    "population": 2328253,
+    "tracts": 579,
+    "blockGroups": 2447,
+    "imagery": {
+      "earliest": "2018-12-04",
+      "median": "2022-01-14",
+      "latest": "2023-04-01",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "houston.tif",
+      "width": 167233,
+      "height": 119235,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        513
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 5,
+    "slug": "phoenix",
+    "cityKey": "Phoenixcity",
+    "name": "Phoenix",
+    "state": "AZ",
+    "bounds": [
+      -112.324065,
+      33.29026,
+      -111.925521,
+      33.918391
+    ],
+    "center": [
+      -112.124793,
+      33.6043255
+    ],
+    "areaWeightedCanopyPct": 6.94,
+    "populationWeightedCanopyPct": 9.24,
+    "population": 1642323,
+    "tracts": 319,
+    "blockGroups": 1043,
+    "imagery": {
+      "earliest": "2019-02-24",
+      "median": "2019-08-13",
+      "latest": "2024-02-13",
+      "uniqueDates": 7
+    },
+    "raster": {
+      "file": "phoenix.tif",
+      "width": 74294,
+      "height": 117092,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 6,
+    "slug": "philadelphia",
+    "cityKey": "Philadelphiacity",
+    "name": "Philadelphia",
+    "state": "PA",
+    "bounds": [
+      -75.280266,
+      39.867464,
+      -74.9557576,
+      40.137992
+    ],
+    "center": [
+      -75.1180118,
+      40.002728
+    ],
+    "areaWeightedCanopyPct": 8.78,
+    "populationWeightedCanopyPct": 5.24,
+    "population": 1579706,
+    "tracts": 391,
+    "blockGroups": 1276,
+    "imagery": {
+      "earliest": "2020-08-24",
+      "median": "2022-09-09",
+      "latest": "2023-05-16",
+      "uniqueDates": 6
+    },
+    "raster": {
+      "file": "philadelphia.tif",
+      "width": 60493,
+      "height": 50430,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 7,
+    "slug": "san-antonio",
+    "cityKey": "SanAntoniocity",
+    "name": "San Antonio",
+    "state": "TX",
+    "bounds": [
+      -98.81345,
+      29.18529,
+      -98.222708,
+      29.731075
+    ],
+    "center": [
+      -98.518079,
+      29.4581825
+    ],
+    "areaWeightedCanopyPct": 19.17,
+    "populationWeightedCanopyPct": 21.48,
+    "population": 1479835,
+    "tracts": 259,
+    "blockGroups": 1007,
+    "imagery": {
+      "earliest": "2018-12-09",
+      "median": "2019-01-12",
+      "latest": "2022-01-03",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "san-antonio.tif",
+      "width": 110122,
+      "height": 101742,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 8,
+    "slug": "san-diego",
+    "cityKey": "SanDiegocity",
+    "name": "San Diego",
+    "state": "CA",
+    "bounds": [
+      -117.309797,
+      32.534787,
+      -116.905723,
+      33.114185
+    ],
+    "center": [
+      -117.10776,
+      32.824486
+    ],
+    "areaWeightedCanopyPct": 10.56,
+    "populationWeightedCanopyPct": 13.14,
+    "population": 1389526,
+    "tracts": 284,
+    "blockGroups": 984,
+    "imagery": {
+      "earliest": "2017-12-08",
+      "median": "2022-11-17",
+      "latest": "2024-03-27",
+      "uniqueDates": 9
+    },
+    "raster": {
+      "file": "san-diego.tif",
+      "width": 75325,
+      "height": 108007,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 9,
+    "slug": "dallas",
+    "cityKey": "Dallascity",
+    "name": "Dallas",
+    "state": "TX",
+    "bounds": [
+      -97.000482,
+      32.613216,
+      -96.46371,
+      33.023792
+    ],
+    "center": [
+      -96.732096,
+      32.818504
+    ],
+    "areaWeightedCanopyPct": 20.11,
+    "populationWeightedCanopyPct": 19.59,
+    "population": 1307930,
+    "tracts": 310,
+    "blockGroups": 931,
+    "imagery": {
+      "earliest": "2017-11-29",
+      "median": "2020-02-02",
+      "latest": "2023-07-19",
+      "uniqueDates": 10
+    },
+    "raster": {
+      "file": "dallas.tif",
+      "width": 100061,
+      "height": 76537,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 10,
+    "slug": "jacksonville",
+    "cityKey": "Jacksonvillecity",
+    "name": "Jacksonville",
+    "state": "FL",
+    "bounds": [
+      -82.049502,
+      30.103748,
+      -81.316712,
+      30.586232
+    ],
+    "center": [
+      -81.683107,
+      30.34499
+    ],
+    "areaWeightedCanopyPct": 36.5,
+    "populationWeightedCanopyPct": 38.15,
+    "population": 977670,
+    "tracts": 204,
+    "blockGroups": 552,
+    "imagery": {
+      "earliest": "2018-12-18",
+      "median": "2018-12-18",
+      "latest": "2021-01-14",
+      "uniqueDates": 3
+    },
+    "raster": {
+      "file": "jacksonville.tif",
+      "width": 136602,
+      "height": 89942,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        514
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 11,
+    "slug": "fort-worth",
+    "cityKey": "FortWorthcity",
+    "name": "Fort Worth",
+    "state": "TX",
+    "bounds": [
+      -97.60015,
+      32.550589,
+      -97.03384,
+      33.049164
+    ],
+    "center": [
+      -97.316995,
+      32.7998765
+    ],
+    "areaWeightedCanopyPct": 11.37,
+    "populationWeightedCanopyPct": 12.67,
+    "population": 963194,
+    "tracts": 149,
+    "blockGroups": 587,
+    "imagery": {
+      "earliest": "2019-12-07",
+      "median": "2019-12-07",
+      "latest": "2023-02-27",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "fort-worth.tif",
+      "width": 105568,
+      "height": 92941,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 12,
+    "slug": "san-jose",
+    "cityKey": "SanJosecity",
+    "name": "San Jose",
+    "state": "CA",
+    "bounds": [
+      -122.045672,
+      37.1231396,
+      -121.58587,
+      37.469168
+    ],
+    "center": [
+      -121.815771,
+      37.2961538
+    ],
+    "areaWeightedCanopyPct": 13.4,
+    "populationWeightedCanopyPct": 16.99,
+    "population": 990138,
+    "tracts": 167,
+    "blockGroups": 664,
+    "imagery": {
+      "earliest": "2018-05-10",
+      "median": "2019-06-20",
+      "latest": "2022-07-09",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "san-jose.tif",
+      "width": 85713,
+      "height": 64504,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 13,
+    "slug": "austin",
+    "cityKey": "Austincity",
+    "name": "Austin",
+    "state": "TX",
+    "bounds": [
+      -97.938354,
+      30.075576,
+      -97.527586,
+      30.516652
+    ],
+    "center": [
+      -97.73297,
+      30.296114
+    ],
+    "areaWeightedCanopyPct": 27.49,
+    "populationWeightedCanopyPct": 28.04,
+    "population": 979539,
+    "tracts": 164,
+    "blockGroups": 689,
+    "imagery": {
+      "earliest": "2019-11-23",
+      "median": "2019-11-23",
+      "latest": "2022-03-26",
+      "uniqueDates": 2
+    },
+    "raster": {
+      "file": "austin.tif",
+      "width": 76572,
+      "height": 82222,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 14,
+    "slug": "charlotte",
+    "cityKey": "Charlottecity",
+    "name": "Charlotte",
+    "state": "NC",
+    "bounds": [
+      -81.009554,
+      35.010464,
+      -80.6347626,
+      35.400203
+    ],
+    "center": [
+      -80.8221583,
+      35.2053335
+    ],
+    "areaWeightedCanopyPct": 41.07,
+    "populationWeightedCanopyPct": 40.51,
+    "population": 903844,
+    "tracts": 190,
+    "blockGroups": 543,
+    "imagery": {
+      "earliest": "2018-04-27",
+      "median": "2021-12-14",
+      "latest": "2023-06-10",
+      "uniqueDates": 7
+    },
+    "raster": {
+      "file": "charlotte.tif",
+      "width": 69866,
+      "height": 72652,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 15,
+    "slug": "columbus",
+    "cityKey": "Columbuscity",
+    "name": "Columbus",
+    "state": "OH",
+    "bounds": [
+      -83.210254,
+      39.808694,
+      -82.771378,
+      40.157349
+    ],
+    "center": [
+      -82.990816,
+      39.9830215
+    ],
+    "areaWeightedCanopyPct": 21.07,
+    "populationWeightedCanopyPct": 21.97,
+    "population": 914802,
+    "tracts": 113,
+    "blockGroups": 743,
+    "imagery": {
+      "earliest": "2017-08-13",
+      "median": "2017-08-13",
+      "latest": "2023-09-01",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "columbus.tif",
+      "width": 81813,
+      "height": 64994,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 16,
+    "slug": "indianapolis",
+    "cityKey": "Indianapoliscity(balance)",
+    "name": "Indianapolis",
+    "state": "IN",
+    "bounds": [
+      -86.328121,
+      39.632177,
+      -85.9373736,
+      39.927392
+    ],
+    "center": [
+      -86.1327473,
+      39.7797845
+    ],
+    "areaWeightedCanopyPct": 25.36,
+    "populationWeightedCanopyPct": 26.49,
+    "population": 885860,
+    "tracts": 202,
+    "blockGroups": 704,
+    "imagery": {
+      "earliest": "2018-08-31",
+      "median": "2021-09-29",
+      "latest": "2024-05-23",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "indianapolis.tif",
+      "width": 72840,
+      "height": 55032,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 17,
+    "slug": "san-francisco",
+    "cityKey": "SanFranciscocity",
+    "name": "San Francisco",
+    "state": "CA",
+    "bounds": [
+      -123.173825,
+      37.63983,
+      -122.2817746,
+      37.929824
+    ],
+    "center": [
+      -122.7277998,
+      37.784827
+    ],
+    "areaWeightedCanopyPct": 15.5,
+    "populationWeightedCanopyPct": 12.36,
+    "population": 830235,
+    "tracts": 241,
+    "blockGroups": 676,
+    "imagery": {
+      "earliest": "2014-04-16",
+      "median": "2022-04-02",
+      "latest": "2022-04-02",
+      "uniqueDates": 13
+    },
+    "raster": {
+      "file": "san-francisco.tif",
+      "width": 166290,
+      "height": 54059,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        513
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 18,
+    "slug": "seattle",
+    "cityKey": "Seattlecity",
+    "name": "Seattle",
+    "state": "WA",
+    "bounds": [
+      -122.459774,
+      47.48215,
+      -122.2198166,
+      47.73528
+    ],
+    "center": [
+      -122.3397953,
+      47.608715
+    ],
+    "areaWeightedCanopyPct": 28.62,
+    "populationWeightedCanopyPct": 25.55,
+    "population": 754195,
+    "tracts": 174,
+    "blockGroups": 538,
+    "imagery": {
+      "earliest": "2020-08-15",
+      "median": "2021-06-22",
+      "latest": "2022-08-24",
+      "uniqueDates": 6
+    },
+    "raster": {
+      "file": "seattle.tif",
+      "width": 44731,
+      "height": 47187,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 19,
+    "slug": "denver",
+    "cityKey": "Denvercity",
+    "name": "Denver",
+    "state": "CO",
+    "bounds": [
+      -105.109924,
+      39.614311,
+      -104.599581,
+      39.914178
+    ],
+    "center": [
+      -104.8547525,
+      39.7642445
+    ],
+    "areaWeightedCanopyPct": 17.42,
+    "populationWeightedCanopyPct": 19.01,
+    "population": 718877,
+    "tracts": 176,
+    "blockGroups": 560,
+    "imagery": {
+      "earliest": "2019-09-13",
+      "median": "2021-06-11",
+      "latest": "2023-09-05",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "denver.tif",
+      "width": 95135,
+      "height": 55899,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 20,
+    "slug": "oklahoma-city",
+    "cityKey": "OklahomaCity",
+    "name": "Oklahoma City",
+    "state": "OK",
+    "bounds": [
+      -97.833675,
+      35.290695,
+      -97.124716,
+      35.674893
+    ],
+    "center": [
+      -97.4791955,
+      35.482794
+    ],
+    "areaWeightedCanopyPct": 15.07,
+    "populationWeightedCanopyPct": 9.22,
+    "population": 697125,
+    "tracts": 183,
+    "blockGroups": 616,
+    "imagery": {
+      "earliest": "2017-12-13",
+      "median": "2020-09-25",
+      "latest": "2023-01-05",
+      "uniqueDates": 6
+    },
+    "raster": {
+      "file": "oklahoma-city.tif",
+      "width": 132160,
+      "height": 71620,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 21,
+    "slug": "nashville",
+    "cityKey": "Nashville-Davidsonmetropolitangovernment(balance)",
+    "name": "Nashville-Davidson",
+    "state": "TN",
+    "bounds": [
+      -87.054705,
+      35.967785,
+      -86.515589,
+      36.405496
+    ],
+    "center": [
+      -86.785147,
+      36.1866405
+    ],
+    "areaWeightedCanopyPct": 7.08,
+    "populationWeightedCanopyPct": 7.12,
+    "population": 690130,
+    "tracts": 156,
+    "blockGroups": 475,
+    "imagery": {
+      "earliest": "2018-04-20",
+      "median": "2018-04-20",
+      "latest": "2018-04-20",
+      "uniqueDates": 1
+    },
+    "raster": {
+      "file": "nashville.tif",
+      "width": 100498,
+      "height": 81595,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 22,
+    "slug": "washington",
+    "cityKey": "Washingtoncity",
+    "name": "Washington",
+    "state": "DC",
+    "bounds": [
+      -77.119759,
+      38.791645,
+      -76.909393,
+      38.995845
+    ],
+    "center": [
+      -77.014576,
+      38.893745
+    ],
+    "areaWeightedCanopyPct": 14.97,
+    "populationWeightedCanopyPct": 11.29,
+    "population": 681294,
+    "tracts": 206,
+    "blockGroups": 554,
+    "imagery": {
+      "earliest": null,
+      "median": null,
+      "latest": null,
+      "uniqueDates": 0
+    },
+    "raster": {
+      "file": "washington.tif",
+      "width": 39215,
+      "height": 38065,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 23,
+    "slug": "el-paso",
+    "cityKey": "ElPasocity",
+    "name": "El Paso",
+    "state": "TX",
+    "bounds": [
+      -106.635934,
+      31.622477,
+      -106.199202,
+      32.001631
+    ],
+    "center": [
+      -106.417568,
+      31.812054
+    ],
+    "areaWeightedCanopyPct": 2.41,
+    "populationWeightedCanopyPct": 3.37,
+    "population": 680130,
+    "tracts": 130,
+    "blockGroups": 497,
+    "imagery": {
+      "earliest": "2016-05-28",
+      "median": "2019-03-14",
+      "latest": "2022-11-21",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "el-paso.tif",
+      "width": 81413,
+      "height": 70679,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 24,
+    "slug": "las-vegas",
+    "cityKey": "LasVegascity",
+    "name": "Las Vegas",
+    "state": "NV",
+    "bounds": [
+      -115.406575,
+      36.1295486,
+      -115.062164,
+      36.401481
+    ],
+    "center": [
+      -115.2343695,
+      36.2655148
+    ],
+    "areaWeightedCanopyPct": 6.77,
+    "populationWeightedCanopyPct": 8.81,
+    "population": 660400,
+    "tracts": 107,
+    "blockGroups": 468,
+    "imagery": {
+      "earliest": "2012-06-22",
+      "median": "2022-12-20",
+      "latest": "2023-05-27",
+      "uniqueDates": 14
+    },
+    "raster": {
+      "file": "las-vegas.tif",
+      "width": 64203,
+      "height": 50692,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 25,
+    "slug": "boston",
+    "cityKey": "Bostoncity",
+    "name": "Boston",
+    "state": "MA",
+    "bounds": [
+      -71.191247,
+      42.227911,
+      -70.748802,
+      42.40082
+    ],
+    "center": [
+      -70.9700245,
+      42.3143655
+    ],
+    "areaWeightedCanopyPct": 22.35,
+    "populationWeightedCanopyPct": 20.62,
+    "population": 666442,
+    "tracts": 199,
+    "blockGroups": 568,
+    "imagery": {
+      "earliest": "1994-01-01",
+      "median": "2022-07-01",
+      "latest": "2022-07-01",
+      "uniqueDates": 4
+    },
+    "raster": {
+      "file": "boston.tif",
+      "width": 82477,
+      "height": 32233,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 26,
+    "slug": "detroit",
+    "cityKey": "Detroitcity",
+    "name": "Detroit",
+    "state": "MI",
+    "bounds": [
+      -83.287803,
+      42.25496,
+      -82.910427,
+      42.45023
+    ],
+    "center": [
+      -83.099115,
+      42.352595
+    ],
+    "areaWeightedCanopyPct": 24.33,
+    "populationWeightedCanopyPct": 24.95,
+    "population": 638530,
+    "tracts": 264,
+    "blockGroups": 600,
+    "imagery": {
+      "earliest": "2017-07-16",
+      "median": "2022-07-25",
+      "latest": "2022-08-02",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "detroit.tif",
+      "width": 70348,
+      "height": 36401,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 27,
+    "slug": "louisville",
+    "cityKey": "Louisville_JeffersonCountymetrogovernment(balance)",
+    "name": "Louisville/Jefferson County",
+    "state": "KY",
+    "bounds": [
+      -85.947104,
+      37.99721,
+      -85.404899,
+      38.380239
+    ],
+    "center": [
+      -85.6760015,
+      38.1887245
+    ],
+    "areaWeightedCanopyPct": 25.14,
+    "populationWeightedCanopyPct": 26.33,
+    "population": 631818,
+    "tracts": 60,
+    "blockGroups": 343,
+    "imagery": {
+      "earliest": "2018-10-22",
+      "median": "2019-09-03",
+      "latest": "2022-04-17",
+      "uniqueDates": 4
+    },
+    "raster": {
+      "file": "louisville.tif",
+      "width": 101074,
+      "height": 71402,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 28,
+    "slug": "portland",
+    "cityKey": "Portlandcity",
+    "name": "Portland",
+    "state": "OR",
+    "bounds": [
+      -122.83675,
+      45.432542,
+      -122.472021,
+      45.652887
+    ],
+    "center": [
+      -122.6543855,
+      45.5427145
+    ],
+    "areaWeightedCanopyPct": 33.43,
+    "populationWeightedCanopyPct": 29.63,
+    "population": 641165,
+    "tracts": 145,
+    "blockGroups": 533,
+    "imagery": {
+      "earliest": "2018-07-21",
+      "median": "2021-05-11",
+      "latest": "2022-06-30",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "portland.tif",
+      "width": 67991,
+      "height": 41075,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 29,
+    "slug": "memphis",
+    "cityKey": "Memphiscity",
+    "name": "Memphis",
+    "state": "TN",
+    "bounds": [
+      -90.187787,
+      34.994188,
+      -89.699189,
+      35.263965
+    ],
+    "center": [
+      -89.943488,
+      35.1290765
+    ],
+    "areaWeightedCanopyPct": 27.09,
+    "populationWeightedCanopyPct": 28.61,
+    "population": 618980,
+    "tracts": 162,
+    "blockGroups": 540,
+    "imagery": {
+      "earliest": "2018-10-22",
+      "median": "2022-11-16",
+      "latest": "2024-04-14",
+      "uniqueDates": 7
+    },
+    "raster": {
+      "file": "memphis.tif",
+      "width": 91081,
+      "height": 50291,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 30,
+    "slug": "baltimore",
+    "cityKey": "Baltimorecity",
+    "name": "Baltimore",
+    "state": "MD",
+    "bounds": [
+      -76.711519,
+      39.197207,
+      -76.5294476,
+      39.372206
+    ],
+    "center": [
+      -76.6204833,
+      39.2847065
+    ],
+    "areaWeightedCanopyPct": 16.64,
+    "populationWeightedCanopyPct": 14.44,
+    "population": 573243,
+    "tracts": 199,
+    "blockGroups": 616,
+    "imagery": {
+      "earliest": "2019-10-18",
+      "median": "2019-10-18",
+      "latest": "2019-10-18",
+      "uniqueDates": 1
+    },
+    "raster": {
+      "file": "baltimore.tif",
+      "width": 33941,
+      "height": 32622,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 31,
+    "slug": "milwaukee",
+    "cityKey": "Milwaukeecity",
+    "name": "Milwaukee",
+    "state": "WI",
+    "bounds": [
+      -88.071009,
+      42.920823,
+      -87.863807,
+      43.194772
+    ],
+    "center": [
+      -87.967408,
+      43.0577975
+    ],
+    "areaWeightedCanopyPct": 18.27,
+    "populationWeightedCanopyPct": 16.42,
+    "population": 566973,
+    "tracts": 203,
+    "blockGroups": 569,
+    "imagery": {
+      "earliest": "2018-03-17",
+      "median": "2018-07-08",
+      "latest": "2019-08-02",
+      "uniqueDates": 3
+    },
+    "raster": {
+      "file": "milwaukee.tif",
+      "width": 38625,
+      "height": 51068,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 32,
+    "slug": "albuquerque",
+    "cityKey": "Albuquerquecity",
+    "name": "Albuquerque",
+    "state": "NM",
+    "bounds": [
+      -106.872784,
+      34.9467806,
+      -106.471184,
+      35.217979
+    ],
+    "center": [
+      -106.671984,
+      35.0823798
+    ],
+    "areaWeightedCanopyPct": 7.9,
+    "populationWeightedCanopyPct": 12.01,
+    "population": 562218,
+    "tracts": 103,
+    "blockGroups": 421,
+    "imagery": {
+      "earliest": "2018-10-26",
+      "median": "2018-10-26",
+      "latest": "2022-10-11",
+      "uniqueDates": 3
+    },
+    "raster": {
+      "file": "albuquerque.tif",
+      "width": 74864,
+      "height": 50555,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 33,
+    "slug": "tucson",
+    "cityKey": "Tucsoncity",
+    "name": "Tucson",
+    "state": "AZ",
+    "bounds": [
+      -111.058797,
+      31.990506,
+      -110.706208,
+      32.320911
+    ],
+    "center": [
+      -110.8825025,
+      32.1557085
+    ],
+    "areaWeightedCanopyPct": 8.37,
+    "populationWeightedCanopyPct": 12.92,
+    "population": 547073,
+    "tracts": 113,
+    "blockGroups": 421,
+    "imagery": {
+      "earliest": "2018-08-19",
+      "median": "2022-11-17",
+      "latest": "2023-12-08",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "tucson.tif",
+      "width": 65727,
+      "height": 61592,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 34,
+    "slug": "fresno",
+    "cityKey": "Fresnocity",
+    "name": "Fresno",
+    "state": "CA",
+    "bounds": [
+      -119.934397,
+      36.66268,
+      -119.6505036,
+      36.911172
+    ],
+    "center": [
+      -119.7924503,
+      36.786926
+    ],
+    "areaWeightedCanopyPct": 12.55,
+    "populationWeightedCanopyPct": 15.11,
+    "population": 545970,
+    "tracts": 75,
+    "blockGroups": 370,
+    "imagery": {
+      "earliest": "2018-08-24",
+      "median": "2022-06-10",
+      "latest": "2022-06-10",
+      "uniqueDates": 4
+    },
+    "raster": {
+      "file": "fresno.tif",
+      "width": 52922,
+      "height": 46322,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 35,
+    "slug": "sacramento",
+    "cityKey": "Sacramentocity",
+    "name": "Sacramento",
+    "state": "CA",
+    "bounds": [
+      -121.56012,
+      38.437894,
+      -121.36274,
+      38.685603
+    ],
+    "center": [
+      -121.46143,
+      38.5617485
+    ],
+    "areaWeightedCanopyPct": 14.34,
+    "populationWeightedCanopyPct": 15.93,
+    "population": 528706,
+    "tracts": 114,
+    "blockGroups": 394,
+    "imagery": {
+      "earliest": "2018-05-11",
+      "median": "2023-11-24",
+      "latest": "2023-11-24",
+      "uniqueDates": 4
+    },
+    "raster": {
+      "file": "sacramento.tif",
+      "width": 36795,
+      "height": 46176,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 36,
+    "slug": "atlanta",
+    "cityKey": "Atlantacity",
+    "name": "Atlanta",
+    "state": "GA",
+    "bounds": [
+      -84.550854,
+      33.647944,
+      -84.28956,
+      33.886823
+    ],
+    "center": [
+      -84.420207,
+      33.7673835
+    ],
+    "areaWeightedCanopyPct": 40.81,
+    "populationWeightedCanopyPct": 34.6,
+    "population": 505268,
+    "tracts": 158,
+    "blockGroups": 461,
+    "imagery": {
+      "earliest": "2018-11-17",
+      "median": "2021-04-02",
+      "latest": "2023-06-27",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "atlanta.tif",
+      "width": 48709,
+      "height": 44531,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 37,
+    "slug": "mesa",
+    "cityKey": "Mesacity",
+    "name": "Mesa",
+    "state": "AZ",
+    "bounds": [
+      -111.894544,
+      33.277383,
+      -111.580646,
+      33.513186
+    ],
+    "center": [
+      -111.737595,
+      33.3952845
+    ],
+    "areaWeightedCanopyPct": 9.84,
+    "populationWeightedCanopyPct": 10.58,
+    "population": 511764,
+    "tracts": 97,
+    "blockGroups": 342,
+    "imagery": {
+      "earliest": "2018-01-14",
+      "median": "2019-08-13",
+      "latest": "2019-08-13",
+      "uniqueDates": 2
+    },
+    "raster": {
+      "file": "mesa.tif",
+      "width": 58515,
+      "height": 43957,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 38,
+    "slug": "kansas-city",
+    "cityKey": "KansasCitycity",
+    "name": "Kansas City",
+    "state": "MO",
+    "bounds": [
+      -94.765567,
+      38.8242536,
+      -94.385448,
+      39.35621
+    ],
+    "center": [
+      -94.5755075,
+      39.0902318
+    ],
+    "areaWeightedCanopyPct": 16.28,
+    "populationWeightedCanopyPct": 18.59,
+    "population": 510612,
+    "tracts": 139,
+    "blockGroups": 500,
+    "imagery": {
+      "earliest": "2018-04-28",
+      "median": "2019-07-26",
+      "latest": "2023-05-03",
+      "uniqueDates": 7
+    },
+    "raster": {
+      "file": "kansas-city.tif",
+      "width": 70859,
+      "height": 99164,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 39,
+    "slug": "raleigh",
+    "cityKey": "Raleighcity",
+    "name": "Raleigh",
+    "state": "NC",
+    "bounds": [
+      -78.818971,
+      35.70825,
+      -78.470789,
+      35.970859
+    ],
+    "center": [
+      -78.64488,
+      35.8395545
+    ],
+    "areaWeightedCanopyPct": 42.14,
+    "populationWeightedCanopyPct": 41.68,
+    "population": 481031,
+    "tracts": 40,
+    "blockGroups": 300,
+    "imagery": {
+      "earliest": "2018-05-01",
+      "median": "2022-10-20",
+      "latest": "2024-08-14",
+      "uniqueDates": 10
+    },
+    "raster": {
+      "file": "raleigh.tif",
+      "width": 64906,
+      "height": 48954,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 40,
+    "slug": "colorado-springs",
+    "cityKey": "ColoradoSpringscity",
+    "name": "Colorado Springs",
+    "state": "CO",
+    "bounds": [
+      -104.923139,
+      38.7157016,
+      -104.581039,
+      39.035871
+    ],
+    "center": [
+      -104.752089,
+      38.8757863
+    ],
+    "areaWeightedCanopyPct": 12.08,
+    "populationWeightedCanopyPct": 14.61,
+    "population": 487887,
+    "tracts": 85,
+    "blockGroups": 351,
+    "imagery": {
+      "earliest": "2018-10-20",
+      "median": "2022-10-25",
+      "latest": "2024-03-02",
+      "uniqueDates": 8
+    },
+    "raster": {
+      "file": "colorado-springs.tif",
+      "width": 63772,
+      "height": 59684,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 41,
+    "slug": "omaha",
+    "cityKey": "Omahacity",
+    "name": "Omaha",
+    "state": "NE",
+    "bounds": [
+      -96.268083,
+      41.190548,
+      -95.871141,
+      41.39317
+    ],
+    "center": [
+      -96.069612,
+      41.291859
+    ],
+    "areaWeightedCanopyPct": 23.02,
+    "populationWeightedCanopyPct": 25.34,
+    "population": 488837,
+    "tracts": 124,
+    "blockGroups": 463,
+    "imagery": {
+      "earliest": "2018-06-05",
+      "median": "2019-07-11",
+      "latest": "2023-05-22",
+      "uniqueDates": 6
+    },
+    "raster": {
+      "file": "omaha.tif",
+      "width": 73995,
+      "height": 37771,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 42,
+    "slug": "miami",
+    "cityKey": "Miamicity",
+    "name": "Miami",
+    "state": "FL",
+    "bounds": [
+      -80.318608,
+      25.709042,
+      -80.132179,
+      25.855786
+    ],
+    "center": [
+      -80.2253935,
+      25.782414
+    ],
+    "areaWeightedCanopyPct": 17.31,
+    "populationWeightedCanopyPct": 14.12,
+    "population": 459745,
+    "tracts": 119,
+    "blockGroups": 345,
+    "imagery": {
+      "earliest": "2017-12-14",
+      "median": "2018-12-17",
+      "latest": "2018-12-17",
+      "uniqueDates": 2
+    },
+    "raster": {
+      "file": "miami.tif",
+      "width": 34753,
+      "height": 27355,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 43,
+    "slug": "virginia-beach",
+    "cityKey": "VirginiaBeachcity",
+    "name": "Virginia Beach",
+    "state": "VA",
+    "bounds": [
+      -76.22806,
+      36.550283,
+      -75.797497,
+      37.040886
+    ],
+    "center": [
+      -76.0127785,
+      36.7955845
+    ],
+    "areaWeightedCanopyPct": 11.86,
+    "populationWeightedCanopyPct": 13.37,
+    "population": 456349,
+    "tracts": 111,
+    "blockGroups": 322,
+    "imagery": {
+      "earliest": "2013-03-09",
+      "median": "2018-05-03",
+      "latest": "2023-04-11",
+      "uniqueDates": 6
+    },
+    "raster": {
+      "file": "virginia-beach.tif",
+      "width": 80262,
+      "height": 91455,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 44,
+    "slug": "long-beach",
+    "cityKey": "LongBeachcity",
+    "name": "Long Beach",
+    "state": "CA",
+    "bounds": [
+      -118.248966,
+      33.690593,
+      -118.06317,
+      33.885531
+    ],
+    "center": [
+      -118.156068,
+      33.788062
+    ],
+    "areaWeightedCanopyPct": 10.98,
+    "populationWeightedCanopyPct": 11.35,
+    "population": 455548,
+    "tracts": 105,
+    "blockGroups": 324,
+    "imagery": {
+      "earliest": "2017-12-04",
+      "median": "2021-10-09",
+      "latest": "2021-10-09",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "long-beach.tif",
+      "width": 34635,
+      "height": 36339,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 45,
+    "slug": "oakland",
+    "cityKey": "Oaklandcity",
+    "name": "Oakland",
+    "state": "CA",
+    "bounds": [
+      -122.355881,
+      37.631714,
+      -122.114793,
+      37.885355
+    ],
+    "center": [
+      -122.235337,
+      37.7585345
+    ],
+    "areaWeightedCanopyPct": 21.74,
+    "populationWeightedCanopyPct": 16.49,
+    "population": 439418,
+    "tracts": 116,
+    "blockGroups": 353,
+    "imagery": {
+      "earliest": "2018-03-29",
+      "median": "2019-06-21",
+      "latest": "2022-04-02",
+      "uniqueDates": 7
+    },
+    "raster": {
+      "file": "oakland.tif",
+      "width": 44942,
+      "height": 47282,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 46,
+    "slug": "minneapolis",
+    "cityKey": "Minneapoliscity",
+    "name": "Minneapolis",
+    "state": "MN",
+    "bounds": [
+      -93.329163,
+      44.8897816,
+      -93.194042,
+      45.05125
+    ],
+    "center": [
+      -93.2616025,
+      44.9705158
+    ],
+    "areaWeightedCanopyPct": 28.56,
+    "populationWeightedCanopyPct": 27.28,
+    "population": 427246,
+    "tracts": 121,
+    "blockGroups": 388,
+    "imagery": {
+      "earliest": "2019-06-06",
+      "median": "2022-07-21",
+      "latest": "2022-07-21",
+      "uniqueDates": 2
+    },
+    "raster": {
+      "file": "minneapolis.tif",
+      "width": 25188,
+      "height": 30100,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 47,
+    "slug": "bakersfield",
+    "cityKey": "Bakersfieldcity",
+    "name": "Bakersfield",
+    "state": "CA",
+    "bounds": [
+      -119.265315,
+      35.193979,
+      -118.77266,
+      35.447975
+    ],
+    "center": [
+      -119.0189875,
+      35.320977
+    ],
+    "areaWeightedCanopyPct": 7.05,
+    "populationWeightedCanopyPct": 9.04,
+    "population": 411986,
+    "tracts": 64,
+    "blockGroups": 326,
+    "imagery": {
+      "earliest": "2018-08-31",
+      "median": "2018-08-31",
+      "latest": "2018-08-31",
+      "uniqueDates": 1
+    },
+    "raster": {
+      "file": "bakersfield.tif",
+      "width": 91837,
+      "height": 47348,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 48,
+    "slug": "tulsa",
+    "cityKey": "Tulsacity",
+    "name": "Tulsa",
+    "state": "OK",
+    "bounds": [
+      -96.074583,
+      35.9683426,
+      -95.6815916,
+      36.336534
+    ],
+    "center": [
+      -95.8780873,
+      36.1524383
+    ],
+    "areaWeightedCanopyPct": 22.74,
+    "populationWeightedCanopyPct": 24.17,
+    "population": 413794,
+    "tracts": 111,
+    "blockGroups": 364,
+    "imagery": {
+      "earliest": "2017-11-10",
+      "median": "2018-10-28",
+      "latest": "2024-02-13",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "tulsa.tif",
+      "width": 73259,
+      "height": 68636,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 49,
+    "slug": "tampa",
+    "cityKey": "Tampacity",
+    "name": "Tampa",
+    "state": "FL",
+    "bounds": [
+      -82.64882,
+      27.8126436,
+      -82.2538566,
+      28.171477
+    ],
+    "center": [
+      -82.4513383,
+      27.9920603
+    ],
+    "areaWeightedCanopyPct": 27.2,
+    "populationWeightedCanopyPct": 28.14,
+    "population": 401618,
+    "tracts": 88,
+    "blockGroups": 355,
+    "imagery": {
+      "earliest": "2019-01-10",
+      "median": "2019-01-10",
+      "latest": "2021-05-24",
+      "uniqueDates": 5
+    },
+    "raster": {
+      "file": "tampa.tif",
+      "width": 73627,
+      "height": 66891,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "available": true
+    }
+  },
+  {
+    "rank": 50,
+    "slug": "arlington",
+    "cityKey": "Arlingtoncity",
+    "name": "Arlington",
+    "state": "TX",
+    "bounds": [
+      -97.233858,
+      32.586889,
+      -97.0371876,
+      32.817121
+    ],
+    "center": [
+      -97.1355228,
+      32.702005
+    ],
+    "areaWeightedCanopyPct": 9.93,
+    "populationWeightedCanopyPct": 9.63,
+    "population": 397742,
+    "tracts": 70,
+    "blockGroups": 258,
+    "imagery": {
+      "earliest": "2019-12-04",
+      "median": "2020-11-16",
+      "latest": "2023-01-17",
+      "uniqueDates": 4
+    },
+    "raster": {
+      "file": "arlington.tif",
+      "width": 36662,
+      "height": 42919,
+      "crs": "EPSG:4326",
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "available": true
+    }
+  }
+]

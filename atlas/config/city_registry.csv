@@ -1,0 +1,51 @@
+rank,slug,city_key,name,state,mask_stem,boundary_file
+1,new-york,NewYorkcity,New York,NY,NewYorkcity_mosaic_clip2,New York city.shp
+2,los-angeles,LosAngelescity,Los Angeles,CA,LosAngelescity_mosaic_clip2,Los Angeles city.shp
+3,chicago,Chicagocity,Chicago,IL,Chicagocity_mosaic_clip2,Chicago city.shp
+4,houston,Houstoncity,Houston,TX,Houstoncity_mosaic_clip2,Houston city.shp
+5,phoenix,Phoenixcity,Phoenix,AZ,Phoenixcity_mosaic_clip2,Phoenix city.shp
+6,philadelphia,Philadelphiacity,Philadelphia,PA,Philadelphiacity_mosaic_clip2,Philadelphia city.shp
+7,san-antonio,SanAntoniocity,San Antonio,TX,SanAntoniocity_mosaic_clip2,San Antonio city.shp
+8,san-diego,SanDiegocity,San Diego,CA,SanDiegocity_mosaic_clip2,San Diego city.shp
+9,dallas,Dallascity,Dallas,TX,Dallascity_mosaic_clip2,Dallas city.shp
+10,jacksonville,Jacksonvillecity,Jacksonville,FL,Jacksonvillecity_mosaic_clip2,Jacksonville city.shp
+11,fort-worth,FortWorthcity,Fort Worth,TX,FortWorthcity_mosaic_clip2,Fort Worth city.shp
+12,san-jose,SanJosecity,San Jose,CA,SanJosecity_mosaic_clip2,San Jose city.shp
+13,austin,Austincity,Austin,TX,Austincity_mosaic_clip2,Austin city.shp
+14,charlotte,Charlottecity,Charlotte,NC,Charlottecity_mosaic_clip2,Charlotte city.shp
+15,columbus,Columbuscity,Columbus,OH,Columbuscity_mosaic_clip2,Columbus city.shp
+16,indianapolis,Indianapoliscity(balance),Indianapolis,IN,Indianapoliscity(balance)_mosaic_clip2,Indianapolis city (balance).shp
+17,san-francisco,SanFranciscocity,San Francisco,CA,SanFranciscocity_mosaic_clip2,San Francisco city.shp
+18,seattle,Seattlecity,Seattle,WA,Seattlecity_mosaic_clip2,Seattle city.shp
+19,denver,Denvercity,Denver,CO,Denvercity_mosaic_clip2,Denver city.shp
+20,oklahoma-city,OklahomaCity,Oklahoma City,OK,OklahomaCity_mosaic_clip2,Oklahoma City city.shp
+21,nashville,Nashville-Davidsonmetropolitangovernment(balance),Nashville-Davidson,TN,Nashville-Davidsonmetropolitangovernment(balance)_mosaic_clip2,Nashville-Davidson metropolitan government (balance).shp
+22,washington,Washingtoncity,Washington,DC,Washingtoncity_mosaic_clip2,Washington city.shp
+23,el-paso,ElPasocity,El Paso,TX,ElPasocity_mosaic_clip2,El Paso city.shp
+24,las-vegas,LasVegascity,Las Vegas,NV,LasVegascity_mosaic_clip2,Las Vegas city.shp
+25,boston,Bostoncity,Boston,MA,Bostoncity_mosaic_clip2,Boston city.shp
+26,detroit,Detroitcity,Detroit,MI,Detroitcity_mosaic_clip2,Detroit city.shp
+27,louisville,Louisville_JeffersonCountymetrogovernment(balance),Louisville/Jefferson County,KY,Louisville_JeffersonCountymetrogovernment(balance)_mosaic_clip2,Louisville_Jefferson County metro government (balance).shp
+28,portland,Portlandcity,Portland,OR,Portlandcity_mosaic_clip2,Portland city.shp
+29,memphis,Memphiscity,Memphis,TN,Memphiscity_mosaic_clip2,Memphis city.shp
+30,baltimore,Baltimorecity,Baltimore,MD,Baltimorecity_mosaic_clip2,Baltimore city.shp
+31,milwaukee,Milwaukeecity,Milwaukee,WI,Milwaukeecity_mosaic_clip2,Milwaukee city.shp
+32,albuquerque,Albuquerquecity,Albuquerque,NM,Albuquerquecity_mosaic_clip2,Albuquerque city.shp
+33,tucson,Tucsoncity,Tucson,AZ,Tucsoncity_mosaic_clip2,Tucson city.shp
+34,fresno,Fresnocity,Fresno,CA,Fresnocity_mosaic_clip2,Fresno city.shp
+35,sacramento,Sacramentocity,Sacramento,CA,Sacramentocity_mosaic_clip2,Sacramento city.shp
+36,atlanta,Atlantacity,Atlanta,GA,Atlantacity_mosaic_clip2,Atlanta city.shp
+37,mesa,Mesacity,Mesa,AZ,Mesacity_mosaic_clip2,Mesa city.shp
+38,kansas-city,KansasCitycity,Kansas City,MO,KansasCitycity_mosaic_clip2,Kansas City city.shp
+39,raleigh,Raleighcity,Raleigh,NC,Raleighcity_mosaic_clip2,Raleigh city.shp
+40,colorado-springs,ColoradoSpringscity,Colorado Springs,CO,ColoradoSpringscity_mosaic_clip2,Colorado Springs city.shp
+41,omaha,Omahacity,Omaha,NE,Omahacity_mosaic_clip2,Omaha city.shp
+42,miami,Miamicity,Miami,FL,Miamicity_mosaic_clip2,Miami city.shp
+43,virginia-beach,VirginiaBeachcity,Virginia Beach,VA,VirginiaBeachcity_mosaic_clip2,Virginia Beach city.shp
+44,long-beach,LongBeachcity,Long Beach,CA,LongBeachcity_mosaic_clip2,Long Beach city.shp
+45,oakland,Oaklandcity,Oakland,CA,Oaklandcity_mosaic_clip2,Oakland city.shp
+46,minneapolis,Minneapoliscity,Minneapolis,MN,Minneapoliscity_mosaic_clip2,Minneapolis city.shp
+47,bakersfield,Bakersfieldcity,Bakersfield,CA,Bakersfieldcity_mosaic_clip2,Bakersfield city.shp
+48,tulsa,Tulsacity,Tulsa,OK,Tulsacity_mosaic_clip2,Tulsa city.shp
+49,tampa,Tampacity,Tampa,FL,Tampacity_mosaic_clip2,Tampa city.shp
+50,arlington,Arlingtoncity,Arlington,TX,Arlingtoncity_mosaic_clip2,Arlington city.shp

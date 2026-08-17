@@ -1,0 +1,24 @@
+module,quantity,expected_value,unit_or_note
+Result 1,municipal block-group intersections,38618,units across 50 cities
+Result 1,positive-population analytical units,37721,units across 50 cities
+Result 2,primary effectively contained block groups,34575,units across 50 cities
+Result 2,tract-scale sensitivity frame,11984,maximum available tracts across 50 cities
+Result 2,matched transfer block groups,34434,units across 50 cities
+Result 2,matched transfer tracts,11932,units across 50 cities
+Results 3-5,fixed complete analytical frame,34566,units across 50 cities
+Result 4,joint high-canopy-deficit high-LST high-social-context units,3602,block groups
+Result 4,population in joint high context,4.59,approximately million residents
+Result 5,positive analytical capacity,1862.57,km2
+Result 5,ten-percent equal-area budget,186.26,km2
+Result 5 trade-off,ten-percent heat-social allocation overlap,0.3545374061,equal-city Jaccard point estimate
+Result 5 trade-off,ten-percent shared area translation,0.5234811597,algebraic translation of equal-city overlap
+Result 5 trade-off,ten-percent redirected area translation,0.4765188403,algebraic translation of equal-city overlap
+Result 5 trade-off,ten-percent heat objective forgone under social rule,0.2881230117,fraction of model-defined upper bound
+Result 5 trade-off,ten-percent social objective forgone under heat rule,0.2290591150,fraction of model-defined upper bound
+Result 5 decomposition,capacity-neutral heat-opportunity-loss change at ten percent,0.0336564886,equal-city absolute change in heat-context opportunity loss under the social rule
+Result 5 decomposition,candidate-gate total-matched heat-opportunity-loss change at ten percent,0.0411171023,equal-city absolute change in heat-context opportunity loss under the social rule
+Result 5 decomposition,candidate-gate rate-matched heat-opportunity-loss change at ten percent,0.0558237865,equal-city absolute change in heat-context opportunity loss under the social rule
+Result 5 transferability,ten-percent cross-city transferability RMSE ratio,0.9706317929,nested leave-one-city-out full model versus training-mean null
+Result 5 transferability,ten-percent cross-city transferability out-of-sample R2,0.0578739226,nested leave-one-city-out full model
+Result 5 transferability,ten-percent pooled leave-region-out RMSE ratio,0.9733330146,full model versus training-mean null
+Result 5 transferability,ten-percent permutation P value,0.002,complete-procedure one-sided test

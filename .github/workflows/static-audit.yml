@@ -1,0 +1,31 @@
+name: static-audit
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Compile and audit release structure
+        run: |
+          python -m compileall -q .
+          python run_pipeline.py --check-only
+          python -m unittest discover -s tests -v
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.16.0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: pnpm
+          cache-dependency-path: atlas/pnpm-lock.yaml
+      - name: Build interactive atlas
+        run: |
+          pnpm --dir atlas install --frozen-lockfile --ignore-workspace
+          pnpm --dir atlas --ignore-workspace run build

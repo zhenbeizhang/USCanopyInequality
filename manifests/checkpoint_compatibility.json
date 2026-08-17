@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-08-06T02:41:35.392797+00:00",
+  "checkpoint_file": "model_best.pth",
+  "checkpoint_sha256": "bd9eaa679675b654a687a4769a88ab44c62e4ca67558da29d84240d0149a5d71",
+  "checkpoint_epoch": 495,
+  "strict_load": true,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "parameter_count": 17554457,
+  "public_model": "uscanopy.segmentation.UNet"
+}

@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-08-17T03:29:06.043929+00:00",
+  "release_version": "0.3.0",
+  "python_files": 101,
+  "analysis_and_figure_scripts": 87,
+  "main_figure_scripts": 5,
+  "supplementary_figure_scripts": 16,
+  "forbidden_binary_artifacts": [],
+  "full_analysis_frames_included": false,
+  "full_resolution_rasters_included": false,
+  "lightweight_atlas_layers_included": true,
+  "checkpoint_included": false
+}
