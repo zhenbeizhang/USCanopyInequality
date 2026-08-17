@@ -385,7 +385,6 @@ fully symmetric cross-support claim for Result 3.
         english_report, encoding="utf-8"
     )
 
-
     scripts_dir = BASE / "scripts"
     scripts_dir.mkdir(exist_ok=True)
     public_sources = {

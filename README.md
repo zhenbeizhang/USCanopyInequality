@@ -4,6 +4,39 @@ Reproducible code for the analysis of urban tree-canopy inequality, summer
 land-surface-temperature associations and equal-budget allocation trade-offs
 across 50 US cities.
 
+[![static-audit](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml/badge.svg)](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Interactive atlas](https://img.shields.io/badge/interactive-atlas-176b55.svg)](atlas/README.md)
+
+## Interactive evidence atlas
+
+The companion **US Urban Canopy Evidence Atlas** turns the analytical outputs
+into a city-first map. It opens with the 50 study cities, then allows users to
+select a city and inspect:
+
+- the native 0.6 m visible-crown mask over a public basemap;
+- neighbourhood canopy deficit, social-condition ordering and positive summer
+  surface-heat anomaly;
+- six interpretable neighbourhood contexts derived from the 27 nominal G/H/V
+  combinations; and
+- equal-area analytical allocations under canopy-gap, surface-heat,
+  social-context and balanced ordering rules.
+
+The viewer is an evidence browser, not a parcel-level planting plan. Its
+display-only six-pixel component filter improves map legibility without
+changing the archived masks or any reported statistic.
+
+**[Open the atlas preview and documentation](atlas/README.md)** ·
+**[View the full-size interface preview](atlas/docs/assets/atlas-preview.png)** ·
+**[Read the deployment design](atlas/docs/deployment.md)**
+
+![City-scale canopy and neighbourhood evidence viewer](atlas/docs/assets/atlas-preview.png)
+
+A live public URL will be added after the raster tile service and
+Cloud-Optimized GeoTIFF record have stable public endpoints. The repository
+currently provides the complete web client, API, lightweight neighbourhood
+layers and deployment configuration.
+
 ## Release status
 
 This repository is the **code component** of a two-record reproducibility
@@ -43,21 +76,6 @@ The code snapshot corresponds to the manuscript analysis with:
 Main-figure, Supplementary-figure and independent audit scripts are under
 `scripts/06_main_figures/`, `scripts/07_supplementary_figures/` and
 `scripts/08_qa/`.
-
-## Interactive canopy atlas
-
-`atlas/` contains a city-first evidence viewer for the 0.6 m canopy masks and
-the frozen 27-type neighbourhood analysis. It uses MapLibre with a public
-OpenFreeMap basemap and a small whitelisted FastAPI tile service. Users can keep
-the canopy mask visible while switching among six neighbourhood contexts, the
-G/H/V component classes and four equal-area allocation rules. The large raster
-assets remain outside Git and are served as Cloud Optimized GeoTIFFs. The web
-renderer suppresses 1-5 pixel, 8-connected canopy components for display
-legibility without changing the archived masks or manuscript calculations.
-
-![City-scale canopy viewer](atlas/docs/assets/atlas-preview.png)
-
-See `atlas/README.md` for local setup, raster conversion and deployment design.
 
 ## Installation
 
