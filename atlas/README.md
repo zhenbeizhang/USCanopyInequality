@@ -1,5 +1,7 @@
 # US Urban Canopy Evidence Atlas
 
+**Live deployment:** [http://8.217.164.241/atlas/](http://8.217.164.241/atlas/)
+
 This directory contains the interactive companion map for the 50-city canopy
 atlas. The application is deliberately city-first: users select a city, retain
 the native 0.6 m canopy mask as a base evidence layer, and switch among the

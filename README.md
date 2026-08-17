@@ -6,9 +6,13 @@ across 50 US cities.
 
 [![static-audit](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml/badge.svg)](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Interactive atlas](https://img.shields.io/badge/interactive-atlas-176b55.svg)](atlas/README.md)
+[![Interactive atlas](https://img.shields.io/badge/live_atlas-open_map-176b55.svg)](http://8.217.164.241/atlas/)
 
 ## Interactive evidence atlas
+
+### [Open the live US Urban Canopy Evidence Atlas](http://8.217.164.241/atlas/)
+
+**Public viewer:** [http://8.217.164.241/atlas/](http://8.217.164.241/atlas/)
 
 The companion **US Urban Canopy Evidence Atlas** turns the analytical outputs
 into a city-first map. It opens with the 50 study cities, then allows users to
@@ -26,16 +30,16 @@ The viewer is an evidence browser, not a parcel-level planting plan. Its
 display-only six-pixel component filter improves map legibility without
 changing the archived masks or any reported statistic.
 
-**[Open the atlas preview and documentation](atlas/README.md)** ·
+**[Open the live atlas](http://8.217.164.241/atlas/)** ·
+**[Read the atlas documentation](atlas/README.md)** ·
 **[View the full-size interface preview](atlas/docs/assets/atlas-preview.png)** ·
 **[Read the deployment design](atlas/docs/deployment.md)**
 
 ![City-scale canopy and neighbourhood evidence viewer](atlas/docs/assets/atlas-preview.png)
 
-A live public URL will be added after the raster tile service and
-Cloud-Optimized GeoTIFF record have stable public endpoints. The repository
-currently provides the complete web client, API, lightweight neighbourhood
-layers and deployment configuration.
+The public deployment serves the web client, its whitelisted query and tile
+API, and the city catalogue. Full-resolution Cloud-Optimized GeoTIFFs remain
+outside Git because they are data-release assets rather than source code.
 
 ## Release status
 

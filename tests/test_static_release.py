@@ -4,6 +4,7 @@ import ast
 import csv
 import hashlib
 import importlib.util
+import ipaddress
 import json
 import re
 import subprocess
@@ -13,6 +14,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLIC_ATLAS_URL = "http://8.217.164.241/atlas/"
+PUBLIC_ATLAS_HOST = "8.217.164.241"
+PUBLIC_ATLAS_DOCS = {Path("README.md"), Path("atlas/README.md")}
+DOCUMENTED_PUBLIC_IPV4 = {
+    PUBLIC_ATLAS_HOST: PUBLIC_ATLAS_DOCS,
+    "223.5.5.5": {Path("atlas/deploy/who-has-shade.nginx")},
+    "1.1.1.1": {Path("atlas/deploy/who-has-shade.nginx")},
+}
 EXCLUDED_PARTS = {
     ".git",
     ".venv",
@@ -98,18 +107,30 @@ class StaticReleaseTests(unittest.TestCase):
 
     def test_public_release_has_no_deployment_secrets(self) -> None:
         forbidden = (
-            "8.217.164.241",
             "who-has-shade-deploy.pem",
             "root@",
         )
+        ipv4_pattern = re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b")
         failures = []
         for suffix in ("*.md", "*.ps1", "*.service", "*.nginx", "*.json", "*.toml"):
             for path in project_files(suffix):
                 text = path.read_text(encoding="utf-8", errors="replace")
+                relative = path.relative_to(ROOT)
                 for token in forbidden:
                     if token in text:
-                        failures.append(f"{path.relative_to(ROOT)}: {token}")
+                        failures.append(f"{relative}: {token}")
+                for address in ipv4_pattern.findall(text):
+                    if not ipaddress.ip_address(address).is_global:
+                        continue
+                    if relative in DOCUMENTED_PUBLIC_IPV4.get(address, set()):
+                        continue
+                    failures.append(f"{relative}: undocumented public IPv4 address {address}")
         self.assertEqual([], failures)
+
+    def test_public_atlas_entry_is_documented(self) -> None:
+        for relative in PUBLIC_ATLAS_DOCS:
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertIn(PUBLIC_ATLAS_URL, text, str(relative))
 
     def test_public_release_has_no_manuscript_revision_traces(self) -> None:
         revision_pattern = re.compile(
