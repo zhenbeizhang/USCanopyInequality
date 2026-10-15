@@ -24,7 +24,7 @@ select a city and inspect:
 - six interpretable neighbourhood contexts derived from the 27 nominal G/H/V
   combinations; and
 - equal-area analytical allocations under canopy-deficit, surface-heat,
-  social-context and illustrative equal-weight ordering rules.
+  social-condition and illustrative equal-weight ordering rules.
 
 The viewer is an evidence browser, not a parcel-level planting plan. Its
 display-only six-pixel component filter improves map legibility without
@@ -46,10 +46,12 @@ outside Git because they are data-release assets rather than source code.
 This repository is the **code component** of a two-record reproducibility
 release. It contains the analysis, figure and quality-control code, together
 with lightweight derived neighbourhood layers needed by the interactive atlas.
-The frozen analysis frames, source data, full-resolution canopy masks, model
-checkpoint and figure source data will be deposited as a separate dataset and
-linked here by a persistent identifier. Restricted third-party imagery and
-full-resolution research rasters are not stored in this repository.
+The frozen analysis frames, figure and table source data, model and bootstrap
+outputs, random seeds, checksums and licence-permitted derived spatial data are
+available from [Zenodo](https://doi.org/10.5281/zenodo.21976810). Raw
+high-resolution imagery, full-resolution canopy masks and model-development
+checkpoints are excluded where redistribution rights or complete upstream
+metadata are unavailable.
 
 Release `0.3.0` is synchronized to the submitted analysis freeze. It includes
 the frozen equal-city allocation overlap, algebraic shared/redirected-area
@@ -117,9 +119,9 @@ USCANOPY_EXTERNAL_ROOT   third-party inputs not included in either record
 ```
 
 Copy `configs/environment.example` to a local shell configuration and set the
-paths after the data record is released. If variables are omitted, the code
-uses `work/`, `model_work/`, `manuscript/` and `external/` below the repository
-root.
+paths after downloading and extracting the data record. If variables are
+omitted, the code uses `work/`, `model_work/`, `manuscript/` and `external/`
+below the repository root.
 
 Check the code release without data:
 
@@ -165,7 +167,7 @@ Further limitations are documented in `docs/reproducibility_scope.md`.
 
 ## Citation and licence
 
-Until the article and archived software release receive persistent identifiers,
-cite this repository using `CITATION.cff`. Code is released under the MIT
-License. Data will receive a separate licence compatible with source-data
-rights; this code licence does not apply to third-party imagery or datasets.
+For the code, cite this repository using `CITATION.cff`. The supporting data
+record is available from [Zenodo](https://doi.org/10.5281/zenodo.21976810).
+Code is released under the MIT License; the Zenodo record is released under
+CC BY 4.0. Neither licence applies to excluded third-party imagery or datasets.
