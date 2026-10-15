@@ -17,7 +17,7 @@ with a five-pixel halo and suppresses 8-connected canopy components containing
 only 1-5 pixels. The halo makes the result independent of web-tile boundaries.
 Zooms 15-16 are then average-resampled; zoom 17 and above uses nearest-neighbour
 rendering. Point queries apply the same native-pixel rule. This filter affects
-only atlas display and inspection: the archived COG values and all frozen city
+only atlas display and inspection: the source COG values and all frozen city
 and neighbourhood statistics remain unchanged.
 
 ## City catalogue

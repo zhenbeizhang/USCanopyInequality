@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Zhang"
     given-names: "Zhenbei"
-version: 0.3.0
-date-released: 2026-08-17
+version: 0.3.1
+date-released: 2026-10-16
 repository-code: "https://github.com/zhenbeizhang/USCanopyInequality"
 url: "https://github.com/zhenbeizhang/USCanopyInequality"
 license: MIT

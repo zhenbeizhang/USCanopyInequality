@@ -1,23 +1,35 @@
-# Two-record release plan
+# Public release records
 
-## Record 1: code
+## Code
 
-- Canonical development repository: GitHub `zhenbeizhang/USCanopyInequality`.
-- Archive a tagged release in Zenodo or another repository that issues a DOI.
-- Use the MIT licence.
-- Link the software DOI to the article and the separate dataset DOI using
-  `IsSupplementTo`/`IsPartOf` and `IsSourceOf` relations where supported.
+- Canonical repository: https://github.com/zhenbeizhang/USCanopyInequality
+- Current repository version: `0.3.1`.
+- Licence: MIT for source code and software documentation.
+- The repository includes the analysis, figure and quality-control code plus
+  the lightweight derived layers required by the interactive atlas.
+- The software does not currently claim a separate archival DOI.
 
-## Record 2: data
+## Supporting data
 
-- Deposit frozen analysis frames, source data, permitted masks, model records,
-  dictionaries and checksums separately.
-- Assign a data-appropriate licence only to files for which the authors hold
-  redistribution rights.
-- Keep metadata public for any restricted component and state the restriction,
-  rights holder and access route.
-- Map every main and Supplementary panel to exact source files.
+- Repository: Zenodo.
+- Version: `1.0.0`.
+- DOI: https://doi.org/10.5281/zenodo.21976810
+- Licence: CC BY 4.0 for author-generated files to the extent that the authors
+  hold rights in them.
+- Contents: analysis-unit ledgers, source data for five main figures,
+  seventeen Supplementary figures and eight Supplementary tables, compact
+  model and bootstrap outputs, random seeds, checksums, metadata and 50
+  neighbourhood GeoJSON files.
 
-No DOI or accession is asserted until the repository assigns it. GitHub alone
-is the development location, not the final persistent archive.
+## Explicit exclusions
+
+The public records do not include raw high-resolution imagery,
+full-resolution 0.6 m canopy masks, third-party raster downloads,
+model-development patches or checkpoints, temporary caches or superseded
+analyses. The Zenodo metadata and `metadata/exclusions_and_restrictions.md`
+record these boundaries. The release supports inspection and analytical
+verification of reported results, not a raw-data-to-model reconstruction.
+
+The Zenodo record links to the code repository and interactive atlas, and this
+repository links back to the DOI. The DOI identifies the dataset, not the code.
 

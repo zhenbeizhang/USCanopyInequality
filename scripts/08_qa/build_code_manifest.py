@@ -30,7 +30,8 @@ EXCLUDED_PARTS = {
     "outputs",
 }
 
-RELEASE_VERSION = "0.3.0"
+RELEASE_VERSION = "0.3.1"
+SUPPLEMENTARY_FIGURE_OUTPUTS = 17
 
 
 def is_excluded(path: Path) -> bool:
@@ -118,6 +119,7 @@ def main() -> None:
         "supplementary_figure_scripts": len(
             list((ROOT / "scripts" / "07_supplementary_figures").glob("make_supplementary_figure_*.py"))
         ),
+        "supplementary_figure_outputs": SUPPLEMENTARY_FIGURE_OUTPUTS,
         "forbidden_binary_artifacts": forbidden_files,
         "full_analysis_frames_included": False,
         "full_resolution_rasters_included": False,

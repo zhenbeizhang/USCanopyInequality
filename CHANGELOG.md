@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.1 - 2026-10-16
+
+- Reconciled public documentation with the published Zenodo supporting-data
+  record and its DOI.
+- Distinguished the minimum verification archive from the non-public full
+  raw-input reconstruction tree and checkpoint.
+- Corrected the documented Supplementary-figure total from sixteen scripts to
+  seventeen outputs.
+- Added an explicit CC BY 4.0 notice for author-generated derived data tracked
+  in the repository.
+- Preserved all frozen analysis frames, estimands and reported numerical
+  outputs from release 0.3.0.
+
 ## 0.3.0 - 2026-08-17
 
 - Synchronized the code release with the submitted analysis freeze.

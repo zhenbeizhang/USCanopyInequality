@@ -16,7 +16,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_ATLAS_URL = "http://8.217.164.241/atlas/"
 PUBLIC_ATLAS_HOST = "8.217.164.241"
-PUBLIC_ATLAS_DOCS = {Path("README.md"), Path("atlas/README.md")}
+SUPPORTING_DATA_DOI = "https://doi.org/10.5281/zenodo.21976810"
+CURRENT_RELEASE_VERSION = "0.3.1"
+PUBLIC_ATLAS_DOCS = {
+    Path("README.md"),
+    Path("atlas/README.md"),
+    Path("pyproject.toml"),
+}
 DOCUMENTED_PUBLIC_IPV4 = {
     PUBLIC_ATLAS_HOST: PUBLIC_ATLAS_DOCS,
     "223.5.5.5": {Path("atlas/deploy/who-has-shade.nginx")},
@@ -161,6 +167,53 @@ class StaticReleaseTests(unittest.TestCase):
             text = (ROOT / relative).read_text(encoding="utf-8")
             self.assertIn(PUBLIC_ATLAS_URL, text, str(relative))
 
+    def test_published_data_release_documents_are_current(self) -> None:
+        release_docs = (
+            Path("README.md"),
+            Path("data/README.md"),
+            Path("docs/code_availability_statement.md"),
+            Path("docs/data_contract.md"),
+            Path("docs/release_plan.md"),
+            Path("docs/reproducibility_scope.md"),
+        )
+        stale_phrases = (
+            "# Data placeholder",
+            "will be released as a separate",
+            "Before archival DOI assignment",
+            "Replace the bracketed fields",
+            "No DOI or accession is asserted",
+            "Deferred to the separate data release",
+        )
+        for relative in release_docs:
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertIn(SUPPORTING_DATA_DOI, text, str(relative))
+            for phrase in stale_phrases:
+                self.assertNotIn(phrase, text, f"{relative}: {phrase}")
+
+        for relative in (
+            Path("docs/workflow.md"),
+            Path("docs/reproducibility_scope.md"),
+        ):
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertIn("seventeen Supplementary figures", text, str(relative))
+
+    def test_release_version_is_consistent(self) -> None:
+        pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+        citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        atlas_package = json.loads(
+            (ROOT / "atlas" / "package.json").read_text(encoding="utf-8")
+        )
+        audit = json.loads(
+            (ROOT / "manifests" / "code_release_audit.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn(f'version = "{CURRENT_RELEASE_VERSION}"', pyproject)
+        self.assertIn(f"version: {CURRENT_RELEASE_VERSION}", citation)
+        self.assertEqual(CURRENT_RELEASE_VERSION, atlas_package["version"])
+        self.assertEqual(CURRENT_RELEASE_VERSION, audit["release_version"])
+        self.assertEqual(17, audit["supplementary_figure_outputs"])
+
     def test_public_terminology_contract(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         evidence = (ROOT / "atlas" / "src" / "evidence.ts").read_text(encoding="utf-8")
@@ -293,6 +346,7 @@ class StaticReleaseTests(unittest.TestCase):
             "docs/terminology.md",
             "docs/reproducibility_scope.md",
             "docs/release_plan.md",
+            "DATA_LICENSE.md",
             "CITATION.cff",
         ):
             self.assertTrue((ROOT / relative).is_file(), relative)

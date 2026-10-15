@@ -3,14 +3,19 @@
 ## Release boundary
 
 The public map and the archived dataset serve different purposes. The map is an
-inspection interface; the archive is the citable scientific record. A complete
-release should provide both:
+inspection interface; the archive is the citable record supporting the
+reported analyses. The current release provides both:
 
-1. A versioned DOI record containing the 50 COGs, catalogue, checksums, imagery
-   dates, model version and data dictionary.
-2. A public web application that reads the same frozen release.
+1. Zenodo record https://doi.org/10.5281/zenodo.21976810, containing frozen
+   analysis-unit ledgers, panel-level source data, compact model and bootstrap
+   outputs, metadata, checksums and neighbourhood-level derived spatial data.
+2. A public web application that displays the same frozen neighbourhood layer
+   and provides on-demand visual access to the 0.6 m canopy layer.
 
-The interface must never be the only route to the data.
+Full-resolution masks and COGs are deployment assets and are not part of the
+minimum Zenodo dataset. The interface is therefore not an archival route to
+those rasters. All numerical claims remain inspectable through the aggregated
+and panel-level files in the DOI record.
 
 ## Recommended production layout
 
@@ -49,8 +54,9 @@ note.
 1. Run `scripts/audit_atlas.py --require-all`.
 2. Run `scripts/audit_neighbourhood_layers.py` and confirm the frozen 50-city,
    34,566-feature release has no issues.
-3. Confirm all 50 COG and neighbourhood-file SHA-256 values against their
-   archived manifests.
+3. Confirm the 50 neighbourhood-file SHA-256 values against the public release
+   manifest and verify the server-side COGs against the internal deployment
+   manifest.
 4. Test national selection and at least one dense, sparse, large and coastal
    city at desktop and mobile widths.
 5. Check zooms 8, 12, 17 and 20 for nonblank canopy tiles and correct binary
@@ -60,4 +66,5 @@ note.
 7. Verify G/H/V labels, the six-context counts and selected-neighbourhood
    properties against the frozen source data.
 8. Verify that the About dialog states the scientific boundaries.
-9. Record the deployed application commit and dataset DOI in the manuscript.
+9. Record the deployed application commit, public atlas URL and supporting-data
+   DOI in the manuscript.

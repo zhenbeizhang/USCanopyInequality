@@ -34,8 +34,8 @@ unchanged.
 Field definitions and map-value semantics are documented in
 `docs/data_dictionary.md`.
 
-Raw masks and generated COGs are data-release assets and must not be committed
-to Git.
+Raw masks and generated COGs are deployment assets and must not be committed to
+Git. They are also outside the scope of the minimum Zenodo supporting dataset.
 
 ## Build the raster assets
 
@@ -141,7 +141,13 @@ duplicates.
 
 ## Public release
 
-Do not upload the COG directory to GitHub. Publish the frozen COGs and catalogue
-as a versioned data record, place the COGs in an HTTP range-enabled object
-store, and set `ATLAS_COG_BASE_URL` for the tile service. Deployment details and
-the recommended DOI-plus-viewer release pattern are in `docs/deployment.md`.
+Do not upload the COG directory to GitHub. The public deployment reads the COGs
+from the configured HTTP range-enabled server, but full-resolution masks and
+COGs are not distributed through GitHub or the minimum supporting dataset. The
+licence-permitted neighbourhood GeoJSON layers and reference boundaries are
+archived at https://doi.org/10.5281/zenodo.21976810 and remain tracked here so
+the web client can be built reproducibly. Their licence scope is documented in
+`../DATA_LICENSE.md`.
+
+Set `ATLAS_COG_BASE_URL` for a production tile service. Deployment details and
+the DOI-plus-viewer architecture are in `docs/deployment.md`.

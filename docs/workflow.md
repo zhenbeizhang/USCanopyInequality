@@ -2,8 +2,10 @@
 
 This repository separates model development, analytical reconstruction and
 manuscript rendering. The code can be inspected and audited without research
-data. Numerical reproduction requires the separately archived data record and,
-for canopy inference, the separately archived model checkpoint.
+data. The public Zenodo record supports verification from frozen analysis-unit
+ledgers, source data and compact analytical outputs onward. It is not a
+drop-in copy of the full internal reconstruction tree, and the raw imagery,
+full-resolution masks and model-development checkpoint are not public.
 
 ## 1. Prepare the environment
 
@@ -15,9 +17,11 @@ python run_pipeline.py --check-only
 python -m unittest discover -s tests -v
 ~~~
 
-Set USCANOPY_ANALYSIS_ROOT to the extracted analysis-data record. Set
-USCANOPY_MODEL_ROOT only when rerunning segmentation inference or its model
-audits. The exact logical inputs are listed in docs/data_contract.md.
+Set `USCANOPY_ANALYSIS_ROOT` only when the full internal reconstruction tree is
+available. Set `USCANOPY_MODEL_ROOT` only when an authorized local checkpoint
+is available for rerunning segmentation inference or model audits. The public
+Zenodo archive should not be used directly as either root. The exact public and
+internal contracts are separated in `docs/data_contract.md`.
 
 ## 2. Canopy mapping and aggregation
 
@@ -30,8 +34,10 @@ The inference entry point converts three-band imagery to binary 0.6 m canopy
 masks using overlap-averaged windows. Stage 1 then aggregates visible woody
 crown context to the frozen census supports and runs annotation, geographic
 split, seam, overlap and imagery-timing audits. Reference training code is
-provided in scripts/01_canopy_mapping/model/train_model.py; rerunning training
-is not required to reproduce the manuscript analyses from archived masks.
+provided in `scripts/01_canopy_mapping/model/train_model.py`. The excluded raw
+imagery, full-resolution masks and checkpoint mean that Stage 1 cannot be
+rerun from the public package alone; its reported summaries and figure source
+data are available in the Zenodo record.
 
 ## 3. Social-canopy analysis
 
@@ -102,10 +108,12 @@ to propose a city taxonomy or causal explanation.
 python run_pipeline.py --stages figures qa
 ~~~
 
-This regenerates five main figures, sixteen Supplementary figures and the
+This regenerates five main figures, seventeen Supplementary figures and the
 source-table ledgers, then runs figure-specific and reporting-consistency
-checks. Figure scripts consume frozen analytical outputs rather than refitting
-models. The separate data record will map every panel to its source files.
+checks when the complete internal analytical-output tree is available. The
+Fig. 2 script also emits Supplementary Fig. 17; the dedicated Supplementary
+directory contains the other sixteen scripts. The Zenodo record already maps
+every submitted panel to its archived source files.
 
 ## Complete run
 
@@ -113,10 +121,11 @@ models. The separate data record will map every panel to its source files.
 python run_pipeline.py --stages 1 2 3 4 5 transfer figures qa
 ~~~
 
-Use --dry-run to print the ordered commands without executing them, or
---continue-on-error only for diagnostic batch runs. A complete run is
+Use `--dry-run` to print the ordered commands without executing them, or
+`--continue-on-error` only for diagnostic batch runs. A complete run is
 computationally substantial and depends on third-party geospatial inputs whose
-licences are documented in the data record.
+licences are documented in the data record; it is not supported by the minimum
+public archive alone.
 
 ## Determinism and expected variation
 
