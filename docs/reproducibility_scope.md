@@ -20,7 +20,7 @@
 
 ## Published minimum supporting dataset
 
-Zenodo record https://doi.org/10.5281/zenodo.21976810 contains:
+Zenodo record https://doi.org/10.5281/zenodo.21976809 contains:
 
 - frozen block-group and tract analysis-unit ledgers and the fixed
   neighbourhood-context frame;

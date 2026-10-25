@@ -18,7 +18,7 @@ Please cite the supporting dataset:
 
 Shao, Z. et al. (2026). *Data supporting urban canopy inequality and divergent
 adaptation goals across 50 US cities*, version 1.0.0. Zenodo.
-https://doi.org/10.5281/zenodo.21976810.
+https://doi.org/10.5281/zenodo.21976809.
 
 This notice does not grant rights in excluded raw imagery, third-party source
 datasets or other materials for which the authors do not hold redistribution

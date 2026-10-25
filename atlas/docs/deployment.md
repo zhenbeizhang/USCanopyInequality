@@ -6,7 +6,7 @@ The public map and the archived dataset serve different purposes. The map is an
 inspection interface; the archive is the citable record supporting the
 reported analyses. The current release provides both:
 
-1. Zenodo record https://doi.org/10.5281/zenodo.21976810, containing frozen
+1. Zenodo record https://doi.org/10.5281/zenodo.21976809, containing frozen
    analysis-unit ledgers, panel-level source data, compact model and bootstrap
    outputs, metadata, checksums and neighbourhood-level derived spatial data.
 2. A public web application that displays the same frozen neighbourhood layer

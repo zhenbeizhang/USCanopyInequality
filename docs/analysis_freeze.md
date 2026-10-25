@@ -19,4 +19,4 @@ to dedicated `step01_city_tradeoff_outcomes`,
 The target ledger is a compact consistency aid, not a substitute for archived
 source tables. Values with deliberately limited precision, such as population
 reported in millions, must not be treated as bitwise test targets. Panel-level
-source data are archived at https://doi.org/10.5281/zenodo.21976810.
+source data are archived at https://doi.org/10.5281/zenodo.21976809.

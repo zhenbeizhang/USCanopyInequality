@@ -13,7 +13,7 @@
 
 - Repository: Zenodo.
 - Version: `1.0.0`.
-- DOI: https://doi.org/10.5281/zenodo.21976810
+- DOI: https://doi.org/10.5281/zenodo.21976809
 - Licence: CC BY 4.0 for author-generated files to the extent that the authors
   hold rights in them.
 - Contents: analysis-unit ledgers, source data for five main figures,

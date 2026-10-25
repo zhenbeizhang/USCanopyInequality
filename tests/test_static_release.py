@@ -14,9 +14,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_ATLAS_URL = "http://8.217.164.241/atlas/"
-PUBLIC_ATLAS_HOST = "8.217.164.241"
-SUPPORTING_DATA_DOI = "https://doi.org/10.5281/zenodo.21976810"
+PUBLIC_ATLAS_URL = "https://atlas.8-217-164-241.sslip.io/atlas/"
+SUPPORTING_DATA_DOI = "https://doi.org/10.5281/zenodo.21976809"
 CURRENT_RELEASE_VERSION = "0.3.1"
 PUBLIC_ATLAS_DOCS = {
     Path("README.md"),
@@ -24,7 +23,6 @@ PUBLIC_ATLAS_DOCS = {
     Path("pyproject.toml"),
 }
 DOCUMENTED_PUBLIC_IPV4 = {
-    PUBLIC_ATLAS_HOST: PUBLIC_ATLAS_DOCS,
     "223.5.5.5": {Path("atlas/deploy/who-has-shade.nginx")},
     "1.1.1.1": {Path("atlas/deploy/who-has-shade.nginx")},
 }

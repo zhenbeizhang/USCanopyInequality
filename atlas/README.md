@@ -1,6 +1,6 @@
 # US Urban Canopy Evidence Atlas
 
-**Live deployment:** [http://8.217.164.241/atlas/](http://8.217.164.241/atlas/)
+**Live deployment:** [https://atlas.8-217-164-241.sslip.io/atlas/](https://atlas.8-217-164-241.sslip.io/atlas/)
 
 This directory contains the interactive companion map for the 50-city canopy
 atlas. The application is deliberately city-first: users select a city, retain
@@ -145,7 +145,7 @@ Do not upload the COG directory to GitHub. The public deployment reads the COGs
 from the configured HTTP range-enabled server, but full-resolution masks and
 COGs are not distributed through GitHub or the minimum supporting dataset. The
 licence-permitted neighbourhood GeoJSON layers and reference boundaries are
-archived at https://doi.org/10.5281/zenodo.21976810 and remain tracked here so
+archived at https://doi.org/10.5281/zenodo.21976809 and remain tracked here so
 the web client can be built reproducibly. Their licence scope is documented in
 `../DATA_LICENSE.md`.
 

@@ -3,7 +3,7 @@
 ## Public minimum supporting dataset
 
 The published supporting dataset is available at
-https://doi.org/10.5281/zenodo.21976810. It is organized for transparent
+https://doi.org/10.5281/zenodo.21976809. It is organized for transparent
 inspection of the submitted evidence rather than as a drop-in copy of the
 project's internal working tree. Its top-level groups are:
 

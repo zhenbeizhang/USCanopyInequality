@@ -6,14 +6,14 @@ across 50 US cities.
 
 [![static-audit](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml/badge.svg)](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21976810.svg)](https://doi.org/10.5281/zenodo.21976810)
-[![Interactive atlas](https://img.shields.io/badge/live_atlas-open_map-176b55.svg)](http://8.217.164.241/atlas/)
+[![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21976809.svg)](https://doi.org/10.5281/zenodo.21976809)
+[![Interactive atlas](https://img.shields.io/badge/live_atlas-open_map-176b55.svg)](https://atlas.8-217-164-241.sslip.io/atlas/)
 
 ## Interactive evidence atlas
 
-### [Open the live US Urban Canopy Evidence Atlas](http://8.217.164.241/atlas/)
+### [Open the live US Urban Canopy Evidence Atlas](https://atlas.8-217-164-241.sslip.io/atlas/)
 
-**Public viewer:** [http://8.217.164.241/atlas/](http://8.217.164.241/atlas/)
+**Public viewer:** [https://atlas.8-217-164-241.sslip.io/atlas/](https://atlas.8-217-164-241.sslip.io/atlas/)
 
 The companion **US Urban Canopy Evidence Atlas** turns the analytical outputs
 into a city-first map. It opens with the 50 study cities, then allows users to
@@ -31,7 +31,7 @@ The viewer is an evidence browser, not a parcel-level planting plan. Its
 display-only six-pixel component filter improves map legibility without
 changing the archived masks or any reported statistic.
 
-- **[Open the live atlas](http://8.217.164.241/atlas/)**
+- **[Open the live atlas](https://atlas.8-217-164-241.sslip.io/atlas/)**
 - **[Read the atlas documentation](atlas/README.md)**
 - **[View the full-size interface preview](atlas/docs/assets/atlas-preview.png)**
 - **[Read the deployment design](atlas/docs/deployment.md)**
@@ -49,7 +49,7 @@ This repository is the **code component** of the public reproducibility
 package. It contains the analysis, figure and quality-control code, together
 with lightweight derived neighbourhood layers needed by the interactive atlas.
 The minimum supporting dataset is available from
-[Zenodo](https://doi.org/10.5281/zenodo.21976810). It contains frozen
+[Zenodo](https://doi.org/10.5281/zenodo.21976809). It contains frozen
 analysis-unit ledgers, source data for all five main figures, seventeen
 Supplementary figures and eight Supplementary tables, compact model and
 bootstrap outputs, random seeds, checksums and licence-permitted derived
@@ -182,7 +182,7 @@ Further limitations are documented in `docs/reproducibility_scope.md`.
 ## Citation and licence
 
 For the code, cite this repository using `CITATION.cff`. The supporting data
-record is available from [Zenodo](https://doi.org/10.5281/zenodo.21976810).
+record is available from [Zenodo](https://doi.org/10.5281/zenodo.21976809).
 Code is released under the MIT License. Author-generated derived data tracked
 in this repository and the Zenodo record are released under CC BY 4.0 to the
 extent that the authors hold rights in them; see [DATA_LICENSE.md](DATA_LICENSE.md).

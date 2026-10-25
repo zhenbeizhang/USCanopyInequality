@@ -2,7 +2,7 @@
 
 The minimum supporting dataset for this repository is published on Zenodo:
 
-**https://doi.org/10.5281/zenodo.21976810**
+**https://doi.org/10.5281/zenodo.21976809**
 
 Version 1.0.0 contains frozen block-group and tract analysis-unit ledgers,
 source data for five main figures, seventeen Supplementary figures and eight

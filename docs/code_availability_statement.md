@@ -5,7 +5,7 @@ surface-temperature modelling, neighbourhood classification, equal-budget
 allocation comparisons, figure generation and quality-control audits is
 available at https://github.com/zhenbeizhang/USCanopyInequality. The minimum
 supporting dataset is available from Zenodo at
-https://doi.org/10.5281/zenodo.21976810. It contains frozen analysis-unit
+https://doi.org/10.5281/zenodo.21976809. It contains frozen analysis-unit
 ledgers, source data for all main and Supplementary figures and tables,
 compact model and bootstrap outputs, random seeds, checksums and
 licence-permitted neighbourhood-level derived spatial data. Raw
