@@ -1,9 +1,8 @@
 # Divergence decomposition implementation safeguards
 
-This note records two safeguards enforced by the released Step 2 implementation.
-It supplements the frozen analytical definitions in
-`DIVERGENCE_DECOMPOSITION_PROTOCOL.md`; it is not a claim of public
-preregistration.
+This note records two safeguards enforced by the released
+structural-decomposition implementation and supplements the prespecified
+analytical definitions in `DIVERGENCE_DECOMPOSITION_PROTOCOL.md`.
 
 ## Outcome-specific spatial uniqueness
 
@@ -21,5 +20,5 @@ meets its own direction, magnitude and interval criteria.
 rate-matched candidate-gate specifications both pass and agree in direction.
 Neither individual specification is sufficient for a headline statement.
 
-The released audit verifies these safeguards across all 50 city analyses,
+The released validation verifies these safeguards across all 50 city analyses,
 1,000 city spatial-block replicates and 5,000 two-level draws.

@@ -17,5 +17,5 @@ terms consistently.
 rule` and `people of colour` are not used as public labels because they either
 overstate the construct, obscure its definition or do not match the ACS
 variable definition. The raw field names `people_of_color_pct`,
-`social_constraint` and `canopy_gap` are retained only as internal
-compatibility keys and must never be displayed.
+`social_constraint` and `canopy_gap` are retained only as legacy compatibility
+keys and must never be displayed.

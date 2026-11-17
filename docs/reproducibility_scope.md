@@ -1,14 +1,14 @@
 # Reproducibility scope
 
-## Included in the code release
+## Code coverage
 
 - checkpoint-compatible U-Net architecture;
 - reference training and stride/overlap inference entry points;
-- segmentation validation, split, seam and overlap audits;
+- segmentation validation, split, seam and overlap assessments;
 - census-boundary and population-allocation reconstruction;
-- social-canopy fixed-effect, complete-case and cross-scale audits;
+- social-canopy fixed-effect, complete-case and cross-scale assessments;
 - support-aligned canopy-LST models, spatial cross-validation, block bootstrap
-  and nonlinear-form audit;
+  and nonlinear-form assessment;
 - 27-type neighbourhood classification and leave-one-unit-out co-location
   benchmarks;
 - equal-budget multiobjective allocation, demographic distribution and
@@ -18,11 +18,11 @@
   Supplementary Fig. 17, while the dedicated Supplementary-figure directory
   contains the other sixteen scripts.
 
-## Published minimum supporting dataset
+## Published supporting dataset
 
 Zenodo record https://doi.org/10.5281/zenodo.21976809 contains:
 
-- frozen block-group and tract analysis-unit ledgers and the fixed
+- versioned block-group and tract analysis-unit ledgers and the fixed
   neighbourhood-context frame;
 - source data for five main figures, seventeen Supplementary figures and eight
   Supplementary tables;
@@ -32,29 +32,29 @@ Zenodo record https://doi.org/10.5281/zenodo.21976809 contains:
 - random seeds, provenance, source-data maps, restrictions, data dictionaries
   and file-level checksums.
 
-## Excluded or restricted
+## Access and licensing
 
-Raw high-resolution imagery, full-resolution 0.6 m canopy masks, third-party
-raster downloads, model-development patches and checkpoints, temporary caches
-and superseded analyses are not part of this code repository or the Zenodo
-record. Redistribution rights and complete upstream acquisition metadata are
-not held consistently for the raw imagery. No licence for excluded files is
-implied here.
+Access to raw high-resolution imagery, full-resolution 0.6 m canopy masks,
+third-party raster downloads, model-development patches and checkpoints
+follows the licences and metadata held by their source providers. The Zenodo
+record therefore focuses on author-shareable analysis ledgers, source data,
+compact outputs and derived spatial layers.
 
-The 95-patch diagnostic set is internal and partly overlaps model-development
-footprints. It is not an independent 50-city validation set. Product
-comparisons quantify disagreement and do not establish that the 0.6 m atlas is
-more accurate than every 10-30 m product.
+The 95-patch diagnostic set is author-generated and includes some geographic
+overlap with model-development footprints; it characterizes performance within
+that support. Public-product comparisons quantify agreement, neighbourhood
+ranking differences and social-gradient sensitivity across products.
 
-## Interpretation limits
+## Interpretation scope
 
-The code preserves the estimands used in the manuscript. It does not convert
-visible crown to cast shade, Landsat LST to personal exposure,
-cross-sectional associations to causal cooling, or analytical canopy-deficit
-capacity to parcel-level plantability. Allocation outputs are model-implied
-diagnostic quantities under equal-area budgets.
+The code preserves the estimands used in the manuscript: visible crown,
+clear-sky Landsat surface temperature, cross-sectional spatial associations and
+analytical canopy-deficit capacity. Cast shade, personal exposure, causal
+cooling and parcel-level plantability require additional measurements and
+designs. Allocation outputs quantify model-implied trade-offs under equal-area
+budgets.
 
 The public package supports code inspection, no-data release checks and
-verification from archived ledgers, source data and compact analytical outputs.
-It does not claim a complete raw-imagery-to-trained-model reconstruction.
+verification from archived ledgers, source data and compact analytical
+outputs.
 

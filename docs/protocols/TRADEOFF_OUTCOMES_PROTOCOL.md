@@ -1,10 +1,9 @@
-# Step 1 frozen city trade-off outcomes
+# Primary city trade-off outcomes protocol
 
 ## Status
 
-This protocol freezes the three city-level outcomes before any explanatory or
-predictive modelling. The frozen NS directory is read-only input and is not
-overwritten by this module.
+This protocol specifies the three city-level outcomes before any explanatory
+or predictive modelling.
 
 ## Spatial frame and allocation experiment
 
@@ -19,7 +18,7 @@ overwritten by this module.
 Analytical capacity is not parcel-level plantable land. The objectives do not
 estimate realised cooling, air-temperature exposure, health benefit or welfare.
 
-## Frozen outcomes
+## Prespecified outcomes
 
 For city c, let x_H and x_S be the surface-heat and social-context upper-bound
 allocations under the common budget B.

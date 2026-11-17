@@ -4,7 +4,7 @@ Reproducible code for the analysis of urban tree-canopy inequality, summer
 land-surface-temperature associations and equal-budget allocation trade-offs
 across 50 US cities.
 
-[![static-audit](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml/badge.svg)](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml)
+[![validation](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml/badge.svg)](https://github.com/zhenbeizhang/USCanopyInequality/actions/workflows/static-audit.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21976809.svg)](https://doi.org/10.5281/zenodo.21976809)
 [![Interactive atlas](https://img.shields.io/badge/live_atlas-open_map-176b55.svg)](https://atlas.8-217-164-241.sslip.io/atlas/)
@@ -27,9 +27,10 @@ select a city and inspect:
 - equal-area analytical allocations under canopy-deficit, surface-heat,
   social-condition and illustrative equal-weight ordering rules.
 
-The viewer is an evidence browser, not a parcel-level planting plan. Its
-display-only six-pixel component filter improves map legibility without
-changing the archived masks or any reported statistic.
+The viewer presents city and neighbourhood evidence. Parcel-level planting
+decisions additionally require ownership, utility, cost and establishment
+information. Its display-only six-pixel component filter improves map
+legibility while leaving the analytical masks and reported statistics unchanged.
 
 - **[Open the live atlas](https://atlas.8-217-164-241.sslip.io/atlas/)**
 - **[Read the atlas documentation](atlas/README.md)**
@@ -39,9 +40,9 @@ changing the archived masks or any reported statistic.
 ![City-scale canopy and neighbourhood evidence viewer](atlas/docs/assets/atlas-preview.png)
 
 The public deployment serves the web client, its whitelisted query and tile
-API, and the city catalogue. Full-resolution Cloud-Optimized GeoTIFFs are
-deployment assets rather than source code and are not included in Git or the
-minimum Zenodo dataset.
+API, and the city catalogue. Full-resolution Cloud-Optimized GeoTIFFs remain
+deployment assets; this repository and Zenodo provide the code and minimum
+derived dataset needed to inspect the reported analysis.
 
 ## Release status
 
@@ -49,27 +50,27 @@ This repository is the **code component** of the public reproducibility
 package. It contains the analysis, figure and quality-control code, together
 with lightweight derived neighbourhood layers needed by the interactive atlas.
 The minimum supporting dataset is available from
-[Zenodo](https://doi.org/10.5281/zenodo.21976809). It contains frozen
+[Zenodo](https://doi.org/10.5281/zenodo.21976809). It contains versioned
 analysis-unit ledgers, source data for all five main figures, seventeen
 Supplementary figures and eight Supplementary tables, compact model and
 bootstrap outputs, random seeds, checksums and licence-permitted derived
 spatial data.
 
-The Zenodo record is not a raw-input or end-to-end reconstruction archive. Raw
-high-resolution imagery, full-resolution canopy masks and third-party raster
-downloads are excluded where redistribution rights or complete upstream
-metadata are unavailable. Model-development patches and checkpoints are also
-outside the scope of this minimum supporting dataset.
+The Zenodo record provides the license-permitted data needed to inspect the
+reported findings. Raw high-resolution imagery, full-resolution canopy masks,
+third-party raster downloads, model-development patches and checkpoints remain
+with their source providers or controlled project records because their
+redistribution terms differ.
 
-Release `0.3.1` preserves the submitted analysis freeze and updates the public
-archive description, licensing and release checks without changing analytical
-frames, estimands or numerical outputs. It includes the frozen equal-city
+Release `0.3.1` records the manuscript analysis version and updates the public
+archive description, licensing and validation checks while preserving the
+analytical frames, estimands and numerical outputs. It includes the equal-city
 allocation overlap, algebraic shared/redirected-area translation, directional
 opportunity losses, controlled structural decomposition and the cross-city
-transferability audit used to delimit the Discussion claim. The neighbourhood
-web layer retains its independent `GHV27-2026-08-09` data-freeze identifier for
-the 34,566 neighbourhood classifications used by the typology and allocation
-modules.
+transferability analysis supporting the city-heterogeneity interpretation. The
+neighbourhood web layer retains its independent `GHV27-2026-08-09` version
+identifier for the 34,566 neighbourhood classifications used by the typology
+and allocation modules.
 
 The code snapshot corresponds to the manuscript analysis with:
 
@@ -89,13 +90,13 @@ The code snapshot corresponds to the manuscript analysis with:
 | 4. Neighbourhood typology | Where do canopy deficit, positive surface heat and social conditions co-occur? | `scripts/04_neighbourhood_typology/` |
 | 5. Allocation | How do equal-area objectives trade off, what shared constraints alter their divergence, and does that divergence transfer among cities? | `scripts/05_allocation/` |
 
-Main-figure, Supplementary-figure and independent audit scripts are under
+Main-figure, Supplementary-figure and independent validation scripts are under
 `scripts/06_main_figures/`, `scripts/07_supplementary_figures/` and
 `scripts/08_qa/`.
 
 ## Installation
 
-The frozen analysis used Python 3.12 on Windows 11. A cross-platform Conda
+The versioned analysis used Python 3.12 on Windows 11. A cross-platform Conda
 environment is provided:
 
 ```bash
@@ -124,12 +125,12 @@ optional environment variables:
 ```text
 USCANOPY_ANALYSIS_ROOT   extracted analysis-data record
 USCANOPY_MODEL_ROOT      checkpoint and model-development record
-USCANOPY_MANUSCRIPT_ROOT optional manuscript files used by reporting audits
+USCANOPY_MANUSCRIPT_ROOT optional manuscript files used by report generation
 USCANOPY_EXTERNAL_ROOT   third-party inputs not included in either record
 ```
 
-These variables describe the complete internal reconstruction tree. The public
-Zenodo record is organized for inspection of frozen ledgers, source data and
+These variables describe the complete reconstruction environment. The public
+Zenodo record is organized for inspection of versioned ledgers, source data and
 compact outputs and should not be used directly as
 `USCANOPY_ANALYSIS_ROOT` or `USCANOPY_MODEL_ROOT`. Authorized users with the
 full inputs may copy `configs/environment.example` to a local shell
@@ -156,28 +157,29 @@ See `docs/data_contract.md` before running an analysis stage,
 
 ## Release checks
 
-The repository-level audit verifies syntax, expected entry points, absence of
-workstation-specific absolute path literals and exclusion of private binary
-artifacts. The public U-Net definition was also checked against the frozen
+The repository-level validation verifies syntax, expected entry points,
+absence of workstation-specific absolute path literals and exclusion of
+private binary artifacts. The public U-Net definition was also checked against the versioned
 checkpoint: strict loading succeeded at epoch 495 with no missing or unexpected
 keys (17,554,457 parameters; checkpoint SHA-256 recorded in
 `manifests/checkpoint_compatibility.json`). The checkpoint itself is not
 included in this code-only release.
 
-## Scientific boundaries
+## Scientific scope
 
-- Canopy denotes mapped visible woody-crown context, not cast shade or
-  individual access.
-- Landsat LST denotes clear-sky surface temperature, not air temperature,
-  personal exposure or health risk.
-- The canopy-LST models are cross-sectional associations, not causal estimates
-  of cooling from added canopy.
-- Analytical canopy-deficit capacity is not verified plantable land.
-- Objective-specific allocation results are diagnostic mathematical quantities,
-  not planting plans or realized benefits.
-- Raw commercial imagery is excluded until redistribution rights are resolved.
+- Canopy denotes mapped visible woody-crown context; cast shade and individual
+  access are separate outcomes.
+- Landsat LST denotes clear-sky surface temperature; air temperature, personal
+  exposure and health risk require different measurements.
+- The canopy-LST models estimate cross-sectional spatial associations.
+- Analytical canopy-deficit capacity measures spatial opportunity; planting
+  feasibility additionally requires parcel-level information.
+- Objective-specific allocation results quantify mathematical trade-offs among
+  stated goals.
+- Access to raw commercial imagery follows the provider's redistribution terms.
 
-Further limitations are documented in `docs/reproducibility_scope.md`.
+Further scope and provenance details are documented in
+`docs/reproducibility_scope.md`.
 
 ## Citation and licence
 

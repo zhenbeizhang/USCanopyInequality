@@ -1,4 +1,4 @@
-# Result 2 matched transferability audit: frozen analysis contract
+# Matched-scale social-gradient transferability analysis
 
 ## Scientific question
 
@@ -14,7 +14,7 @@ population-weighted percentage-point difference in neighbourhood canopy per one
 unweighted within-city standard deviation of that attribute. It is an ecological
 gradient, not an individual effect or causal coefficient.
 
-## Frozen variables
+## Prespecified variables
 
 1. Hispanic/Latino share.
 2. Renter-occupied household share.
@@ -23,7 +23,7 @@ gradient, not an individual effect or causal coefficient.
 
 No variable will be added or removed after inspecting city heterogeneity.
 
-## Frozen spatial supports
+## Prespecified spatial supports
 
 - Primary block-group support: the 34,566 Result 3 support-aligned block groups,
   which are an exact subset of the 34,575 Result 2 fully contained frame.
@@ -33,7 +33,7 @@ No variable will be added or removed after inspecting city heterogeneity.
 - Predictors are restandardised separately within city and geography using the
   unweighted population standard deviation with `ddof=0`.
 
-## Frozen model sequence
+## Prespecified model sequence
 
 1. Fit a separate population-weighted WLS slope in each city, with an intercept
    and HC3 standard error.
@@ -48,7 +48,7 @@ the Result 2 population weights and matches the Result 3 heterogeneity analysis.
 An unweighted one-stage mixed model is not substituted for the weighted
 estimand.
 
-## Frozen spatial inference
+## Prespecified spatial inference
 
 - Use the Result 3 M2/M3 shared physical block widths and the same four grid
   origins.

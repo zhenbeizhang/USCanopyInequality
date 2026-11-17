@@ -1,6 +1,6 @@
-# Analysis freeze
+# Versioned analysis record
 
-Software release 0.3.1 preserves the submitted analysis freeze of 17 August
+Software release 0.3.1 preserves the manuscript analysis version of 17 August
 2026. This patch updates public-release documentation, licensing and archive
 metadata without changing analytical frames, estimands or numerical outputs.
 The immutable analytical frames and their intended roles
@@ -9,8 +9,8 @@ structural contrasts and the transferability decision gate are recorded in
 manifests/analysis_targets.csv.
 
 Analytical products use role-based directory names. The atlas layer identifier
-`GHV27-2026-08-09` records the scientific content and freeze date, whereas
-`0.3.0` identifies the original analytical freeze; `0.3.1` is its public
+`GHV27-2026-08-09` records the scientific content and version date, whereas
+`0.3.0` identifies the original analytical version; `0.3.1` is its public
 documentation patch. Derived allocation outputs are written
 to dedicated `step01_city_tradeoff_outcomes`,
 `step02_divergence_decomposition`, `step03_cross_city_transferability` and

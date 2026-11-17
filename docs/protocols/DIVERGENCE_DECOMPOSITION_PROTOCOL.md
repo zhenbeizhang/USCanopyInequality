@@ -1,8 +1,8 @@
-# Step 2 frozen protocol: structural decomposition of allocation divergence
+# Structural decomposition of allocation divergence
 
-**Status:** frozen before the Step 2 confirmatory run  
+**Status:** specified before the structural-decomposition confirmatory run
 **Date:** 12 August 2026  
-**Baseline:** Step 1 city trade-off outcomes  
+**Baseline:** primary city trade-off outcomes
 **Scope:** structural counterfactual decomposition, not causal attribution
 
 ## Question
@@ -15,18 +15,18 @@ two objectives?
 
 The analysis does not estimate why social and thermal conditions came to occupy
 their observed locations. It tests whether two features of the analytical
-allocation design alter the already frozen divergence outcomes.
+allocation design alter the prespecified divergence outcomes.
 
-## Frozen analysis frame
+## Prespecified analysis frame
 
 - 34,566 block groups in 50 US municipal geographies.
 - Positive represented population and positive city-clipped land area.
 - Density-peer q75 canopy deficit, positive population-relative LST anomaly and
   the prespecified three-domain social-condition ordering are reconstructed as
-  in the Step 1 confirmatory allocation analysis.
+  in the primary confirmatory allocation analysis.
 - Race and ethnicity are not allocation inputs.
 
-## Frozen objectives
+## Prespecified objectives
 
 For block group i in city c, the two marginal objective scores are
 
@@ -110,9 +110,9 @@ structure and budget, both rules receive and exhaust exactly the same area
 budget. Total capacity and nominal budget are identical across the three
 structures.
 
-## Frozen outcomes
+## Prespecified outcomes
 
-The three Step 1 outcomes remain unchanged:
+The three primary trade-off outcomes remain unchanged:
 
 1. continuous Jaccard overlap O_c;
 2. heat-context opportunity loss under social allocation L_Hc;
@@ -145,7 +145,7 @@ structure increases the corresponding loss.
 ## Prespecified main-text gate
 
 A controlled contrast is eligible for main-text interpretation only if, for at
-least one of the three frozen outcomes:
+least one of the three prespecified outcomes:
 
 1. its deterministic point estimate has the same non-zero direction at 5%, 10%
    and 20% budgets;
@@ -168,7 +168,7 @@ budget at H = 0 in any city at any of the three budgets. Those outcomes remain
 reported as convention-dependent sensitivities. The
 `heat_context_opportunity_loss_under_social` outcome remains eligible because its heat
 upper bound is invariant to how the H = 0 tie is resolved. This exclusion rule
-is frozen before inspecting the controlled-contrast results.
+is specified before inspecting the controlled-contrast results.
 
 ## Forbidden interpretations
 

@@ -10,18 +10,18 @@
   seventeen outputs.
 - Added an explicit CC BY 4.0 notice for author-generated derived data tracked
   in the repository.
-- Preserved all frozen analysis frames, estimands and reported numerical
+- Preserved all versioned analysis frames, estimands and reported numerical
   outputs from release 0.3.0.
 
 ## 0.3.0 - 2026-08-17
 
-- Synchronized the code release with the submitted analysis freeze.
-- Added frozen equal-city overlap, shared/redirected-area translations and
+- Synchronized the code release with the manuscript analysis version.
+- Added versioned equal-city overlap, shared/redirected-area translations and
   directional cross-objective opportunity losses.
 - Added the paired 5%, 10% and 20% structural decomposition of capacity
   intensity and the positive canopy-deficit candidate screen.
-- Added the independently specified cross-city transferability audit used as a
-  Discussion boundary rather than a predictive headline.
+- Added the independently specified cross-city transferability assessment
+  supporting the city-heterogeneity interpretation.
 - Updated Fig. 5, Supplementary Table 7 sources, reporting-consistency checks,
   protocols and reconstruction targets.
 - Sanitized deployment examples and regenerated the public-file checksum
@@ -30,12 +30,12 @@
 ## 0.2.0 - 2026-08-10
 
 - Retained the 0.6 m canopy mask and added switchable city-level neighbourhood
-  evidence layers from frozen release `GHV27-2026-08-09`.
+  evidence layers from versioned release `GHV27-2026-08-09`.
 - Added six manuscript-facing contexts, direct G/H/V component views, a
   27-type explorer and four equal-area 10% allocation views.
 - Added per-neighbourhood inspection, shareable city/view/filter URLs and
   desktop/mobile layouts.
-- Added build-time and release-time audits for 50 cities, 34,566 unique block
+- Added build-time and release-time validation checks for 50 cities, 34,566 unique block
   groups, type/context consistency and equal-area allocation controls.
 
 ## 0.1.0 - 2026-08-06
@@ -46,5 +46,5 @@
   entry points.
 - Added main/Supplementary figure scripts, QA checks, environment files and
   release documentation.
-- Added the city-first interactive canopy atlas, COG conversion and audit
+- Added the city-first interactive canopy atlas, COG conversion and validation
   pipeline, whitelisted raster-tile API and responsive MapLibre client.

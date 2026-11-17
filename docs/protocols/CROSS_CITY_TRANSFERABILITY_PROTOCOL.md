@@ -1,8 +1,8 @@
-# Step 3 frozen protocol: cross-city transferability of allocation divergence
+# Cross-city transferability of allocation divergence
 
-**Status:** frozen before predictor-outcome association, model fitting or outcome-tuned variable selection  
+**Status:** specified before predictor-outcome association, model fitting or outcome-tuned variable selection
 **Date:** 12 August 2026  
-**Parent modules:** Step 1 frozen city outcomes and Step 2 controlled structural decomposition  
+**Parent modules:** primary city trade-off outcomes and controlled structural decomposition
 **Scope:** out-of-city prediction and descriptive transportability, not causal attribution
 
 All stochastic operations use the fixed seed `20260812`. Bootstrap and
@@ -19,17 +19,17 @@ estimate why any city acquired its observed social or thermal geography and it
 does not claim transportability to cities outside the sampled size and
 geographic frame unless the regional holdout test also succeeds.
 
-## Frozen outcome
+## Prespecified outcome
 
-The sole primary outcome is the Step 1 quantity
+The sole primary outcome is the primary trade-off quantity
 
     L_Hc = 1 - Q_Hc(x_S) / Q_Hc(x_H)
 
 under `observed_gap_capacity` at the 10% equal-area analytical budget. Larger
 values indicate that the social-context ordering retains less of the
 surface-heat-context rule's mathematical upper bound. The 5% and 20% outcomes
-are frozen budget sensitivities. Allocation overlap and social-context loss
-under the heat allocation are not alternative Step 3 targets.
+are prespecified budget sensitivities. Allocation overlap and social-context loss
+under the heat allocation are not alternative cross-city transferability targets.
 
 All outcomes are model-defined ratios. They are not realised cooling, personal
 heat exposure, health effects or welfare.
@@ -37,14 +37,14 @@ heat exposure, health effects or welfare.
 ## Prohibited proximal predictors
 
 No variable used to define G, H, V, analytical capacity, either ranking score
-or Step 2 structural contrasts may enter a predictive model. The following are
+or structural-decomposition contrasts may enter a predictive model. The following are
 therefore excluded: canopy cover or canopy deficit; LST or H summaries;
 social-condition indicators or V summaries; population or density; capacity,
 budget or concentration; G-H-V type shares; H-V or score correlations; and
 allocation outputs. These quantities may not be introduced after results are
 seen.
 
-## Six frozen external predictors
+## Six prespecified external predictors
 
 All predictors are city-level and defined without reference to the outcome.
 
@@ -80,10 +80,10 @@ to retrieve climate and display geography.
 - Within each training split, predictors are centred and scaled using training
   means and standard deviations. Any zero-variance predictor in a training
   split stops the analysis.
-- No transformations beyond the frozen definitions above are selected after
+- No transformations beyond the prespecified definitions above are selected after
   outcome inspection.
 
-## Frozen models
+## Prespecified models
 
 The primary model is ridge regression with all six predictors. Two diagnostic
 models are fixed in advance: climate-only (predictors 1-2) and
@@ -107,8 +107,8 @@ The complete procedure is repeated without changing predictors at 5% and 20%.
 
 The full model is also evaluated by holding out each US Census region
 (Northeast, Midwest, South and West) in turn. Alpha selection and scaling use
-only cities outside the held-out region. This is a harder geographic
-extrapolation audit, not a claim about all US cities.
+only cities outside the held-out region. This provides a more demanding
+geographic extrapolation test across the four Census regions.
 
 ## Metrics
 
@@ -134,7 +134,7 @@ must not be labelled mechanisms or drivers.
    across cities rerun the complete nested procedure. The one-sided P value is
    `(1 + number of permuted RMSE advantages at least as large as observed) /
    1,000`.
-3. **Influence audit:** recompute the mean squared-error advantage after
+3. **Influence assessment:** recompute the mean squared-error advantage after
    deleting each held-out prediction from the scoring set. A result dominated
    by one city fails the gate.
 4. **Regularisation sensitivity:** alpha grids shifted one decade lower and
@@ -153,7 +153,7 @@ conditions hold:
 4. the pooled leave-one-Census-region-out RMSE ratio is below 1.00;
 5. the 95% outcome-uncertainty interval for the 10% RMSE ratio lies wholly
    below 1.00; and
-6. the leave-one-city scoring audit retains a positive mean squared-error
+6. the leave-one-city scoring assessment retains a positive mean squared-error
    advantage for every omitted city.
 
 If any condition fails, the confirmatory conclusion is that these six generic
@@ -169,4 +169,5 @@ The module must not use `cause`, `drive`, `mechanism`, `determinant`, `explains
 why`, `percentage explained`, `optimal policy`, `realised cooling` or
 `implementation effect`.
 
-This is an internal frozen protocol and not a public preregistration.
+This protocol records the prespecified design used for the reported cross-city
+assessment.
